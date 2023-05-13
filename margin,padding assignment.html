@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin,padding,border-radius assignment</title>
+</head>
+
+<body>
+    <style>
+        #screen {
+            width: 100%;
+            height: 2000px;
+            border: 1px solid black;
+        }
+
+        #div-for-margin {
+            width: 100%;
+            height: 150px;
+            border: 1px solid red;
+            display: flex;
+            justify-content: space-evenly;
+            background-color: aliceblue;
+        }
+
+        #margin-top {
+            width: 40%;
+            height: 50px;
+            margin-top: 10%;
+            border: 2px solid black;
+            background-color: bisque;
+        }
+
+        #margin-right {
+            width: 40%;
+            height: 50px;
+            margin: 10px 20px;
+            border: 2px solid black;
+            background-color: bisque;
+        }
+
+        #margin-bottom {
+            width: 40%;
+            height: 50px;
+            margin: 25px 5px;
+            border: 2px solid black;
+            background-color: bisque;
+        }
+
+        #margin-left {
+            width: 40%;
+            height: 50px;
+            margin: 10px 40px;
+            border: 2px solid black;
+            background-color: bisque;
+        }
+
+        #margin-auto {
+            width: 40%;
+            height: 50px;
+            margin: auto;
+            border: 2px solid black;
+            background-color: bisque;
+        }
+
+        #div-for-padding {
+            width: 100%;
+            height: 150px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #padding-top {
+            width: 15%;
+            height: 30px;
+            padding: 40px 0px;
+            border: 2px solid black;
+            background-color: bisque;
+        }
+
+        #padding-right {
+            width: 15%;
+            height: 30px;
+            padding: 40px 30px;
+            border: 2px solid black;
+            background-color: bisque;
+        }
+
+        #padding-bottom {
+            width: 15%;
+            height: 30px;
+            padding: 50px 0px;
+            border: 2px solid black;
+            background-color: bisque;
+        }
+
+        #padding-left {
+            width: 15%;
+            height: 30px;
+            padding: 30px 30px;
+            border: 2px solid black;
+            background-color: bisque;
+        }
+
+        #example1 {
+            width: 20%;
+            height: 40px;
+            border: 2px solid red;
+            padding: 10px;
+            border-radius: 30px;
+        }
+
+        #example2 {
+            width: 20%;
+            height: 40px;
+            border: 2px solid red;
+            padding: 10px;
+            border-radius: 50px 20px;
+        }
+
+        #example3 {
+            width: 20%;
+            height: 40px;
+            border: 2px solid red;
+            padding: 10px;
+            border-radius: 50px 20px 30px;
+        }
+
+        #example4 {
+            width: 20%;
+            height: 40px;
+            border: 2px solid red;
+            padding: 10px;
+            border-radius: 50px 20px 40px 60px;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div id="screen">
+
+            <div id="div-for-margin">
+                <h2>Margin</h2>
+
+                <div style="width:15%;height:100px;border:2px solid black;
+        background-color: aquamarine;">
+                    <div id="margin-top">margin-top</div>
+                </div>
+                <div style="width:15%;height:100px;border:2px solid black;
+        background-color: aquamarine;">
+                    <div id="margin-right">margin-right</div>
+                </div>
+                <div style="width:15%;height:100px;border:2px solid black;
+        background-color: aquamarine;">
+                    <div id="margin-bottom">margin-bottom</div>
+                </div>
+                <div style="width:15%;height:100px;border:2px solid black;
+        background-color: aquamarine;">
+                    <div id="margin-left">margin-left</div>
+                </div>
+                <div style="width:15%;height:100px;border:2px solid black; 
+        background-color: aquamarine;">
+                    <div id="margin-auto">margin-auto</div>
+                </div>
+            </div>
+
+            <div id="div-for-padding">
+                <div id="padding-top">padding-top</div>
+                <div id="padding-right">padding-right</div>
+                <div id="padding-bottom">padding-bottom</div>
+                <div id="padding-left">padding-left</div>
+            </div>
+
+            <h2>border-radius:30px</h2>
+            <div id="example1">
+                <p>this is paragraph</p>
+            </div>
+
+            <h2>border-radius:50px 20px</h2>
+            <div id="example2">
+                <p>this is paragraph</p>
+            </div>
+
+            <h2>border-radius:50px 20px 30px</h2>
+            <div id="example3">
+                <p>this is paragraph</p>
+            </div>
+
+            <h2>border-radius:50px 20px 40px 60px</h2>
+            <div id="example4">
+                <p>this is paragraph</p>
+            </div>
+
+        </div>
+    </body>
+
+</html
