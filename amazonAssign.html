@@ -2,41 +2,226 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon navbar assignment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-    *{
+    * {
         margin:0;
         padding:0;
         box-sizing:border-box;
     }
     #screen{
         width:100%;
-        height:100vh;
-        border:1px solid red;
+        height:100%;
+        border:3px solid black;
     }
     #navbar{
         width:100%;
         height:60px;
         border: 2px solid black;
-        background-color: rgb(48, 42, 42);
+        background-color: rgb(15, 17, 20);
         color:white;
         display: flex;
-        justify-content: space-evenly;
         align-items: center;
     }
-    #
+    #logo{
+        /* border:1px solid black; */
+        width:10%;
+        display: flex;
+    }
+    #logo > h1{
+        margin-left: 15px;
+    }
+    #location{
+        /* border: 2px solid black; */
+        width:10%;
+        display: flex;
+    }
+    loc{
+        color:white;
+        padding-top: 19px;
+
+    }
+    #loc-text{
+        padding-left: 5px;
+    }
+    #search{
+        /* border:1x solid black; */
+        width:50%;
+        display: flex;
+    }
+    #search-box{
+        width:750px;
+        height:40px;
+    }
+    #deals{
+        height: 40px;
+        width: 90px;
+        background-color: rgb(243, 243, 243);
+        border: none;
+        border-color: none;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    #search-btn{
+        width:50px;
+        height:40px;
+        border:none;
+        border-color: none;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background-color: rgb(254,189,105);
+
+    }
+    #country{
+        /* border: 1px solid black; */
+        width:5%;
+        display: flex;
+        padding-left:10px ;
+    }
+
+    #flag{
+        padding-right: 5px;
+        padding-top: 2px;
+    }
+    #arrow{
+        padding-top:12px;
+        width:5px;
+        height:5px;
+    }
+    #sign-in{
+        /* border:1px solid blue; */
+        width:12%;
+
+    }1
+    #orders{
+        /* border:1px solid black; */
+        width:8%;
+    }
+    #arrow-two{
+        padding-left: 5px;
+    }
+    #cart{
+        /* border:1px solid black; */
+        width:7%;
+        display: flex;
+    }
+
+    /* new navbar start */
+    #navbar1{
+            width:100%;
+            height:28px;
+            /* border:2px solid black; */
+            background-color: rgb(43, 41, 41);
+            color:white;
+            display: flex;
+            justify-content:space-around;
+            font-size: 15px;
+            
+            }
+        #navbar-left{
+            width:70%;
+            height:20px;
+            display: flex;
+            justify-content: space-around;
+        
+        }
+        #navbar-right{
+            width:20%;
+            height:20px;
+            margin: left 15px;
+            
+        }
+        #navbar-left>span:hover{
+            border:1px solid white;
+            /* padding:2px; */
+        }
+        #left>span{
+            padding-top:12px;
+        }
     </style>
 </head>
 <body>
-    
+    <div id="screen">
+        <div id="navbar">
+        <div id="logo">
+            <h1>amazon</h1>
+            <small style="padding-top: 18px;">.in</small>
+        </div>
+        <div id="location">
+            <i class="fa-solid fa-location-dot" id="loc"></i>
 
-  
-</body>
+        <div>
+        <div id="loc-text">
+            <small>Hello</small>
+            <h5>Select your address</h5>
+            </div>
+        </div>
+    </div>
+    <div id="search">
+        <button id="deals">Deals</button>
+        <input id="search-box" placeholder="Search Amazon.in"/>
+        <button id="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+    </div>
+            <div id="country">
+                <div><i class="fa-solid fa-flag" id="flag"></i></div>
+                <div>EN</div>
+                <div><i class="fa-solid fa-angle-down" id="arrow"></i></div>
+            </div>
+            <div id="sign-in">
+                <div>Hello,sign in</div>
+                <div style="display: flex;">
+                <h4>Account & Lists</h4>
+                <div>
+                    <i class="fa-solid fa-angle-down" id="arrow-two"></i>
+                </div>
+                </div>
+                </div>
+                <div id="orders">
+                    <div>Returns</div>
+                    <div><b>& Orders</b></div>
+                    </div>
+                    <div id="cart">
+                   <div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                   </div>
+                   <div style="font-weight: bolder; padding-top: 1px;">Cart</div>
+                    </div>
+                    </div>
+                    <div id="navbar1">
+                    <div id="navbar-left">
+                        <i class="fa-solid fa-bars"></i>
+                     <span>All</span>
+                     <span>Amazon miniTV</span>
+                     <span>Sell</span>
+                     <span>Best Sellers</span>
+                     <span>Today's deals</span>
+                     <span>Mobile</span>
+                     <span>Customer service</span>
+                     <span>Electronics</span>
+                     <span>New releases</span>
+                     <span>Prime</span>
+                    </div>
+                    <div id="navbar-right">
+                        <div>
+                          <img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/X-site/SingleTitle/Air/400x39-SWM_NP._CB589429826_.jpg"
+                           style="width:100%;height:100%;">
+                          100%">
+                    
+                        </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        
+
+    </body>
 
 </html>
