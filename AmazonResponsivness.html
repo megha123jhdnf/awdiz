@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Amazon responsivness</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        #screen{
+            width:100%;
+            height:700px;
+            /* border:3px solid black; */
+        }
+        
+        #navbar{
+            width:100%;
+            height:60px;
+            border: 2px solid black;
+            background-color: rgb(19,25,33);
+            color:white;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+    #logonloc{
+        width:20%;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    #logo{
+        height: 60px;
+        width: 40%;
+        display: flex;
+    }
+    #loc{
+        width:40%;
+        height: 60px;
+        display: flex;
+        justify-content: space-around;
+        padding-left:2px;
+    }
+     #loc>i{
+        padding-top: 19px;
+     }  
+     #text{
+        padding-left: 6px;
+     } 
+     #search{
+        width:50%;
+        display: flex;
+     }
+     #all{
+        height: 40px;
+        width: 60px;
+        background-color: rgb(243,243,243);
+        border: none;
+        border-color: none;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        color: black;
+     }
+     #all>i{
+        color: black;
+     }
+     #search-box{
+        width:750px;
+        height: 40px;
+     }
+     #btn{
+        width:50px;
+        height: 40px;
+        border: none;
+        border-color: none;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background-color: rgb(254,189,105);
+     }
+     #country{
+        width: 5%;
+        display: flex;
+        padding-left: 10px;
+     }
+     #flag{
+        padding-right: 5px;
+        padding-top: 4px;
+     }
+     #darrow{
+        padding-top: 12px;
+     }
+     #signin{
+        width: 13%;
+        padding-left: 10px;
+     }
+     #order{
+        width:8%;
+     }
+     #darrow1{
+        padding-left:5px
+     }
+     #cart{
+        width:8%;
+        display: flex;
+        padding-left: 10px;
+     }
+     /* #navbar{
+        width:100%;
+        height:60px;
+        border: 1px solid black;
+        background-color: rgb(19,25,93);
+     } */
+     
+     second navbar
+     #nav{
+        width:100%;
+        height: 45px;
+        /* border:1px solid black; */
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(35,47,62);
+     }
+     nav-left{
+        width:5%;
+        /* padding: 10px; */
+        color:white;
+        display: flex;
+        justify-content: space-around;
+     }
+     #nav-left>span{
+        padding-top:10px;
+     }
+     #nav-left>span:hover{
+        border:1px solid white;
+     }
+
+     #nav-right{
+        width:35%;
+        border:1px solid greenyellow;
+     }
+     #nav-right:hover{
+        border:1px solid white;
+     }
+     @media screen and (max-width:400px){
+        *{font-size:8px;
+        color:white;
+        }
+#navbar{
+
+    width:100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+#logonloc{
+        width:20%;
+        height:50px;
+        display: flex ;
+        justify-content: space-between;
+        /* flex-direction: column; */
+}
+#logo{
+    width:50%;
+    height:50px;
+}
+#logo>h1{
+    padding-top: 17px;
+}
+#logo>hover{
+    border:1px solid white;
+}
+#loc{
+    width:50%;
+    height: 5px;
+    padding-left: 5px;
+    display: flexbox;
+}
+#search{
+
+width:40%;
+height: 30px;
+display: flex;
+margin-left: 20px;
+}
+#all{
+    height:30px;
+    width:20px;
+}
+#btn{
+    width:20px;
+    height:30px;
+}
+#search-box{
+width:70px;
+height:30px;
+}
+#country{
+    height:35px;
+    width: auto;
+    display: flex;
+    padding-top:15px;
+    margin-left: auto;
+    /* padding-left: 5px; */
+}
+#flag{
+    height: 10px;
+    width:10px;
+    padding-right: 5px;
+    padding-top: 3px;
+}
+#darrow{
+    padding-top: 6px;
+}
+#signin{
+    width:auto;
+    height:50px;
+    font-size: 4px;
+    padding-top: 15px;
+}
+#order{
+    width:auto;
+    height:35px;
+    
+}
+#darrow1{
+    padding-right: 4px;
+    /* padding-left:10px; */
+}
+#cart{
+    width:auto;
+    display: flex;
+    padding-left: 10px;
+}
+/* second navbar */
+#nav{
+    width:100%;
+    height:30px;
+    /* border:1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(35,47,62);
+    font-size: 8px;
+}
+#navbar-left{
+    width:100%;
+    padding: 10px;
+    height: 30px;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+}
+#navbar-left>span{
+    padding-top: 10px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+#navbar-left>span:hover{
+    border: 2px solid grey;
+
+}
+#navbar-right{
+    width:25%;
+    display: none;
+    border: 2px solid grey;
+}
+#navbar-right:hover{
+     border: 1px solid white;
+}
+
+     }
+
+      
+     /* new navbar start */
+        #navbar1{
+                width:100%;
+                height:28px;
+                /* border:2px solid black; */
+                background-color: rgb(43, 41, 41);
+                color:white;
+                display: flex;
+                justify-content:space-around;
+                font-size: 15px;
+                
+                }
+            #navbar-left{
+                width:70%;
+                height:20px;
+                display: flex;
+                justify-content: space-around;
+            
+            }
+            #navbar-right{
+                width:20%;
+                height:20px;
+                margin: left 15px;
+                
+            }
+            #navbar-left>span:hover{
+                border:1px solid white;
+                /* padding:2px; */
+            }
+            #left>span{
+                padding-top:12px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="screen">
+            <div id="navbar">
+            <div id="logonloc">
+                <div id="logo">
+                <h1>amazon</h1>
+                <small style="padding-top: 10px;">.in</small>
+            </div>
+            <div id="loc">
+                <i class="fa-solid fa-location-dot"></i>
+    
+            <div id="text">
+                <small>Hello</small> 
+                <h5>Select your country</h5> 
+                </div>
+                </div>
+                </div>     
+        <div id="search">
+            <button id="all">all
+                <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <input id="search-box" placeholder="Search Amazon.in"/>
+            <button id="btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            </div>
+
+            <div id="country">
+                <div><i class="fa-regular fa-flag" id="flag"></i></div>
+                <div>En</div>
+                <div><i class="fa-solid fa-angle-down" id="darrow"></i></div>
+                </div>
+
+
+
+                <div id="signin">
+                    <div>Hello,Sign in</div>
+                    <div style="display:flex;">
+                    <h4>Account & Lists</h4>
+                <div>
+                    <i class="fa-solid fa-angle-down" id="darrow1"></i>
+                </div>
+            </div>
+                </div>
+            <div id="order">
+                <div>Returns</div>
+                <div><b>& Orders</b></div>
+            </div>
+            <div id="cart">
+                <div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div style="font-weight: bolder;padding-top: 1px;">
+                </div>
+            </div>
+            </div>
+            
+            
+            
+        
+                
+            
+           <!-- new navbar start -->
+                    <div id="navbar">
+                        <div id="navbar-left">
+                            <i class="fa-solid fa-bars"></i>
+                         <span>All</span>
+                         <span>Amazon miniTV</span>
+                         <span>Sell</span>
+                         <span>Best Sellers</span>
+                         <span>Today's deals</span>
+                         <span>Mobile</span>
+                         <span>Customer service</span>
+                         <span>Electronics</span>
+                         <span>New releases</span>
+                         <span>Prime</span>
+                        </div>
+                        <div id="navbar-right">
+                            <div>
+                              <img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/X-site/SingleTitle/Air/400x39-SWM_NP._CB589429826_.jpg"
+                               style="width:100%;height:100%;">
+                              100%">
+                        
+                            </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            
+    
+        </body>
+    
+    </html>

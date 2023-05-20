@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>github navbar using media querie</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    #screen{
+        width:100%;
+        height:800px;
+        border: 2px solid yellow;
+    }
+        
+    #navbar{
+        width:100%;
+        height: 55px;
+        border:1px solid black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(23,37,34);
+        color: white;
+
+    }
+    #navbar>div:nth-child(1){
+        display: none;
+    }
+    #navbar>div:nth-child(2){
+        width: 60%;
+        /* border:5px solid black; */
+        display: flex;
+        justify-content: space-between;
+        margin-left: 15px;
+    }
+    #navbar>div:nth-child(2)>div:nth-child(1){
+        width:5%;
+        padding-left: 20px;
+        padding-top: 5px;
+    }
+    #navbar>div:nth-child(2)>div:nth-child(3){
+        width: 45%;;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+    #input{
+        border:3px solid grey;
+        background-color: transparent;
+        width: 100px;
+        height: 30px;
+        padding-left: 20px;
+        border-radius: 5px;
+    }
+    #navbar>div:nth-child(3){
+        width:9%;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-between;
+    }
+    #body{
+        width:100%;
+        height:500px;
+        border:1px solid red;
+    }
+    @media screen and (max-width:400px){
+        #navbar>div:nth-child(1){
+            display: block;
+            margin-left: 10px;
+            /* color:white; */
+        }
+        #navbar>div:nth-child(2){
+            padding-left: 120px;
+        }
+        #navbar>div:nth-child(2)>div:nth-child(2){
+            display: none;
+        }
+        #navbar>div:nth-child(2)>div:nth-child(3){
+            display: none;
+        }
+        #navbar>div:nth-child(3)>div:nth-child(2){
+            display: none;
+        }
+        #navbar>div:nth-child(3)>div:nth-child(3){
+            display: none;
+        }
+        #body{
+            display: none;
+        }
+
+    }
+        
+    
+    </style>
+</head>
+<body>
+    <div id="screen">
+        <div id="navbar">
+            <div>
+                <i class="fa-solid fa-bars  fa-xl"></i>
+            </div>
+            <!-- 2nd child -->
+            <div >
+                <div>
+                    <i class="fa-brands fa-github fa-lg"></i>
+                </div>
+                <div>
+                    <input type="text" placeholder="Search or jump to..."/>
+                </div>
+                <div>
+                    <p>Pull requests</p>
+                    <p>Issues</p>
+                    <p>Codespaces</p>
+                    <p>Marketplace</p>
+                    <p>Explore</p>
+                </div>
+
+              </div>
+              <!-- child 3 -->
+              <div>
+                <div>
+                    <i class="fa-regular fa-bell fa-lg"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-plus fa-lg" ></i>
+                </div>
+
+                <div>
+                        <i class="fa-regular fa-user fa-lg"></i>
+                    </div>
+
+                </div>
+              </div>
+        <div id="body">body</div>
+    </div>
+</body>
+</html>
