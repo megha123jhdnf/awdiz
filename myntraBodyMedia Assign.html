@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myntraBodyMedia queries</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #screen {
+            width: 100%;
+            border: 1px solid red;
+        }
+
+        #navbar {
+            width: 100%;
+            border: 1px solid black;
+        }
+
+        #body {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #body>div:nth-child(1) {
+            width: 15%;
+            border:2px solid green;
+        
+
+        }
+
+        #body>div:nth-child(2) {
+            width: 81%;
+            /* border: 3px solid green; */
+        }
+
+        #body>div:nth-child(1)>div {
+            border-bottom: 1px solid blue;
+            margin-left: 20px;
+            
+        }
+        #body>div:nth-child(1)>div>h4{
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        #body>div:nth-child(1)>div>input,label{
+            margin-bottom: 15px;
+        }
+        #product{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        #product>div{
+            width:18%;
+            height:370px;
+            margin-bottom:20px;
+        }
+        #product>div:hover{
+            border:1px solid black;
+        }
+        #product>div>img{
+            width:100%;
+            height:75%;
+        }
+        #product>div>h4,p{
+            margin-left: 20px;
+            margin-bottom: 4px;
+        }
+        #product>div>h4:nth-child(2){
+             color:red;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div id="screen">screen
+        <div id="navbar">navbar</div>
+        <div id="body">
+            <!-- 1st child -->
+            <div>
+                <div>
+                    <h4>CATEGORIES</h4>
+                    <input type="checkbox" />
+                    <label>Tshirts(96180)</label><br>
+                    <input type="checkbox" />
+                    <label>Lounge Tshirts(1064)</label>
+                </div>
+
+                <div>
+                    <h4>BRAND</h4>
+                    <input type="checkbox" />
+                    <label>Roadster(3996)</label><br>
+                    <input type="checkbox" />
+                    <label>Lounge Tshirts(1064)</label><br>
+                    <input type="checkbox" />
+                    <label>Roadster(3996)</label><br>
+                    <input type="checkbox" />
+                    <label>Lounge Tshirts(1064)</label><br>
+                </div>
+
+                <div>
+                    <h4>PRICE</h4>
+                    <input type="checkbox" />
+                    <label>Roadster(3996)</label><br>
+                    <input type="checkbox" />
+                    <label>Lounge Tshirts(1064)</label><br>
+                    <input type="checkbox" />
+                    <label>Roadster(3996)</label><br>
+                    <input type="checkbox" />
+                    <label>Lounge Tshirts(1064)</label><br>
+                </div>
+
+               </div>
+
+                <div id="product">
+                    <div>
+                       <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11545192/2022/3/25/626b0419-cbb0-4200-8490-67e20a0021c51648208612203-Roadster-Men-Green--White-Printed-Round-Neck-Pure-Cotton-T-s-1.jpg"/>
+                    <h4>Roadster</h4>
+                    <p>T-shirt</p>
+                    <h4>299</h4>
+                    </div>
+
+                    
+                    <div>
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11545192/2022/3/25/626b0419-cbb0-4200-8490-67e20a0021c51648208612203-Roadster-Men-Green--White-Printed-Round-Neck-Pure-Cotton-T-s-1.jpg"/>
+                     <h4>Roadster</h4>
+                     <p>T-shirt</p>
+                     <h4>299</h4>
+                     </div>
+
+                     <div>
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11545192/2022/3/25/626b0419-cbb0-4200-8490-67e20a0021c51648208612203-Roadster-Men-Green--White-Printed-Round-Neck-Pure-Cotton-T-s-1.jpg"/>
+                     <h4>Roadster</h4>
+                     <p>T-shirt</p>
+                     <h4>299</h4>
+                     </div>
+
+                     <div>
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11545192/2022/3/25/626b0419-cbb0-4200-8490-67e20a0021c51648208612203-Roadster-Men-Green--White-Printed-Round-Neck-Pure-Cotton-T-s-1.jpg"/>
+                     <h4>Roadster</h4>
+                     <p>T-shirt</p>
+                     <h4>299</h4>
+                     </div>
+                     <div>
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11545192/2022/3/25/626b0419-cbb0-4200-8490-67e20a0021c51648208612203-Roadster-Men-Green--White-Printed-Round-Neck-Pure-Cotton-T-s-1.jpg"/>
+                     <h4>Roadster</h4>
+                     <p>T-shirt</p>
+                     <h4>299</h4>
+                     </div>
+
+                     <div>
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11545192/2022/3/25/626b0419-cbb0-4200-8490-67e20a0021c51648208612203-Roadster-Men-Green--White-Printed-Round-Neck-Pure-Cotton-T-s-1.jpg"/>
+                     <h4>Roadster</h4>
+                     <p>T-shirt</p>
+                     <h4>299</h4>
+                     </div>
+
+                     <div>
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11545192/2022/3/25/626b0419-cbb0-4200-8490-67e20a0021c51648208612203-Roadster-Men-Green--White-Printed-Round-Neck-Pure-Cotton-T-s-1.jpg"/>
+                     <h4>Roadster</h4>
+                     <p>T-shirt</p>
+                     <h4>299</h4>
+                     </div>
+
+                     <div>
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11545192/2022/3/25/626b0419-cbb0-4200-8490-67e20a0021c51648208612203-Roadster-Men-Green--White-Printed-Round-Neck-Pure-Cotton-T-s-1.jpg"/>
+                     <h4>Roadster</h4>
+                     <p>T-shirt</p>
+                     <h4>299</h4>
+                     </div>
+
+                     <div>
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11545192/2022/3/25/626b0419-cbb0-4200-8490-67e20a0021c51648208612203-Roadster-Men-Green--White-Printed-Round-Neck-Pure-Cotton-T-s-1.jpg"/>
+                     <h4>Roadster</h4>
+                     <p>T-shirt</p>
+                     <h4>299</h4>
+                     </div>
+
+                     <div>
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11545192/2022/3/25/626b0419-cbb0-4200-8490-67e20a0021c51648208612203-Roadster-Men-Green--White-Printed-Round-Neck-Pure-Cotton-T-s-1.jpg"/>
+                     <h4>Roadster</h4>
+                     <p>T-shirt</p>
+                     <h4>299</h4>
+                     </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
