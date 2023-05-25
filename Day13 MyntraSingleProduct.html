@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 13 myntra single product assignment</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+
+        }
+
+        #body {
+            width: 100%;
+            /* height: 400px; */
+            /* border: 5px solid red; */
+        }
+        #body>div:nth-child(1){
+            /* border: 1px solid blue; */
+            margin-top: 20px;
+        }
+
+        #proInfo {
+            margin: 25px;
+            /* border: 5px solid green; */
+            display: flex;
+            justify-content: space-between;
+        }
+        #proInfo>div:nth-child(1) {
+            width: 57%;
+            /* height: 300px; */
+            /* border: 5px solid red; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        #proInfo>div:nth-child(1)>div:hover {
+            border: 1px solid black
+        
+        }
+
+        #proInfo>div:nth-child(1)>div {
+            width: 49%;
+            /* border: 2px solid blue; */
+            height: 500px;
+            margin-bottom: 12px;
+        }
+
+        #proInfo>div:nth-child(1)>div>img {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        #proInfo>div:nth-child(1)>img:hover {
+            border: 1px solid red;
+        }
+
+        #proInfo>div:nth-child(2) {
+            width: 40%;
+            height: 300px;
+            /* border: 5px solid black */
+        }
+
+        #right>div {
+            border-bottom: 1px solid black;
+          }
+
+        #right>div:nth-child(1)>p {
+            margin-bottom: 15px;
+            color: #a1a3ab;
+        }
+
+        #right>div:nth-child(2)>div:nth-child(4) {
+            display: flex;
+        }
+
+        #right>div:nth-child(2)>div:nth-child(4)>div {
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            padding: 10px;
+            margin-left: 10px;
+            border-radius: 50%;
+            text-align: center;
+            border: 2px solid #a1a3ab;
+        }
+
+        #right>div:nth-child(2)>div:nth-child(4)>div:hover {
+            border: 2px solid rgb(241, 14, 90);
+        }
+
+        #bag-wish {
+            width: 90%;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+
+        #bag-wish>h5 {
+            width: 50%;
+            height: 32px;
+            /* border: 2px solid #a1a3ab; */
+            background-color: #ff3e6c;
+            color: white;
+            text-align: center;
+            padding-top: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+         }
+
+        #bag-wish>h4 {
+            width: 35%;
+            height: 30px;
+            border: 2px solid #a1a3ab;
+            background-color: #ffffff;
+            color: black;
+            text-align: center;
+            padding-top: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            /* border: 1px solid red;  */
+        }
+
+        #right>div:nth-child(3)>div {
+            border: 1px solid #c9c4c4;
+            /* border:none; */
+            width: 45%;
+            height: 30px;
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 15px;
+         }
+
+
+        #right>div:nth-child(3)>div>input {
+            border: none;
+            color: green;
+            margin: auto;
+            padding-bottom: 5px;
+            /* border: 1px solid red; */
+         }
+
+        #right>div:nth-child(3)>div>h5 {
+            color: red;
+            margin: auto;
+            padding-bottom: 5px;
+            /* border: 1px solid red;  */
+         }
+
+        .proInfoSale {
+            margin: 5px;
+            display: block;
+            width: 90%;
+            color: #282c3f;
+            font-size: 14px;
+            /* border: 1px solid black; */
+        }
+
+        #right>div:nth-child(3)>h4 {
+            /* border: 1px solid red;  */
+            margin-top: 25px;
+            margin-bottom: 25px;
+            color: #282c3f;
+            font-size: 14px;
+        }
+
+        #right>div:nth-child(3)>ul {
+            /* border: 1px solid red;  */
+            font-size: 16px;
+            color: #282c3f;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .discount {
+            /* border: 1px solid blue;  */
+            font-weight: 700;
+            color: #ff3f6c;
+            font-size: 13px;
+            margin-top: 4px;
+            margin-bottom: 20px;
+
+        }
+
+        #Pro-detail {
+            color: #282c3f;
+            font-size: 16px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-weight: 700;
+            /* border:1px solid red; */
+        }
+
+        .pro-decript {
+            color: #282c3f;
+            line-height: 1.4;
+            font-size: 14px;
+        }
+
+        .size-material {
+            color: #282c3f;
+            font-size: 14px;
+            line-height: 1.4;
+            margin-top: 18px;
+            margin-bottom: 5px;
+        }
+
+        #material>div {
+            border-bottom: 1px solid grey
+        }
+
+        #rating>div:nth-child(1) {
+            /* border: 1px solid red; */
+            display: flex;
+        }
+
+        #rating>div>p {
+            /* border: 1px solid green; */
+            margin-bottom: 10px;
+        }
+        #Reviews>h4 {
+            /* border: 3px solid red; */
+            font-size: 16px;
+            color: #141518;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        #Reviews>div {
+            /* border: 1px solid red; */
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+        #proCode {
+            /* border: 1px solid red; */
+            margin-top: 10px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id=body>
+        <div>
+            <p>Home / Clothing / Men Clothing / Tshirt /<b>Roadster Tshirts > More by Roadster</b> </p>
+        </div>
+        <div id="proInfo">
+            <div>
+                <!-- left div -->
+                <div>
+                    <img
+                        src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/18218256/2022/6/2/1fc535d9-b04a-4452-b150-1638ab5e7fc41654165291569-Louis-Philippe-Men-White-Polo-Collar-Pure-Cotton-T-shirt-110-1.jpg" />
+                </div>
+                <div>
+                    <img
+                        src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/18218256/2022/6/2/78bc250d-b462-4c44-9e82-b2ffd5ed106a1654165291548-Louis-Philippe-Men-White-Polo-Collar-Pure-Cotton-T-shirt-110-2.jpg" />
+                </div>
+                <div>
+                    <img
+                        src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/18218256/2022/6/2/8b689a79-ee48-4a34-a8c9-bb2b0209e8081654165291529-Louis-Philippe-Men-White-Polo-Collar-Pure-Cotton-T-shirt-110-3.jpg" />
+                </div>
+                <div>
+                    <img
+                        src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/18218256/2022/6/2/9e94f371-c5aa-447a-96cb-82a3f746f2ac1654165291509-Louis-Philippe-Men-White-Polo-Collar-Pure-Cotton-T-shirt-110-4.jpg" />
+                </div>
+                <div>
+                    <img
+                        src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/18218256/2022/6/2/eaec4ca6-3d1a-4685-9697-0b0f9dcf87361654165291487-Louis-Philippe-Men-White-Polo-Collar-Pure-Cotton-T-shirt-110-5.jpg" />
+                </div>
+            </div>
+
+            <div id="right">
+
+                <div>
+                    <!-- 1st child -->
+                    <h3>Louis Philippe</h3>
+                    <p>Men White Solid Polo Collar Pure Cotton T-shirt</p>
+                </div>
+
+                <div>
+                    <!-- 2nd child -->
+                    <h3>₹1329 MRP ₹1899(30% OFF)</h3>
+                    <p>inclusive of all taxes</p>
+                    <h4>SELECT SIZE Size Chart
+                        <i class="fa-solid fa-angle-right" style="font-size:10px;margin-top:12px;"></i>
+                    </h4>
+
+                    <div>
+                        <!-- 1st child of 2nd -->
+                        <div>
+                            <p>xs</p>
+                        </div>
+                        <div>
+                            <p>s</p>
+                        </div>
+                        <div>
+                            <p>m</p>
+                        </div>
+                        <div>
+                            <p>l</p>
+                        </div>
+                        <div>
+                            <p>xl</p>
+                        </div>
+                    </div>
+                    <div id="bag-wish">
+                        <!-- 2st child of 2nd child -->
+                        <h5>
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            ADD TO BAG
+                        </h5>
+                        <h4>
+                            <i class="fa-regular fa-heart"></i>
+                            WISHLIST
+                        </h4>
+                    </div>
+                </div>
+                <div>
+                    <!-- 3rd child -->
+                    <h5>DELIVERY OPTIONS
+                        <i class="fa-solid fa-truck" style="color:#282c3f;"></i>
+                    </h5>
+                    <div>
+                        <!-- 1st child of 3 -->
+                        <input type="text" placeholder="Enter pincode" />
+                        <h5>Check</h5>
+
+                    </div>
+
+                    <p style="font-size: 14px;color:#464953">Please enter PIN code to check delivery time & Pay on
+                        Delivery Availability</p>
+
+
+                    <p class="proInfoSale">100% Original Products</p>
+                    <p class="proInfoSale">Pay on delivery might be available</p>
+                    <p class="proInfoSale">Easy 14 days returns and exchanges</p>
+                    <p class="proInfoSale">Try & Buy might be available</p>
+
+                    <h4>BEST OFFERS</h4>
+
+
+                    <h5 style="color: #282c3f; margin-bottom: 10px;">Best Price:<span
+                            style="color: #ff905a;font-weight: 700;"> Rs.1129</span></h5>
+
+
+
+                    <ul>
+                        <li>
+                            <p>Applicable on: Orders above Rs. 1199 (only on first purchase)</p>
+                        </li>
+
+                        <li>
+                            <p>Coupon code : <span style="font-weight: 700;"> MYNTRA200</span></p>
+                        </li>
+
+                        <li>
+                            <p>Coupon Discount: Rs. 200 off (check cart for final savings)</p>
+                        </li>
+
+                    </ul>
+                    <p class="discount">View Eligible Products</p>
+                    <h5 style="color: #282c3f; margin-bottom: 5px;">
+                        12% Instant Discount on OneCard Credit Cards</h5>
+                    <ul style="font-size: 14px;">
+                        <li>Min Spend Rs 3,500, Max Discount Rs 1,000.</li>
+                    </ul>
+
+                    <p class="discount">Terms & Condition</p>
+                    <h5 style="color: #282c3f; margin-bottom: 5px;">
+                        10% Instant Discount on IDFC FIRST Credit and Debit Cards
+                    </h5>
+                    <ul style="font-size: 14px;">
+                        <li> Min Spend Rs 2,500, Max Discount Rs 1,000.</li>
+                    </ul>
+
+                    <p class="discount">Terms & Condition</p>
+                    <h5 style="color: #282c3f; margin-bottom: 5px;">
+                        Up To Rs 500 Cashback on CRED pay transactions.</h5>
+                    <ul style="font-size: 14px;">
+                        <li>Min Spend Rs 1,000. Available only on Android Devices.</li>
+                    </ul>
+
+                    <p class="discount">Terms & Condition</p>
+                    <h5 style="color: #282c3f; margin-bottom: 5px;">
+                        EMI option available</h5>
+                    <ul style="font-size: 14px;">
+                        <li>EMI starting from Rs.63/month
+                        </li>
+                    </ul>
+                    <p class="discount">View Plan</p>
+
+                  </div>
+
+                <div>
+                    <!-- 4rth child -->
+
+                    <h4 id="Pro-detail">PRODUCT DETAILS </h4>
+                    <div class="pro-decript">
+                        <!-- 1stchild -->
+                        <p>White Tshirt for men</p>
+                        <p>Solid</p>
+                        <p>Regular length</p>
+                        <p>Polo collar</p>
+                        <p>Short, regular sleeves</p>
+                        <p>Knitted pure cotton fabric</p>
+                        <p>Button closure</p>
+
+                    </div>
+
+                         <h4 class="size-material"> Size & Fit</h4>
+                         <div class="pro-decript">
+                        <!-- 2nd child -->
+                        <p>Regular Fit</p>
+                        <p>Size worn by the model: M</p>
+                        <p>Chest: 38"</p>
+                        <p>Height: 6'1"</p>
+
+                    </div>
+                    <h4 class="size-material">Material & Care</h4>
+                    <div class="pro-decript">
+                        <!-- 3rd child -->
+                        <p>100% Cotton</p>
+                        <p>Machine wash</p>
+                    </div>
+
+                    <h4 class="size-material">Specifications
+                        <div id="material">
+                            <!-- 4th child -->
+
+                            <div>
+                                <p style="font-size: 12px;color: #a59f9f;">Closure</p>
+                                <p style="font-size: 14px;color: #5a5656;">Button</p>
+                            </div>
+
+                            <div>
+                                <p style="font-size: 12px;color: #a59f9f;">Fit</p>
+                                <p style="font-size: 14px;color: #5a5656;">Regular Fit</p>
+                            </div>
+
+                            <div>
+                                <p style="font-size: 12px;color: #a59f9f;">Main Trend</p>
+                                <p style="font-size: 14px;color: #5a5656;">New Basics</p>
+                            </div>
+                            <div>
+                                <p style="font-size: 12px;color: #a59f9f;">Neck</p>
+                                <p style="font-size: 14px;color: #5a5656;">Polo Collar</p>
+                            </div>
+
+                        </div>
+
+
+                    </h4>
+
+                    <div>
+                        <p class="discount">See more</p>
+                    </div>
+
+
+                    <div>
+                        <!-- 6th  -->
+                        <h4 class="size-material">Ratings</h4>
+                        <div id="rating">
+                            <div>
+                                <h4>4.4
+                                    <i class="fa-regular fa-star" style="color:black;"></i>
+                                </h4>
+                            </div>
+                            <div style="font-size: 13px;">
+                                <p>301 Verified Buyers</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Reviews">
+                    <!-- 7 -->
+
+                    <h4>Customer Reviews (12)</h4>
+                    <div>
+                        <div>
+                            <i class="fa-regular fa-star" style="color:black;"></i>
+
+                            Perfect, if you want white T-shirt for L or XL size. LP is the good option
+                        </div>
+                        <div>Pinkesh Sancheti | 1 Sept 2022
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="proCode">
+                    <div>
+                        <p class="discount">View all 12 reviews</p>
+                    </div>
+                    <div style="font-size:16px ;color:#13151a;">Product Code:<b> 18218256</b>
+                    </div>
+                    <div>
+                        <span style="font-size:16px ;color: #12141a;">Seller : </span>
+                        <span style="color:#d3224b;font-weight: 600;">RetaiNet</span>
+                    </div>
+                    <div>
+                        <p style="font-size: 14px;color: black;font-weight: 700;">View Supplier Information</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+
+</html>
