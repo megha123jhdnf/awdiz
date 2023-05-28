@@ -43,7 +43,7 @@ var number2= 20;
 
 // Q. Check given number is lesser than 100 or 150 or 200;
 
-// var num = 98763;
+// var num = 250;
 // if (num<100){
 //     console.log("number is greater clearthan 100");
 // }
