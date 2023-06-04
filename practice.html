@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            border:5px solid red;
+            width:100%;
+            display: flex;
+            justify-content: space-around;
+        }
+        #parent>div{
+            border: 5px solid blue;
+            width:30%;
+            height:350px;
+        }
+        
+        #parent>div>div
+       
+        {
+            border: 5px solid yellow;
+
+        }
+        @media screen and (max-width: 400px){
+              #parent{
+                border : 5px solid black;
+                flex-direction: column;
+              }
+              #parent>div{
+                border: 5px solid green;
+                width:90%;
+                margin: auto;
+                margin-bottom: 20px;
+                /* display: flex; */
+                
+
+              }
+              
+              /* #parent > div:nth-child(1) >div
+              { */
+                #parent > div{
+                    border: 5px solid purple;
+                    display: flex;
+              } 
+              #parent>div>div{
+                width:30%;
+              }
+        }
+            
+        
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div>
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+        </div>
+
+        <div> 
+            <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+
+        <div>
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+        </div>
+
+    </div>
+</body>
+</html>

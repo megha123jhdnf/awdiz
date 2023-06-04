@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyntraCart</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+
+        }
+        #navbar{
+            width:100%;
+            height:12%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom:rgb(243, 241, 241);
+        }
+  
+  #process{
+    /* border:1px solid red; */
+    display: flex;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color:#726b6b
+  }
+  #process p:nth-child(1){
+    text-decoration: underline;
+    color:#6cbdbd;
+    text-underline-offset: 8px;
+
+  }
+  #process p:nth-child(2){
+    color:#292828;
+  }
+  #process p:nth-child(3){
+      color:#292828;
+  }
+  #secure-payment{
+    /* border: 1px solid red; */
+    width:15%;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+  }
+  #secure-payment > img{
+    width:12%;
+  }
+  #secure-payment > p{
+      font-size: 12px;
+      letter-spacing: 3px;
+      color:#242121;
+      font-weight: bold;
+      padding-left: 5px;
+  }
+  /* body */
+   #body{
+    width:100%;
+  /* border:1px solid red; */
+   }
+   #first-section{
+    width:70%;
+    margin: auto;
+    height:100vh;
+    display: flex;
+    justify-content: space-between;
+   }
+  #left-section{
+    width:61%;
+    /* border:1px solid red; */
+  }
+  #left-first-section{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    border:1px solid rgb(235, 221, 221);
+    height: 8%;
+    align-items: center;
+    margin-top: 10px;
+  }
+  #left-first-section > p{
+    font-weight: bold;
+    font-size: 0.9em;
+    padding-left:15px;
+  }
+  #left-first-section >button{
+    border: 1px solid red;
+    background-color: transparent;
+    color:red;
+    width:130px;
+    height: 35px;
+    font-weight: bold;
+    font-size: 12px;
+    margin-right: 10px;
+  }
+  #left-second-section{
+    border: 1px solid rgb(223, 215, 215);
+    margin-top: 5px;
+    padding-left: 15px;
+    line-height: 30px;
+    height:15%;
+
+  }
+  #left-second-section > p:nth-child(1){
+    font-weight: bold;
+  }
+  #left-second-section >p:nth-child(2){
+    color:rgb(134, 131, 131);
+    font-size: 12px;
+  }
+  #left-second-section >p:nth-child(3){
+     color:#f77187;
+     font-size: 12px;
+     font-weight: bold;
+  }
+  #left-third-section{
+    /* border:1px solid grey; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+    height: 8%;
+
+  }
+  #left-third-section > div:nth-child(1){
+    /* border:1px solid black; */
+    display: flex;
+    font-size: 12px;
+    font-weight: bold;
+    color: #242121;
+  }
+  #left-third-section > div:nth-child(1) >p{
+    padding: 5px;
+    /* border:1px solid black; */
+
+  }
+.cart-button{
+    border:1px solid black;
+     background-color: transparent;
+    border: none;
+    font-size: 10px;
+    font-weight: 800;
+    color: #706b6b;
+    margin: 0.9px;
+}
+#left-fouth-section{
+    border: 1px solid rgb(233, 228, 228);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    position: relative;
+}
+#left-fouth-section > i{
+    position: absolute;
+    top:10%;
+    right: 3%;
+}
+#cart-img{
+    /* border: 1px solid red; */
+    width: 25%;
+}
+#cart-img > img{
+    /* border:1px solid red; */
+    width: 100%;
+    height: 100%;
+}
+#cart-details{
+    /* border: 1px solid red; */
+    width:70%;
+    /* font-size: 10px; */
+    padding-top:10px;
+}
+
+#size-qty{
+    display: flex;
+    padding-top: 10px;
+}
+#size-qty > p{
+    background-color: rgb(247, 245, 245);
+    width: 60%;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+#size-qty > p:nth-child(2){
+/* { border:1px solid red; */
+    margin-left: 12px;
+}
+.product-descrip{
+    /* border:1px solid red; */
+    font-size: 0.9em;
+    padding-top: 10px;
+    color:#968f8f
+}
+.product-descrip > h4{
+   /* border:1px solid red; */
+   color: #161515;
+   font-size: 12px;
+   font-weight: 800;
+}
+
+
+
+
+#right-section{
+    width:38%;
+    border-left: 1px solid rgb(238, 235, 235);
+    border-bottom: 1px solid rgb(238, 235, 235);
+}
+#right-main{
+    border-bottom: 1px solid rgb(238, 235, 235);
+     margin-top: 10px;
+}
+#right-main > h5{
+    color:rgb(68, 64, 64);
+    padding-left: 10px;
+    font-size: 12px;
+}
+#right-main > p{
+    /* border: 1px solid red; */
+    font-size:10px;
+    padding: 15px 38px;
+    color:rgb(134, 131, 131);
+}
+#right-main > p > span{
+    color: red;
+    font-weight: bold;
+}
+
+
+
+#right-top{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#right-top > button{
+    border: 1px solid red;
+    width:75px;
+    color:red;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 0.8em;
+    margin-top: 9px;
+    height: 25px;
+}
+#right-top-first > i{
+    padding-top: 13px;
+    padding-left: 7px;
+}
+#right-top-first > h4{
+    padding-left: 15px;
+}
+#right-top-first {
+    display: flex;
+    padding-top: 15px;
+}
+#right-top-2nd{
+    /* border: 1px solid black; */
+    border-bottom: 1px solid rgb(230, 225, 225);
+    padding-bottom: 17px;
+    line-height: 30px;
+    padding-left: 15px;
+}
+#right-top-2nd >p{
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-top: 10px;
+    color:#5a5858;
+}
+#final-price{
+    /* display: flex; */
+    justify-content: space-between;
+    line-height: 30px;
+    border-bottom: 1px solid rgb(243, 238, 238);
+    font-size: 0.85em;
+}
+#details-price{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+}
+#total-price{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#order-btn{
+    /* border: 1px solid red; */
+    width: 100%;
+    margin: auto;
+    /* background-color: yellow; */
+    height: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+      
+}#order-btn>button{
+    width: 100%;
+    height: 100%;
+    background-color: #f77187;
+    font-weight: bold;
+    color: white;
+    border: none;
+    letter-spacing: 1px;
+
+}
+
+/* footer */
+#footer{
+    /* border: 1px solid red; */
+    width:69%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+#payment-method{
+    /* border: 1px solid red; */
+    width:62%;
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 2px; */
+}
+#payment-img{
+    width:10%;
+    height:32px;
+    border: 1px solid rgb(214, 208, 208);
+
+}
+#payment-img:hover{
+    cursor: pointer;
+}
+#payment-img > img{
+    /* border: 1px solid red; */
+    width:100%;
+    height:100%;
+
+}
+#need-help{
+    color:#726b6b;
+    font-size: 0.95em;
+    font-weight: bold;
+}
+
+
+    </style>
+</head>
+<body>
+<div id="screen">
+    <div id="navbar">
+        <div>
+
+            <img style="width:120px;padding-top: 10px;padding-left: 20px;"src="myntra logo.jpg"alt=""/>
+        </div>
+        <div id="process">
+            <p>BAG</p>
+            <p>------ADDRESS------</p>
+            <p>PAYMENT</p>
+        </div>
+        <div id="secure-payment">
+            <img src="https://constant.myntassets.com/checkout/assets/img/sprite-secure.png"/>
+            <p> 100 % SECURE</p>
+        </div>
+    </div>
+    <div id="body">
+        <div id="first-section">
+            <div id="left-section">
+                <div id="left-first-section">
+                    <p>Check delivery time & services</p>
+                    <button>ENTER PIN CODE</button>
+                </div>
+                <div id="left-second-section">
+                    <p>Available Offers</p>
+                    <p>10% Instant Discount on ICICI Bank Credit & Debit Cards on a min a spend of Rs.3,500 TCA</p>
+                    <P>Show More</P>
+                </div>
+                <div id="left-third-section">
+                    <div>
+                        <input type="checkbox"/>
+                        <p> 1/1 ITEM SELECTED</p>
+                    </div>
+                    <div>
+                        <button class="cart-button">REMOVE</button>
+                        <span> | </span>
+                        <button class="cart-button">MOVE TO WHISHLIST</button>
+                    </div>
+                </div>
+                <div id="left-fouth-section">
+                    <i class="fa-solid fa-xmark"></i>
+                    <div id="cart-img">
+                  <img src="https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/23456722/2023/5/29/95cbbecd-2db3-4822-b4d6-4006d262ebf71685344915764WomenWhitenBlueIndigoPrintWorkCottonKurtawithTrousersWithDup1.jpg"/>
+                    </div>
+                    <div id="cart-details">
+                        <div class="product-descrip">
+                            <h4>Karagwals fab</h4>
+                            <p>Women Blue Ethenic MotifS Printed Pure cotton kurta</p>
+                            <p>Sold by: SHIV SHAKTI FASHION</p>
+                        </div>
+                        <div id="size-qty">
+                            <p>Size : XL</p>
+                            <p>Qty: 1</p>
+                        </div>
+                        <div class="product-descrip">
+                            <p style="color:#161515; font-weight: 700;"><b>Rs.1699</b></p>
+                            <p ><b style="color:#2e2c2c; font-weight: 700;">30 days </b>
+                            <span>return available</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="right-section">
+                <div id="right-main">
+                    <h5>COUPONS</h5>
+
+                    <div id="right-top">
+                        <div id="right-top-first">
+                            <i class="fa-solid fa-tag"></i>
+                            <h4>Apply Coupons</h4>
+                        </div>
+                        <button>APPLY</button>
+                    </div>
+                    
+            </div>
+            <div id="right-top-2nd"> 
+                <h4>PRICE DETAILS(1 item)</h4>
+                <div id="details-price">
+                <div id="final-price">
+                    <p>TOTAL MRP</p>
+                    <p>Coupon Discount</p>
+                    <p>Convenience Fee <span style="color:#ce4e64;font-weight: 600;">Know More</span></p>
+                </div>
+                <div>
+                    <p>rs.1699</p>
+                    <p style="color:#ce4e64;">Apply Coupon</p>
+                    <p>rs.<del>10</del><span style="color:green;">FREE</span></p>
+                </div>
+                </div>
+            </div>
+            <div id="total-price">
+                <h4>Total Amount</h4>
+                <h4>Rs.1699</h4>
+            </div>
+
+            <div id="order-btn">
+                <button>PLACE ORDER</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- payment footer -->
+<div id="footer">
+    <div id="payment-method">
+
+        <div id="payment-img">
+        <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ssl.png"/>
+        </div>
+
+        <div id="payment-img">
+            <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-visa.png" alt=""/>
+        </div>
+
+        <div id="payment-img">
+            <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-mc.png"/>
+        </div>
+
+        <div id="payment-img">
+            <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ae.png"/>
+        </div>
+
+        <div id="payment-img">
+            <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-dc.png"/>
+        </div>
+
+        <div id="payment-img">
+         <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-nb.png"/>
+        </div>
+
+        <div id="payment-img">
+            <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-visa.png" alt=""/>
+        </div>
+
+        <div id="payment-img">
+          <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-cod.png"/>
+        </div>
+
+        <div id="payment-img">
+            <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-rupay.png"/>
+        </div>
+
+        <div id="payment-img">
+            <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-bhim.png"/>
+        </div>
+    </div>
+    <div id="need-help">Need Help? Contact Us</div>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>

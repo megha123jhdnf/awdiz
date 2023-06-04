@@ -1,5 +1,5 @@
-var number1 = 10;
-var number2= 20;
+// var number1 = 10;
+// var number2= 20;
 
 // var  add =number1 + number2;
 // console.log( add );
@@ -76,18 +76,18 @@ var number2= 20;
 
 
 // var num1 = 120;
-// var num2 = 120;
+// var num2 = '120';
 // console.log(num1 == num2);
 // // ==here only check value
 
-// var num1 = 120;
-// var num2 = '120';
-// console.log(num1 === num2);
+var num1 = 120;
+var num2 = '120';
+console.log(num1 === num2);
 // // check value and datatype
 
 
 // here we use && (and) || (or)
-var num =95;
+// var num =95;
 // console.log(num > 50 && num < 99 && num >45);
 // console.log(num > 50 || num < 99 || num <45);
 // console.log(num > 50 || num < 90 || num< 20);
