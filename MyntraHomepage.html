@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra Home & Living page</title>
+    <style>
+
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+            #screen {
+            /* border: 1px solid black; */
+            width: 100%;
+            /* height: 800px; */
+            font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+        }
+
+        #navbar {
+            border: 1px solid  #faf7f7;
+            width: 100%;
+            height: 10%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #navbar>div:nth-child(1) {
+            /* border: 1px solid blue; */
+            width: 5%;
+            
+
+        }
+
+        #navbar>div:nth-child(1)>img {
+            width: 120px;
+            height: 70px;
+            padding: 10px 0px 10px 25px;
+        }
+
+        #navbar>div:nth-child(2) {
+            /* border: 1px solid blue; */
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            padding: 25px 0px 20px 0px;
+            font-size: 14px;
+            color: #282c3f;
+            font-weight: 700;
+
+
+        }
+        
+        #navbar>div:nth-child(2)>div:nth-child(6)>sup {
+            /* border: 1px solid red; */
+            color: #ff3f6c;
+            font-family: Assistant;
+            font-weight: 600;
+            text-align: left;
+        }
+
+
+        #navbar>div:nth-child(3) {
+            /* border: 1px solid blue; */
+            width: 25%;
+            
+            
+        }
+
+        #navbar>div:nth-child(3) >div{
+            /* border: 1px solid black; */
+            width:100%;
+            height: 40px;
+            margin: 15px 0px 20px 0px; 
+            border: 1px solid #f5f5f6;
+            border-radius: 0 4px 4px 0;
+            background-color: #f5f5f6;
+
+
+        }
+        #navbar>div:nth-child(3) >div>input{
+            /* border: 1px solid red; */
+            width: 80%;
+             margin: 10px 0px 20px 10px;
+             font-size: 14px;
+             color: #696e79;
+             background-color: #f5f5f6;
+             border: none;
+
+
+        }
+
+        #navbar>div:nth-child(4) {
+            /* border: 1px solid blue; */
+            width: 15%;
+            display: flex;
+            justify-content: space-around;
+           
+
+        }
+        #navbar>div:nth-child(4)>div{
+            /* border: 1px solid red; */
+            color: #000;
+            padding: 15px 0px 20px 5px;
+            font-size: 12px;
+             font-weight: 700;
+            
+        }
+        #navbar>div:nth-child(4)>div > i{
+         
+         padding-left: 10px;
+        }
+
+
+        #MulProduct {
+            /* border: 1px solid black; */
+            width: 100%;
+            /* height: 800px; */
+        }
+
+        #filter {
+            /* border: 5px solid yellow; */
+            width: 100%;
+            height: 120px;
+            border-bottom: 1px solid #dbdce4;
+        }
+
+        #filter>div {
+            /* border: 2px solid red; */
+            width: 100%;
+            font-size: 14px;
+            color: #4e5169;
+            margin: 15px 0px 10px 15px;
+
+
+        }
+
+        #home-furnining{
+            /* border: 2px solid blue; */
+            color: rgb(39, 36, 36);
+            font-weight: 700;
+            margin-bottom: 10PX;
+        }
+
+        #home-furnining1 {
+            /* border: 2px solid blue; */
+            color: rgb(39, 36, 36);
+            font-size: 16px;
+            font-weight: 700;
+
+        }
+
+        #filter>div:nth-child(3) {
+            /* border: 2px solid green; */
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        #filter>div:nth-child(3)>div:nth-child(1) {
+            /* border: 2px solid purple; */
+            font-size: 16px;
+            font-weight: 700;
+            color: rgb(29, 26, 26);
+            width: 20%;
+            margin-left: 5px;
+            /* display: flex; */
+
+
+        }
+
+        #filter-option {
+            /* border:2px solid yellow; */
+            display: flex;
+            margin-left: 5px;
+            /* margin: 10px 0px 10px 0px; */
+        }
+
+        #filter>div:nth-child(3)>div:nth-child(8) {
+            /* border:2px solid yellow; */
+            color: rgb(39, 37, 37);
+
+            margin-left: 2px;
+
+
+        }
+
+        #filter>div:nth-child(3)>div:nth-child(9) {
+            /* margin-left:35%; */
+            margin-right: 30px;
+            border: 1px solid rgb(182, 179, 179);
+            width: 18%;
+            height: 40px;
+            padding-left: 10px;
+            display: flex;
+
+
+        }
+
+        #leftANDright-divs {
+            /* border: 1px solid black; */
+            width: 100%;
+            /* height: 600px; */
+            display: flex;
+            justify-content: space-around
+        }
+
+        #leftDiv {
+            /* border: 1px solid blue; */
+            width: 20%;
+        }
+
+        .leftside {
+            /* border: 2px solid black;  */
+            margin: 15px 10px 10px 10px;
+            font-size: 14px;
+            font-weight: 800;
+            color: #434657;
+
+        }
+
+        #leftDiv>div {
+            border-bottom: 1px solid rgb(221, 219, 219);
+
+            /* border: 2px solid red;  */
+            margin: 10px 10px 10px 10px;
+            font-size: 14px;
+            color: #4b4b50;
+            line-height: 1.8em;
+
+
+        }
+
+        #rightDiv {
+            /* border: 2px solid blue; */
+            width: 75%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+
+        #rightDiv>div {
+            /* border:2px solid black;  */
+            width: 18%;
+            height: 400px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            line-height: 1.8em;
+        }
+
+        #rightDiv>div:hover {
+            border: 1px solid rgb(190, 185, 185);
+        }
+
+        #rightDiv>div>img {
+            width: 100%;
+            height: 75%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="screen">
+        <div id="navbar">
+            <div>
+                <!-- 1st child -->
+                <img src="myntra logo.jpg" alt="Myntra logo" />
+            </div>
+            <div>
+            <div><a href="./MyntraMen product.html">MEN</a></div>
+                <div><a href="./mytra women.html">WOMEN</a></div>
+                <div><a href="./Myntra Kids Page.html">KIDS</a></div>
+                <div><a href="./MyntraHomepage.html">HOME & LIVING</a></div>
+                <div><a href="./Myntra Beauty.html">BEAUTY</a></div>
+                <div>STUDIO <sup>new</sup></div> 
+            
+            </div>
+            <div>
+                <!-- 3rd child -->
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search for product brands and more">
+                </div>
+                
+            </div>
+            <div>
+                <div>
+                    <i class="fa-regular fa-user fa-lg"></i>
+                    <div><a href="MyntraProfile.html">Profile</a></div>
+                </div>
+                <div>
+                    <i class="fa-regular fa-heart fa-lg"></i>
+                    <div>Wishlist</div>
+                
+                </div>
+                <div>
+                    <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                    <div> <a href="MyntraCart.html">Bag</a></div>
+    
+                </div>
+               
+                
+               
+            </div>
+        </div>
+    
+
+    
+    
+   
+
+    <div id="HomeMulProduct">
+        <!-- parent -->
+        <div id="filter"> <!-- 1st -->
+            <div>
+                <!-- filter 1st -->
+                <span>Home</span>
+                <span> / Home Furnishing / Runneres </span>
+                <span id="home-furnining">Home Furnishing</span>
+
+            </div>
+            <div>
+                <!-- in filter 2nd -->
+                <span id="home-furnining1">Kids Wear Online Store</span>
+                <span style=" color: #9193a0;"> - 153 items</span>
+
+            </div>
+            <div>
+                <!-- in filter 3rd -->
+                <div>FILTERS </div>
+                <div id="filter-option">Bundle
+                    <div>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+
+                </div>
+                <div id="filter-option">Country of Origin
+                    <div>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+
+                </div>
+                <div id="filter-option">Material
+                    <div>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+
+                <div id="filter-option">Multiple Set
+                    <div>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+                <div id="filter-option">Print Or pattern type
+                    <div>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+                <div id="filter-option">Rating
+                    <div>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+                <div id="filter-option">Size
+                    <div>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+
+
+                <div>
+                    <p>Sort by : <b>Recommended</b></p>
+                    <div>
+                        <i style="margin:15px 0px 15px 60px;" class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="leftANDright-divs">
+                <div id="leftDiv">
+
+
+
+
+
+                    <h4 class="leftside"> BRANDS</h4>
+                    <div>
+                        <div>
+                            <input type="checkbox">
+                            Saral Home(59)
+
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            HOSTA HOMES(19)
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            Status(15)
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            Athom Trendz(13)
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            Arrabi(10)
+                        </div>
+                        <div><input type="checkbox">
+                            Kuber Industries(9)
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            FABINALIV(7)
+                        </div>
+                        <div><input type="checkbox">
+                            KLOTTHE(5)
+                        </div>
+                        <div style="color:red"> + 8 more</div>
+
+
+                    </div>
+
+
+                    <h4 class="leftside">PRICE</h4>
+                    <div>
+                        <div>
+                            <input type="checkbox">
+                            Rs. 399 to Rs. 1125(75)
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            Rs. 1125 to Rs. 1851(68)
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            Rs. 1851 to Rs. 2577(7)
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            Rs. 2577 to Rs. 3303(2)
+
+                        </div>
+                    </div>
+
+
+                    <h4 class="leftside">color</h4>
+                    <div>
+                        <div><input type="checkbox">
+                            <i class="fa-regular fa-circle"></i>
+                            Grey (24)
+                            <div>
+                                <input type="checkbox">
+                                <i class="fa-regular fa-circle"></i>
+                                Brown (23)
+                            </div>
+                            <div><input type="checkbox">
+                                <i class="fa-regular fa-circle"></i>
+                                Beige (18)
+                            </div>
+                            <div><input type="checkbox">
+                                <i class="fa-regular fa-circle"></i>
+                                Blue (16)
+                            </div>
+                            <div><input type="checkbox">
+                                <i class="fa-regular fa-circle"></i>
+                                Maroon (11)
+                            </div>
+                            <div><input type="checkbox">
+                                <i class="fa-regular fa-circle"></i>
+                                Red (10)
+                            </div>
+                            <div><input type="checkbox">
+                                <i class="fa-regular fa-circle"></i>
+                                Green (10)
+                            </div>
+                            <div style="color:red">+ 17 more</div>
+                        </div>
+
+
+
+                        <h4 class="leftside">DISCOUNT RANGE</h4>
+
+                        <div>
+                            <div>
+
+
+                                <i class="fa-regular fa-circle"></i>
+                                10% and above
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-circle"></i>
+                                20% and above
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-circle"></i>
+                                30% and above
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-circle"></i>
+                                40% and above
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-circle"></i>
+                                50% and above
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-circle"></i>
+                                60% and above
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-circle"></i>
+                                70% and above
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="rightDiv">
+                    <div>
+                        <img
+                            src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/16196280/2021/11/22/45d309f7-5cc0-4559-b3ba-f0cf27407cb71637570797562ArrabiBrownBeigeGeometricBedRunner1.jpg" />
+                        <h4>Arrabi</h4>
+                        <p>Geometric Floor Runner</p>
+                        <h5>Rs.1125<del style="color:#767881"> Rs.4329</del><span style="color:#f03cab">(74% OFF)</span>
+                        </h5>
+                    </div>
+
+                    <div>
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/19208786/2022/7/21/31663675-b193-4a41-808e-5bf1e63987cc1658405967091Runners1.jpg"
+                            alt="">
+                        <h4>Saral Home</h4>
+                        <p>Cotton Anti-Skid Runner Mats</p>
+                        <h5> Rs.959<del style="color:#767881"> Rs.1599</del><span style="color:#f03cab">(40% OFF)</span>
+                        </h5>
+                    </div>
+
+                    <div>
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/19761648/2022/9/28/6c997dc1-e953-47ab-ad12-e88c8743e9501664345924939-OBSESSIONS-Yellow-Abstract-Runner-2671664345924410-1.jpg"
+                            alt="">
+                        <h4>OBSESSIONS</h4>
+                        <p>Abstract Runner</p>
+                        <h5>Rs.2847 <del style="color:#767881"> Rs.3350</del><span style="color:#f03cab">(15%
+                                OFF)</span></h5>
+                    </div>
+
+                    <div>
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13374274/2022/1/1/688a720d-1c14-4886-9937-8356d51a97601641030183026SaralHomePurplePinkSolidAnti-SkidFloorRunner1.jpg"
+                            alt="">
+                        <h4>Saral Home</h4>
+                        <p>Solid Anti-Skid floorRunner</p>
+                        <h5>Rs.999 <del style="color:#767881"> Rs.1999</del><span style="color:#f03cab">(50% OFF)</span>
+                        </h5>
+                    </div>
+
+                    <div>
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/22205150/2023/3/2/d84d85bd-7595-4ffc-ba63-d4f3f60b5c241677769415740ClasikoBedsideRunnerCarpetRugWithAntiSkidBacking57x140cmsBei1.jpg"
+                            alt="">
+                        <h4>Clasiko</h4>
+                        <p>Checked Anti-Skid Bedside </p>
+                        <h5>Rs.1997<del style="color:#767881"> Rs.3995</del><span style="color:#f03cab">(50% OFF)</span>
+                        </h5>
+                    </div>
+
+                    <div>
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/22205150/2023/3/2/d84d85bd-7595-4ffc-ba63-d4f3f60b5c241677769415740ClasikoBedsideRunnerCarpetRugWithAntiSkidBacking57x140cmsBei1.jpg"
+                            alt="">
+                        <h4>Clasiko</h4>
+                        <p>Checked Anti-Skid Bedside </p>
+                        <h5>Rs.1997<del style="color:#767881"> Rs.3995</del><span style="color:#f03cab">(50% OFF)</span>
+                        </h5>
+                    </div>
+
+                    <div>
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2019/1/11/c85b3555-f9b2-4edf-898f-067d22056e001547155244862-1.jpg"
+                            alt="">
+                        <h4>Status</h4>
+                        <p>3D Digital Bed sider Runner </p>
+                        <h5>Rs.459<del style="color:#767881"> Rs.1995</del><span style="color:#f03cab">(77% OFF)</span>
+                        </h5>
+                    </div>
+
+
+                    <div>
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2020/9/9/521d9fe0-0c1c-4926-a948-523f117f55131599600829273-1.jpg"
+                            alt="">
+                        <h4>HOSTA HOMES</h4>
+                        <p>Abstract Pattern Shaggy </p>
+                        <h5>Rs.1349<del style="color:#767881"> Rs2999</del><span style="color:#f03cab">(55% OFF)</span>
+                        </h5>
+                    </div>
+
+                    <div>
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2021/4/1/bf110f46-cd77-411d-949e-9bbe3420ae0b1617267119829-1.jpg"
+                            alt="">
+                        <h4>HOSTA HOMES</h4>
+                        <p> Anti-Skid Bed side Runner</p>
+                        <h5>Rs.1349<del style="color:#767881"> Rs.2999</del><span style="color:#f03cab">(55% OFF)</span>
+                        </h5>
+                    </div>
+
+                    <div>
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2020/9/9/25d11bbb-70e7-49bd-82b0-7a81a659bc961599602187952-1.jpg"
+                            alt="">
+                        <h4>HOSTA HOMES</h4>
+                        <p>Solid Shaggy Fur Bed Runner</p>
+                        <h5>Rs.1349<del style="color:#767881"> Rs.2999</del><span style="color:#f03cab">(55% OFF)</span>
+                        </h5>
+                    </div>
+
+                    <div>
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2021/3/17/4ff00ded-76b9-4bb4-bc98-bc5f10bf4f481615956234405-1.jpg"
+                            alt="">
+                        <h4>Atom Trendz</h4>
+                        <p>Geometric Printed Anti-Skid Bedsider </p>
+                        <h5>Rs.1195<del style="color:#767881"> Rs.1999</del><span style="color:#f03cab">(40% OFF)</span>
+                        </h5>
+                    </div>
+
+                    <div>
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/16196300/2021/11/22/449d8ad4-07a7-47d8-b800-a9f532708c541637573341430ArrabiBlackGreyGeometricBedRunner1.jpg"
+                            alt="">
+                        <h4>Arrabi</h4>
+                        <p>Geometric Bed Runner </p>
+                        <h5>Rs.1125<del style="color:#767881"> Rs.4319</del><span style="color:#f03cab">(74% OFF)</span>
+                        </h5>
+                    </div>
+
+                    <div>
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2021/4/1/bf110f46-cd77-411d-949e-9bbe3420ae0b1617267119829-1.jpg"
+                            alt="">
+                        <h4>HOSTA HOMES</h4>
+                        <p> Anti-Skid Bed side Runner</p>
+                        <h5>Rs.1349<del style="color:#767881"> Rs.2999</del><span style="color:#f03cab">(55% OFF)</span>
+                        </h5>
+                    </div>
+
+                    <div>
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/19208786/2022/7/21/31663675-b193-4a41-808e-5bf1e63987cc1658405967091Runners1.jpg"
+                            alt="">
+                        <h4>Saral Home</h4>
+                        <p>Cotton Anti-Skid Runner Mats</p>
+                        <h5> Rs.959<del style="color:#767881"> Rs.1599</del><span style="color:#f03cab">(40% OFF)</span>
+                        </h5>
+                    </div>
+
+                    <div>
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/19761648/2022/9/28/6c997dc1-e953-47ab-ad12-e88c8743e9501664345924939-OBSESSIONS-Yellow-Abstract-Runner-2671664345924410-1.jpg"
+                            alt="">
+                        <h4>OBSESSIONS</h4>
+                        <p>Abstract Runner</p>
+                        <h5>Rs.2847 <del style="color:#767881"> Rs.3350</del><span style="color:#f03cab">(15%
+                                OFF)</span></h5>
+                    </div>
+
+                </div>
+
+                </div>
+                </div>
+
+
+</body>
+
+</html>

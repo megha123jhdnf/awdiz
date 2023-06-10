@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra Kids Page </title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+            #screen {
+            border: 1px solid black;
+            width: 100%;
+            height: 800px;
+            font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+        }
+
+        #navbar {
+            border: 1px solid  #faf7f7;
+            width: 100%;
+            height: 10%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #navbar>div:nth-child(1) {
+            /* border: 1px solid blue; */
+            width: 5%;
+            
+
+        }
+
+        #navbar>div:nth-child(1)>img {
+            width: 120px;
+            height: 70px;
+            padding: 10px 0px 10px 25px;
+        }
+
+        #navbar>div:nth-child(2) {
+            /* border: 1px solid blue; */
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            padding: 25px 0px 20px 0px;
+            font-size: 14px;
+            color: #282c3f;
+            font-weight: 700;
+
+
+        }
+        
+        #navbar>div:nth-child(2)>div:nth-child(6)>sup {
+            /* border: 1px solid red; */
+            color: #ff3f6c;
+            font-family: Assistant;
+            font-weight: 600;
+            text-align: left;
+        }
+
+
+        #navbar>div:nth-child(3) {
+            /* border: 1px solid blue; */
+            width: 25%;
+            
+            
+        }
+
+        #navbar>div:nth-child(3) >div{
+            /* border: 1px solid black; */
+            width:100%;
+            height: 40px;
+            margin: 15px 0px 20px 0px; 
+            border: 1px solid #f5f5f6;
+            border-radius: 0 4px 4px 0;
+            background-color: #f5f5f6;
+
+
+        }
+        #navbar>div:nth-child(3) >div>input{
+            /* border: 1px solid red; */
+            width: 80%;
+             margin: 10px 0px 20px 10px;
+             font-size: 14px;
+             color: #696e79;
+             background-color: #f5f5f6;
+             border: none;
+
+
+        }
+
+        #navbar>div:nth-child(4) {
+            /* border: 1px solid blue; */
+            width: 15%;
+            display: flex;
+            justify-content: space-around;
+           
+
+        }
+        #navbar>div:nth-child(4)>div{
+            /* border: 1px solid red; */
+            color: #000;
+            padding: 15px 0px 20px 5px;
+            font-size: 12px;
+             font-weight: 700;
+            
+        }
+        #navbar>div:nth-child(4)>div > i{
+         
+         padding-left: 10px;
+        }
+
+       
+        /* kidpage */
+      #KidsMulProduct{
+            /* border: 1px solid black; */
+            width: 100%;
+            /* height: 800px; */
+        }
+
+        #filter {
+            /* border: 5px solid yellow; */
+            width: 100%;
+            height: 120px;
+            border-bottom: 1px solid #dbdce4;
+        }
+        
+        #filter>div {
+            /* border: 2px solid red; */
+            width: 100%;
+            font-size: 14px;
+            color: #4e5169;
+            margin:15px 0px 10px 15px;
+
+
+        }
+        #kids-wear {
+            /* border: 2px solid blue; */
+            color: rgb(39, 36, 36);
+            font-weight: 700;
+            margin-bottom: 10PX;
+        }
+        #kids-wear1 {
+            /* border: 2px solid blue; */
+            color: rgb(39, 36, 36);
+            font-size: 16px;
+            font-weight: 700;
+            
+        }
+        #filter>div:nth-child(3) {
+            /* border: 2px solid green; */
+            display: flex;
+            justify-content: space-between;
+            margin-top:20px;
+        }
+        #filter>div:nth-child(3)>div:nth-child(1) {
+            /* border: 2px solid purple; */
+            font-size: 16px;
+            font-weight: 700;
+            color: rgb(29, 26, 26);
+            width: 20%;
+            margin-left: 5px;
+            /* display: flex; */
+            
+
+        }
+        #filter-option{
+             /* border:2px solid yellow; */
+             display: flex;
+             margin-left: 5px;
+            /* margin: 10px 0px 10px 0px; */
+        }
+        #filter>div:nth-child(3)>div:nth-child(8) {
+            /* border:2px solid yellow; */
+            color: rgb(39, 37, 37);
+           
+            margin-left: 2px;
+
+           
+        }
+        #filter>div:nth-child(3)>div:nth-child(9) {
+            /* margin-left:35%; */
+            margin-right: 30px;
+            border: 1px solid rgb(182, 179, 179);
+            width:18%;
+            height: 40px;
+            padding-left: 10px;
+            display: flex;
+
+
+        } 
+        #leftANDright-divs{
+            /* border: 1px solid black; */
+            width: 100%;
+            /* height: 600px; */
+            display: flex;
+            justify-content: space-around
+       }
+       #leftDiv{
+             /* border: 1px solid blue; */
+            width:20%;
+       }
+       .leftside{
+            /* border: 2px solid black;  */
+         margin: 15px 10px 10px 10px;
+         font-size: 14px;
+         font-weight: 800;
+         color: #434657;
+
+        }
+       #leftDiv>div{
+            border-bottom: 1px solid rgb(221, 219, 219);
+            
+            /* border: 2px solid red;  */
+            margin: 10px 10px 10px 10px;
+            font-size: 14px;
+            color: #4b4b50;
+            line-height: 1.8em;
+
+    
+       }
+       #rightDiv{
+           /* border: 2px solid blue; */
+           width: 75%;
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: space-around;
+        }
+       
+       
+        #rightDiv>div{
+            /* border:2px solid black;  */
+            width: 18%;
+            height: 400px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            line-height: 0.9em;
+
+        }
+       
+        #rightDiv>div:hover {
+            border: 1px solid rgb(190, 185, 185);
+        }
+
+        #rightDiv>div>img {
+            width: 100%;
+            height: 75%;
+        }
+       
+
+
+    </style>
+</head>
+<body>
+    <div id="screen">
+        <div id="navbar">
+            <div>
+                <!-- 1st child -->
+                <img src="myntra logo.jpg" alt="Myntra logo" />
+            </div>
+            <div>
+            <div><a href="./MyntraMen product.html">MEN</a></div>
+                <div><a href="./mytra women.html">WOMEN</a></div>
+                <div><a href="./Myntra Kids Page.html">KIDS</a></div>
+                <div><a href="./MyntraHomepage.html">HOME & LIVING</a></div>
+                <div><a href="./Myntra Beauty.html">BEAUTY</a></div>
+                <div>STUDIO <sup>new</sup></div> 
+            
+            </div>
+            <div>
+                <!-- 3rd child -->
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search for product brands and more">
+                </div>
+                
+            </div>
+            <div>
+                <div>
+                    <i class="fa-regular fa-user fa-lg"></i>
+                    <div><a href="MyntraProfile.html">Profile</a></div>
+                </div>
+                <div>
+                    <i class="fa-regular fa-heart fa-lg"></i>
+                    <div>Wishlist</div>
+                
+                </div>
+                <div>
+                    <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                    <div> <a href="MyntraCart.html">Bag</a></div>
+    
+                </div>
+               
+                
+               
+            </div>
+        </div>
+    
+
+    
+    
+   
+
+    <div id="KidsMulProduct">
+        <!-- parent -->
+        <div id="filter">                <!-- 1st -->
+            <div>
+                <!-- filter 1st -->
+                <span>Home</span>
+                <span> / Clothing / </span>
+                <span id="kids-wear">Kids Wear Online Store</span>
+
+            </div>
+            <div>
+                <!-- in filter 2nd -->
+                <span id="kids-wear1">Kids Wear Online Store</span>
+                <span style=" color: #9193a0;"> - 103522 items</span>
+               
+            </div>
+            <div>
+                <!-- in filter 3rd -->
+                <div>FILTERS </div>
+                <div id="filter-option">Add -Ons
+                    <div>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+
+                </div>
+                <div id="filter-option">Age
+                    <div>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+
+                </div>
+                <div id="filter-option">Bundle
+                    <div>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+
+                <div id="filter-option">Closure
+                    <div>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+                <div id="filter-option">Country of Origin
+                    <div>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+                <div id="filter-option">Fabric
+                    <div>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+                <!-- <div id="filter-option">Fabric2
+                    <div>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div> -->
+                <div>
+                    <span> +19 More
+                     </span>
+                  
+                </div>
+
+                <div>
+                    <p>Sort by : <b>Recommended</b></p>
+                    <div>
+                        <i style= "margin:15px 0px 15px 60px;"class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="leftANDright-divs">
+            <div id="leftDiv">
+            
+        
+                       
+                            <div>
+                                <div>
+                                    <input type="radio">
+                                    Kurtas(75574)
+                                </div>
+                                <div>
+                                    <input type="radio">
+                                    Kurta Sets(55224)
+                                                       
+                                </div>
+                            </div>
+        
+                            <h4 class="leftside">CATEGORIES</h4>
+        
+                            <div>
+                                <div>
+                                    <input type="checkbox">
+                                    Tshirts(33216)                      
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                    Shirts(9837)
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                    Clothing Set(8264)
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                    Sweatshirts(8257)
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                    Kurta Sets(7804)
+                                </div>
+                                <div><input type="checkbox">
+                                    Shorts(7015)
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                    Track Pants(6938)
+                                </div>
+                                <div><input type="checkbox">
+                                    Night suits(3681)
+                                </div>
+                                <div style="color:red"> + 239 more</div>
+                            
+        
+                        </div>
+
+                        <h4 class="leftside"> BRANDS</h4>
+                            <div>
+                                <div>
+                                    <input type="checkbox">
+                                    Gini and Jony(3693)
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                    NUSYL(1162)
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                    Marvel by Wear Your Mind(1030)
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                    max(910)
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                    V-Mart(907)
+                                </div>
+                                <div><input type="checkbox">
+                                    Kids Ville(862)
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                    Pantaloons Junior(816)
+                                </div>
+                                <div><input type="checkbox">
+                                    Disney by Wear Your Mind(543)
+                                </div>
+                                <div style="color:red"> + 317 more</div>
+                            
+        
+                        </div>
+        
+        
+                        <h4 class="leftside">PRICE</h4>
+                            <div>
+                                <div>
+                                <input type="checkbox">
+                                Rs. 99 to Rs. 2700(32975)
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                Rs. 2700 to Rs. 5301(123)
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                Rs. 5301 to Rs. 7902(52)
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                Rs. 7902 to Rs. 10503(37)
+                            
+                        </div>
+                        </div>
+                        
+        
+                        <h4 class="leftside">color</h4>
+                            <div>
+                                <div><input type="checkbox">
+                                    <i class="fa-regular fa-circle"></i>
+                                    Blue (5195)
+                                <div>
+                                    <input type="checkbox">
+                                    <i class="fa-regular fa-circle"></i>
+                                    White (4694)
+                                </div>
+                                <div><input type="checkbox">
+                                    <i class="fa-regular fa-circle"></i>
+                                    Black (3768)
+                                </div>
+                                <div><input type="checkbox">
+                                    <i class="fa-regular fa-circle"></i>
+                                    Red (3224)
+                                </div>
+                                <div><input type="checkbox">
+                                    <i class="fa-regular fa-circle"></i>
+                                    Navy Blue (2722)
+                                </div>
+                                <div><input type="checkbox">
+                                    <i class="fa-regular fa-circle"></i>
+                                    Yellow (2596)
+                                </div>
+                                <div><input type="checkbox">
+                                    <i class="fa-regular fa-circle"></i>
+                                    Green (2085)
+                                </div>
+                                <div style="color:red">+ 38 more</div>
+                            </div>
+                        
+                    
+        
+                    <h4 class="leftside">DISCOUNT RANGE</h4>
+        
+                           <div>
+                            <div>
+                            
+                                        
+                            <i class="fa-regular fa-circle"></i>
+                            10% and above</div>
+                        <div>
+                            <i class="fa-regular fa-circle"></i>
+                            20% and above</div>
+                        <div>
+                            <i class="fa-regular fa-circle"></i>
+                            30% and above</div>
+                        <div>
+                            <i class="fa-regular fa-circle"></i>
+                            40% and above</div>
+                        <div>
+                            <i class="fa-regular fa-circle"></i>
+                            50% and above</div>
+                        <div>
+                            <i class="fa-regular fa-circle"></i>
+                            60% and above</div>
+                        <div>                                
+                            <i class="fa-regular fa-circle"></i>
+                            70% and above</div>
+                        <div>
+                            <i class="fa-regular fa-circle"></i>
+                            80% and above
+                        </div>
+                        
+                    </div> 
+                    </div>
+                    </div>
+
+                    <div id="rightDiv">
+                        <div>
+                            <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/22204518/2023/3/2/a9b7d358-129e-4170-82d4-1166e59a1f451677770727893Tshirts1.jpg" alt="">
+                         <h4>HELLCAT</h4>
+                         <p>Boys Pack Of 5 Cotton T-shirts</p>
+                         <h5>Rs.714 <del style="color:#767881"> Rs.6495</del><span style="color:#f03cab">(89% OFF)</span></h5>
+                        </div> 
+        
+                     <div>
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/22508642/2023/3/25/6c5f1070-ab90-421e-8a2e-fbd1e4ccc2631679691490894BONKIDSBoysWhitePrintedPocketsT-shirt2.jpg" alt="">
+                         <h4>BONKIDS</h4>
+                         <p>Boy Printed Cotton T-shirt</p>
+                         <h5>Rs.399 <del style="color:#767881"> Rs.1322</del><span style="color:#f03cab">(70% OFF)</span></h5>
+                        </div> 
+        
+                        <div>
+                            <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/12955912/2023/5/16/accf68c5-0288-41f2-ae98-605fd302a6771684227151479-United-Colors-of-Benetton-Boys-Yellow-Brand-Logo-Print-Round-1.jpg" alt="">
+                         <h4>United Colors of Benetton</h4>
+                         <p>Boys Brand Logo Print T-shirt</p>
+                         <h5>Rs.279 <del style="color:#767881"> Rs.799</del><span style="color:#f03cab">(65% OFF)</span></h5>
+                        </div> 
+        
+                        <div>
+                            <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/15334348/2021/9/1/d784aa9b-15a9-41e0-86d1-a9cba85591e71630509125052BonOrganikBoysWhitePrintedV-NeckAppliqueT-shirt1.jpg" alt="">
+                         <h4>BonOrganik</h4>
+                         <p>Boys Graphic Printed T-shirt</p>
+                         <h5>Rs.349 <del style="color:#767881"> Rs.1164 </del><span style="color:#f03cab">(70% OFF)</span></h5>
+                        </div> 
+        
+                        <div>
+                            <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/22204500/2023/3/2/f58e4754-a41e-4b70-8157-f5cc5de0d3c61677770699685Tshirts1.jpg" alt="">
+                         <h4>HELLCAT</h4>
+                         <p>Boy pack of 5 T-shirt</p>
+                         <h5>Rs.714<del style="color:#767881"> Rs.6495 </del><span style="color:#f03cab">(89% OFF)</span></h5>
+                        </div> 
+        
+                        <div>
+                            <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11245466/2022/9/9/81178c26-49cc-4555-9d23-78084d871e6c1662729416552-Hrx-By-Hrithik-Roshan-Boys-Navy-Blue-Printed-Bio-Wash-Lifest-1.jpg" alt="">
+                         <h4>HRX By Hrithik Roshan</h4>
+                         <p>U-17 Boys Lifestyle T-shirt</p>
+                         <h5>Rs.199 <del style="color:#767881"> Rs.799 </del><span style="color:#f03cab">(75% OFF)</span></h5>
+                        </div> 
+                         
+                        <div>
+                            <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14526380/2021/10/26/26b810cc-163f-4277-9fc8-34f9eec01acc1635244526110BONKIDSBoysBlackIronManPrintedSlimFitT-shirt1.jpg" alt="">
+                         <h4>BONKIDS</h4>
+                         <p>Boys Iron Man Printed T-shirt</p>
+                         <h5>Rs.293 <del style="color:#767881"> Rs.1322</del><span style="color:#f03cab">(78% OFF)</span></h5>
+                        </div> 
+                        
+                        <div>
+                            <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/17137560/2022/2/11/4dd42ff2-7468-4bcc-a4a2-f0994b2d01751644582207769HellcatBoysRoundNeckBlendedCottonTshirt-ComboPackof51.jpg" alt="">
+                         <h4>HELLCAT</h4>
+                         <p>Boys Pack Of 5 T-shirt</p>
+                         <h5>Rs.849 <del style="color:#767881"> Rs.4995 </del><span style="color:#f03cab">(83% OFF)</span></h5>
+                        </div> 
+        
+                        <div>
+                            <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/23495336/2023/5/31/b0bcba0d-eeaa-482c-8bf3-e19d6db0d9881685552590398CottonT-shirt1.jpg" alt="">
+
+                         <h4>H&M</h4>
+                         <p>Boys Cotton T-shirt</p>
+                         <h5>Rs.399 <del style="color:#767881"> Rs.2399 </del><span style="color:#f03cab">(68% OFF)</span></h5>
+                        </div> 
+                    
+                    <div>
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/18307784/2022/5/18/7499149e-a396-4a38-a608-c1e3fa6a70ef1652850414359YKMarvelBoysBlack3PrintedAppliqueT-shirt1.jpg" alt="">
+                     <h4>Y K Marvel</h4>
+                     <p>Boys Printed Appique T-shirt</p>
+                     <h5>Rs.476 <del style="color:#767881"> Rs.1700 </del><span style="color:#f03cab">(72% OFF)</span></h5>
+                    </div> 
+        
+                    <div>
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/21389144/2023/3/9/0849a35b-5581-40af-84fd-65920fc0d2171678355479940-HERENOW-Boys-Tshirts-1491678355479586-1.jpg" alt="">
+                     <h4>HERE&NOW</h4>
+                     <p>Boys Stripted Hooded T-shirt</p>
+                     <h5>Rs.229 <del style="color:#767881"> Rs.999 </del><span style="color:#f03cab">(77% OFF)</span></h5>
+                    </div> 
+        
+                    <div>
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/17132454/2022/2/22/23dc0b28-9ac1-4638-b3d4-b87da5f3e9cb1645542891622-HELLCAT-Boys-Navy-Blue--Green-Pack-Of-3-Printed-Bio-Finish-C-11.jpg" alt="">
+                     <h4>HELLCAT</h4>
+                     <p>Boys Pack of 3 Printed T-shirt</p>
+                     <h5>Rs.419<del style="color:#767881"> Rs.2997</del><span style="color:#f03cab">(87% OFF)</span></h5>
+                    </div> 
+        
+                    <div>
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/20328018/2022/10/8/15fd1468-09f1-4f83-af1e-986b3e9ac23f1665220832018MickeyFriendsPrintedOfficialMerchandiseBoysTshirt1.jpg" alt="">
+                     <h4>BONKIDS</h4>
+                     <p>Boys Mickey Mouse Printed T-shirt</p>
+                     <h5>Rs.293 <del style="color:#767881"> Rs.1332 </del><span style="color:#f03cab">(78% OFF)</span></h5>
+                    </div> 
+        
+                    <div>
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/20242288/2022/10/1/2fd26e42-1944-4c88-beb7-52a12f759e161664601385587Cottonjerseytop1.jpg" alt="">
+                     <h4>H&M</h4>
+                     <p>Boys Cotton Jersey Top</p>
+                     <h5>Rs.239<del style="color:#767881"> Rs.399 </del><span style="color:#f03cab">(40% OFF)</span></h5>
+                    </div> 
+        
+        
+                    <div>
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/22217960/2023/3/3/78af0ff1-6855-42aa-ac51-96ffae0dfa1f1677855097047KUCHIPOOBoysOrangeYellow5PrintedT-shirt1.jpg" alt="">
+                     <h4>KUCHIPOO</h4>
+                     <p>Boys Pack OF 5 T-shirt</p>
+                     <h5>Rs.744 <del style="color:#767881"> Rs.2100</del><span style="color:#f03cab">(1356% OFF)</span></h5>
+                    </div> 
+        
+        
+        
+                    </div>
+                </div>
+            
+        
+                
+        
+
+           
+
+   
+</body>
+</html>

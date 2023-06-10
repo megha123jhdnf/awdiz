@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra Beauty Page</title>
+    <style>
+         #screen {
+            /* border: 1px solid black; */
+            width: 100%;
+            /* height: 800px; */
+            font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+        }
+
+        #navbar {
+            border: 1px solid  #faf7f7;
+            width: 100%;
+            height: 10%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #navbar>div:nth-child(1) {
+            /* border: 1px solid blue; */
+            width: 5%;
+            
+
+        }
+
+        #navbar>div:nth-child(1)>img {
+            width: 110px;
+            height: 60px;
+            padding: 10px 0px 10px 25px;
+        }
+
+        #navbar>div:nth-child(2) {
+            /* border: 1px solid blue; */
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            padding: 25px 0px 20px 0px;
+            font-size: 14px;
+            color: #282c3f;
+            font-weight: 700;
+
+
+        }
+        #navbar>div:nth-child(2)>div:nth-child(6)>sup {
+            /* border: 1px solid red; */
+            color: #ff3f6c;
+            font-family: Assistant;
+            font-weight: 600;
+            text-align: left;
+        }
+
+
+        #navbar>div:nth-child(3) {
+            /* border: 1px solid blue; */
+            width: 25%;
+            
+            
+        }
+
+        #navbar>div:nth-child(3) >div{
+            /* border: 1px solid black; */
+            width:100%;
+            height: 40px;
+            margin: 15px 0px 20px 0px; 
+            border: 1px solid #f5f5f6;
+            border-radius: 0 4px 4px 0;
+            background-color: #f5f5f6;
+
+
+        }
+        #navbar>div:nth-child(3) >div>input{
+            /* border: 1px solid red; */
+            width: 80%;
+             margin: 10px 0px 20px 10px;
+             font-size: 14px;
+             color: #696e79;
+             background-color: #f5f5f6;
+             border: none;
+
+
+        }
+
+        #navbar>div:nth-child(4) {
+            /* border: 1px solid blue; */
+            width: 15%;
+            display: flex;
+            justify-content: space-around;
+           
+
+        }
+        #navbar>div:nth-child(4)>div{
+            /* border: 1px solid red; */
+            color: #000;
+            padding: 15px 0px 20px 5px;
+            font-size: 12px;
+             font-weight: 700;
+            
+        }
+        #navbar>div:nth-child(4)>div > i{
+         
+         padding-left: 10px;
+        }
+
+
+
+        #BeautyMulProduct{
+            /* border: 1px solid black; */
+            width: 100%;
+            /* height: 800px; */
+        }
+
+        #filter {
+            /* border: 5px solid yellow; */
+            width: 100%;
+            height: 120px;
+            border-bottom: 1px solid #dbdce4;
+        }
+        
+        #filter>div {
+            /* border: 2px solid red; */
+            width: 100%;
+            font-size: 14px;
+            color: #4e5169;
+            margin:15px 0px 10px 15px;
+
+
+        }
+        #Lipstick {
+            /* border: 2px solid blue; */
+            color: rgb(39, 36, 36);
+            font-weight: 700;
+            margin-bottom: 10PX;
+        }
+        #Lipstick1 {
+            /* border: 2px solid blue; */
+            color: rgb(39, 36, 36);
+            font-size: 16px;
+            font-weight: 700;
+            
+        }
+        #filter>div:nth-child(3) {
+            /* border: 2px solid green; */
+            display: flex;
+            justify-content: space-between;
+            margin-top:20px;
+        }
+        #filter>div:nth-child(3)>div:nth-child(1) {
+            /* border: 2px solid purple; */
+            font-size: 16px;
+            font-weight: 700;
+            color: rgb(29, 26, 26);
+            width: 20%;
+            margin-left: 5px;
+            /* display: flex; */
+            
+
+        }
+        #filter-option{
+             /* border:2px solid yellow; */
+             display: flex;
+             margin-left: 5px;
+            /* margin: 10px 0px 10px 0px; */
+        }
+        #filter>div:nth-child(3)>div:nth-child(8) {
+            /* border:2px solid yellow; */
+            color: rgb(39, 37, 37);
+           
+            margin-left: 2px;
+
+           
+        }
+        #filter>div:nth-child(3)>div:nth-child(9) {
+            /* margin-left:35%; */
+            margin-right: 30px;
+            border: 1px solid rgb(182, 179, 179);
+            width:18%;
+            height: 40px;
+            padding-left: 10px;
+            display: flex;
+
+
+        } 
+        #leftANDright-divs{
+            /* border: 1px solid black; */
+            width: 100%;
+            /* height: 600px; */
+            display: flex;
+            justify-content: space-around
+       }
+       #leftDiv{
+             /* border: 1px solid blue; */
+            width:20%;
+       }
+       .leftside{
+            /* border: 2px solid black;  */
+         margin: 15px 10px 10px 10px;
+         font-size: 14px;
+         font-weight: 800;
+         color: #434657;
+
+        }
+       #leftDiv>div{
+            border-bottom: 1px solid rgb(221, 219, 219);
+            
+            /* border: 2px solid red;  */
+            margin: 10px 10px 10px 10px;
+            font-size: 14px;
+            color: #4b4b50;
+            line-height: 1.8em;
+
+    
+       }
+       #rightDiv{
+           /* border: 2px solid blue; */
+           width: 75%;
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: space-around;
+        }
+       
+       
+        #rightDiv>div{
+            /* border:2px solid black;  */
+            width: 18%;
+            height: 400px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            line-height: 0.9em;
+        }
+       
+        #rightDiv>div:hover {
+            border: 1px solid rgb(190, 185, 185);
+        }
+
+        #rightDiv>div>img {
+            width: 100%;
+            height: 75%;
+        }
+       
+
+
+    </style>
+
+</head>
+<body>
+    <div id="screen">
+        <div id="navbar">
+            <div>
+                <!-- 1st child -->
+                <img src="myntra logo.jpg" alt="Myntra logo" />
+            </div>
+            <div>
+                <!-- 2n child -->
+                <div><a href="./MyntraMen product.html">MEN</a></div>
+                <div><a href="./Myntra Women page.html">WOMEN</a></div>
+                <div><a href="./Myntra Kids Page.html">KIDS</a></div>
+                <div><a href="./MyntraHomepage.html">HOME & LIVING</a></div>
+                <div><a href="./Myntra Beauty.html">BEAUTY</a></div>
+                <div>STUDIO <sup>new</sup></div> 
+            </div>
+            <div>
+                <!-- 3rd child -->
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search for product brands and more">
+                </div>
+                
+            </div>
+            <div>
+                <div>
+                    <i class="fa-regular fa-user fa-lg"></i>
+                    <div><a href="MyntraProfile.html">Profile</a></div>
+
+                  </div>
+                <div>
+                    <i class="fa-regular fa-heart fa-lg"></i>
+                    <div>Wishlist</div>
+                
+                </div>
+                <div>
+                    <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                    <div> <a href="MyntraCart.html">Bag</a></div>
+
+    
+                </div>
+               
+                
+               
+            </div>
+        </div>
+    
+
+    
+    <div id="BeautyMulProduct">
+        <!-- parent -->
+        <div id="filter">                <!-- 1st -->
+            <div>
+                <!-- filter 1st -->
+                <span>Home</span>
+                <span> / Personal Care / </span>
+                <span id="Lipstick">Lipstick</span>
+
+            </div>
+            <div>
+                <!-- in filter 2nd -->
+                <span id="Lipstick1">Lipstick</span>
+                <span style=" color: #9193a0;"> - 9548 items</span>
+               
+            </div>
+            <div>
+                <!-- in filter 3rd -->
+                <div>FILTERS </div>
+                <div id="filter-option">Bundle
+                    <div>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+
+                </div>
+                <div id="filter-option">Colour Family
+                    <div>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+
+                </div>
+                <div id="filter-option">Colour Shade Name
+                    <div>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+
+                <div id="filter-option">Country of Origin
+                    <div>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+                <div id="filter-option">Featurs
+                    <div>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+                <div id="filter-option">Finish
+                    <div>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+                 <div id="filter-option">Formulation
+                    <div>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div> 
+                
+
+                <div>
+                    <p>Sort by : <b>Recommended</b></p>
+                    <div>
+                        <i style= "margin:15px 0px 15px 60px;"class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="leftANDright-divs">
+            <div id="leftDiv">
+            
+        
+                       
+                            <div>
+                                <div>
+                                    <input type="radio">
+                                Men
+                                </div>
+                                <div>
+                                    <input type="radio">
+                                    Women
+                                                       
+                                </div>
+                            </div>
+        
+                            
+                        <h4 class="leftside"> BRANDS</h4>
+                            <div>
+                                <div>
+                                    <input type="checkbox">
+                                    ME-ON(641)
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                    CurlyTales(550)
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                    MI FASHION(486)
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                    Colors Queen(460)
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                    PERPAA(421)
+                                </div>
+                                <div><input type="checkbox">
+                                    krayons(388)
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                    MISS ROSE(356)
+                                </div>
+                                <div><input type="checkbox">
+                                    MyGlamm(286)
+                                </div>
+                                <div style="color:red"> + 136 more</div>
+                            
+        
+                        </div>
+                    
+        
+        
+                        <h4 class="leftside">PRICE</h4>
+                            <div>
+                                <div>
+                                <input type="checkbox">
+                                Rs. 89 to Rs. 941(8792)
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                Rs. 941 to Rs. 1793(497)
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                Rs. 1793 to Rs. 2645(182)
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                Rs. 2645 to Rs. 3497(72)
+                            
+                        </div>
+                        </div>
+                        
+        
+                        <h4 class="leftside">color</h4>
+                            <div>
+                                <div><input type="checkbox">
+                                    <i class="fa-regular fa-circle"></i>
+                                    Pink (2149)
+                                <div>
+                                    <input type="checkbox">
+                                    <i class="fa-regular fa-circle"></i>
+                                    Red (2020)
+                                </div>
+                                <div><input type="checkbox">
+                                    <i class="fa-regular fa-circle"></i>
+                                    Brown (1158)
+                                </div>
+                                <div><input type="checkbox">
+                                    <i class="fa-regular fa-circle"></i>
+                                    Maroon (968)
+                                </div>
+                                <div><input type="checkbox">
+                                    <i class="fa-regular fa-circle"></i>
+                                    Nude (691)
+                                </div>
+                                <div><input type="checkbox">
+                                    <i class="fa-regular fa-circle"></i>
+                                    Purple (529)
+                                </div>
+                                <div><input type="checkbox">
+                                    <i class="fa-regular fa-circle"></i>
+                                    Multi (498)
+                                </div>
+                                <div style="color:red">+ 27 more</div>
+                            </div>
+                        
+                    
+        
+                    <h4 class="leftside">DISCOUNT RANGE</h4>
+        
+                           <div>
+                            <div>
+                            
+                                        
+                            <i class="fa-regular fa-circle"></i>
+                            10% and above</div>
+                        <div>
+                            <i class="fa-regular fa-circle"></i>
+                            20% and above</div>
+                        <div>
+                            <i class="fa-regular fa-circle"></i>
+                            30% and above</div>
+                        <div>
+                            <i class="fa-regular fa-circle"></i>
+                            40% and above</div>
+                        <div>
+                            <i class="fa-regular fa-circle"></i>
+                            50% and above</div>
+                        <div>
+                            <i class="fa-regular fa-circle"></i>
+                            60% and above</div>
+                        <div>                                
+                            <i class="fa-regular fa-circle"></i>
+                            70% and above</div>
+                        
+                        
+                    </div> 
+                    </div>
+                    </div>
+
+                    <div id="rightDiv">
+                        <div>
+                            <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/7196207/2022/5/13/7634acfb-b629-47fb-89df-518159765c881652430761251-Maybelline-New-York-Color-Sensational-Creamy-Matte-Lipstick--1.jpg" alt="">
+                         <h4>Maybelline</h4>
+                         <p>Creamy Matte- 695 Divine Wine</p>
+                         <h5>Rs.246 <del style="color:#767881"> Rs.329</del><span style="color:#f03cab">(20% OFF)</span></h5>
+                        </div> 
+
+                           <div>
+                            <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/9270091/2022/12/1/a34f277f-4c77-417b-b4e4-4ee167bdb8811669880963181ColorbarSinfulSmudge-ProofMatteLipcolor35g-Lustful0061.jpg" alt="">
+                         <h4>Color bar</h4>
+                         <p>Sinful Matte Lipcolor</p>
+                         <h5>Rs840<del style="color:#767881"> Rs.1200</del><span style="color:#f03cab">(30% OFF)</span></h5>
+                        </div> 
+                        <div>
+                            <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13105598/2021/1/25/31c4c5f6-8540-46a1-952e-bf2094943cb71611572545003-Lakme-Women-Lipstick-361611572544138-1.jpg" alt="">
+                         <h4>Lakme</h4>
+                         <p>Primer Matte Lipstick -MP6</p>
+                         <h5>Rs.291 <del style="color:#767881"> Rs.550</del><span style="color:#f03cab">(47% OFF)</span></h5>
+                        </div> 
+                        
+
+                        <div>
+                            <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/21180534/2022/12/13/4a47ab9d-5630-4500-9e69-8415ad7f5f6c1670948162199LOVEEARTHLiquidMousseMiniatureSetOf9LiquidMatteLipstick-2mlE1.jpg" alt="">
+                         <h4>LOVE EARCH</h4>
+                         <p>9 Pcs Liquid Mousse Lipstick </p>
+                         <h5>Rs.999<del style="color:#767881"> Rs.1999</del><span style="color:#f03cab">(50% OFF)</span></h5>
+                        </div> 
+
+                        <div>
+                            <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/19444472/2023/3/23/cda22736-befc-4f7a-a7cd-b5961d6c20f21679562325519-Maybelline-New-York-Superstay-Vinyl-Ink-Liquid-Lipstick-45-m-1.jpg" alt="">
+                         <h4>Maybelline</h4>
+                         <p>SuperStay Lipstick -Lippy</p>
+                         <h5>Rs.679 <del style="color:#767881"> Rs.849</del><span style="color:#f03cab">(20% OFF)</span></h5>
+                        </div> 
+
+                        <div>
+                            <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/22695636/2023/4/7/0c5edd28-d562-4861-9411-7def6d26a1f61680891356316Lipstick1.jpg" alt="">
+                         <h4>FORFOR</h4>
+                         <p>Stay Matte Lipstick-106</p>
+                         <h5>Rs.211<del style="color:#767881"> Rs.249</del><span style="color:#f03cab">(15% OFF)</span></h5>
+                        </div> 
+                        <div>
+                            <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13105586/2021/1/25/8700a57f-588d-4c32-ab61-2877f3c7b40d1611572324107-Lakme-Women-Lipstick-7651611572323405-1.jpg" alt="">
+                         <h4>Lakme</h4>
+                         <p>Primer Matte Lipstick-MP7</p>
+                         <h5>Rs.291 <del style="color:#767881"> Rs.550</del><span style="color:#f03cab">(47% OFF)</span></h5>
+                        </div> 
+        
+                        <div>
+                            <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/17199410/2022/4/22/6bcb3ff2-2dd5-42d9-88f3-e035a3aaf7d71650617711606-FACES-CANADA-Comfy-Matte-Lip-Color-3-ml---Any-Day-Now-04-824-1.jpg" alt="">
+                         <h4>FACES CANADA</h4>
+                         <p>Comfy Matte 10HR Long Stay</p>
+                         <h5>Rs.679 <del style="color:#767881"> Rs.849</del><span style="color:#f03cab">(20% OFF)</span></h5>
+                        </div> 
+
+                        <div>
+                            <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/6870099/2023/3/23/7241af4d-1326-4765-8464-c5e597ff45631679564802853-Maybelline-New-York-Super-Stay-Matte-Ink-Liquid-Lipstick-5-m-1.jpg" alt="">
+                         <h4>Maybelline</h4>
+                         <p>Super Stay Matte Amazonian 70</p>
+                         <h5>Rs.454 <del style="color:#767881"> Rs.699</del><span style="color:#f03cab">(35% OFF)</span></h5>
+                        </div> 
+
+                        <div>
+                            <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/12815714/2022/6/22/243d72ec-9f4d-448c-b488-08ff111625ac1655889089979MyGlammLITLiquidMatteLipstick3ml-Swinger1.jpg" alt="">
+                         <h4>MyGlamm</h4>
+                         <p>SWINGGER Lipstick 3 g</p>
+                         <h5>Rs.98 <del style="color:#767881"> Rs.395</del><span style="color:#f03cab">(75% OFF)</span></h5>
+                        </div> 
+                        </div>
+                        </div>
+                        </div>
+</body>
+</html>

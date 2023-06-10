@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra women page</title>
+    <style>
+         #screen{
+            /* border:2px solid red; */
+            width: 100%;
+            height: 400px;
+            font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+        }
+        #navbar {
+            /* border: 1px solid  #e9e5e5; */
+            width: 100%;
+            height: 10%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #navbar>div:nth-child(1) {
+            /* border: 1px solid blue; */
+            width: 5%;
+            
+
+        }
+
+        #navbar>div:nth-child(1)>img {
+            width: 110px;
+            height: 60px;
+            padding: 10px 0px 10px 25px;
+        }
+
+        #navbar>div:nth-child(2) {
+            /* border: 1px solid blue; */
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            padding: 25px 0px 20px 0px;
+            font-size: 14px;
+            color: #282c3f;
+            font-weight: 700;
+
+
+        }
+        #navbar>div:nth-child(2)>div:nth-child(6)>sup {
+            /* border: 1px solid red; */
+            color: #ff3f6c;
+            font-family: Assistant;
+            font-weight: 600;
+            text-align: left;
+        }
+
+
+        #navbar>div:nth-child(3) {
+            /* border: 1px solid blue; */
+            width: 25%;
+            
+            
+        }
+
+        #navbar>div:nth-child(3) >div{
+            /* border: 1px solid black; */
+            width:100%;
+            height: 40px;
+            margin: 15px 0px 20px 0px; 
+            border: 1px solid #f5f5f6;
+            border-radius: 0 4px 4px 0;
+            background-color: #f5f5f6;
+
+
+        }
+        #navbar>div:nth-child(3) >div>input{
+            /* border: 1px solid red; */
+            width: 80%;
+             margin: 10px 0px 20px 10px;
+             font-size: 14px;
+             color: #696e79;
+             background-color: #f5f5f6;
+             border: none;
+
+
+        }
+
+        #navbar>div:nth-child(4) {
+            /* border: 1px solid blue; */
+            width: 15%;
+            display: flex;
+            justify-content: space-around;
+           
+
+        }
+        #navbar>div:nth-child(4)>div{
+            /* border: 1px solid red; */
+            color: #000;
+            padding: 15px 0px 20px 5px;
+            font-size: 12px;
+             font-weight: 700;
+            
+        }
+        #navbar>div:nth-child(4)>div > i{
+         
+         padding-left: 10px;
+        }
+
+        /* women page */
+         #MulProduct {
+            border: 5px solid black;
+            width: 100%;
+            /* height: 800px; */
+        }
+
+        #filter {
+            /* border: 5px solid yellow; */
+            width: 100%;
+            height: 120px;
+            border-bottom: 1px solid #dbdce4;
+        }
+        
+        #filter>div {
+            /* border: 2px solid red; */
+            width: 100%;
+            font-size: 14px;
+            color: #4e5169;
+            margin:15px 0px 10px 15px;
+
+
+        }
+        
+        #kurtis {
+            /* border: 2px solid blue; */
+            color: rgb(39, 36, 36);
+            font-weight: 700;
+            margin-bottom: 10PX;
+        }
+        #kurtis1 {
+            /* border: 2px solid blue; */
+            color: rgb(39, 36, 36);
+            font-size: 16px;
+            font-weight: 700;
+            
+        }
+        #filter>div:nth-child(3) {
+            /* border: 2px solid green; */
+            display: flex;
+            justify-content: space-between;
+            margin-top:20px;
+        }
+        #filter>div:nth-child(3)>div:nth-child(1) {
+            /* border: 2px solid purple; */
+            font-size: 16px;
+            font-weight: 700;
+            color: rgb(29, 26, 26);
+            width: 20%;
+            margin: 10px 3px 10px 5px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        #filter>div:nth-child(3)>div:nth-child(2) {
+            /* border:2px solid yellow; */
+            display: flex;
+
+            margin: 10px 15px 10px 10px;
+        }
+        #filter>div:nth-child(3)>div:nth-child(3) {
+            /* border:2px solid yellow; */
+            display: flex;
+            margin: 10px 15px 10px 10px;
+        }
+
+        #filter>div:nth-child(3)>div:nth-child(4) {
+            /* border:2px solid yellow; */
+            display: flex;
+            margin: 10px 15px 10px 10px;
+        }
+        #filter>div:nth-child(3)>div:nth-child(5) {
+            margin-left:35%;
+            margin-right: 30px;
+            border: 1px solid rgb(182, 179, 179);
+            width:18%;
+            height: 40px;
+            padding-left: 10px;
+            display: flex;
+
+
+        }
+       #leftANDright-divs{
+            /* border: 1px solid black; */
+            width: 100%;
+            /* height: 600px; */
+            display: flex;
+            justify-content: space-around
+       }
+       #leftDiv{
+             /* border: 1px solid blue; */
+            width:20%;
+       }
+       .leftside{
+            /* border: 2px solid black;  */
+         margin: 15px 10px 10px 10px;
+         font-size: 14px;
+         font-weight: 800;
+         color: #434657;
+
+        }
+       #leftDiv>div{
+            border-bottom: 1px solid rgb(221, 219, 219);
+            
+            /* border: 2px solid red;  */
+            margin: 10px 10px 10px 10px;
+            font-size: 12px;
+            color: #4b4b50;
+            line-height: 1.8em;
+
+    
+       }
+
+       #rightDiv{
+           /* border: 2px solid blue; */
+           width: 75%;
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: space-around;
+        }
+       
+       
+        #rightDiv>div{
+            /* border:2px solid black;  */
+            width: 18%;
+            height: 370px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            line-height: 0.7em;
+        }
+       
+        #rightDiv>div:hover {
+            border: 1px solid black;
+        }
+
+        #rightDiv>div>img {
+            width: 100%;
+            height: 75%;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <div id="screen">
+        <div id="navbar">
+            <div>
+                <!-- 1st child -->
+                <img src="myntra logo.jpg" alt="Myntra logo" />
+            </div>
+            <div>
+                <!-- 2n child -->
+                <div><a href="./MyntraMen product.html">MEN</a></div>
+                <div><a href="./Myntra Women page.html">WOMEN</a></div>
+                <div><a href="./Myntra Kids Page.html">KIDS</a></div>
+                <div><a href="./MyntraHomepage.html">HOME & LIVING</a></div>
+                <div><a href="./Myntra Beauty.html">BEAUTY</a></div>
+                <div>STUDIO <sup>new</sup></div> 
+            </div>
+            <div>
+                <!-- 3rd child -->
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search for product brands and more">
+                </div>
+                
+            </div>
+            <div>
+                <div>
+                    <i class="fa-regular fa-user fa-lg"></i>
+                    <div><a href="MyntraProfile.html">Profile</a></div>
+
+                </div>
+                <div>
+                    <i class="fa-regular fa-heart fa-lg"></i>
+                    <div>Wishlist</div>
+                
+                </div>
+                <div>
+                    <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                    <div> <a href="MyntraCart.html">Bag</a></div>
+    
+                </div>
+               
+                
+               
+            </div>
+        </div>
+    
+    
+    <div id="womenMulProduct">
+        <!-- parent -->
+        <div id="filter">                <!-- 1st -->
+            <div>
+                <!-- filter 1st -->
+                <span>Home</span>
+                <span> / Clothing / </span>
+                <span id="kurtis">Kurtis For Women</span>
+
+            </div>
+            <div>
+                <!-- in filter 2nd -->
+                <span id="kurtis1">Kurtis For Women</span>
+                <span style=" color: #9193a0;"> - 103522 items</span>
+               
+            </div>
+            <div>
+                <!-- in filter 3rd -->
+                <div>FILTERS </div>
+                <div>Bundles
+                    <div>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+
+                </div>
+                <div>Country of Origin
+                    <div>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+
+                </div>
+                <div>Size
+                    <div>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+                <div>
+                    <p>Sort by : <b>Recommended</b></p>
+                    <div>
+                        <i style= "margin:15px 0px 15px 60px;"class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+
+            </div>
+
+           
+
+        </div>
+        <div id="leftANDright-divs">
+            <div id="leftDiv">
+            
+        
+                        <h4 class="leftside">CATEGORIES</h4>
+                            <div>
+                                <div>
+                                    <input type="checkbox">
+                                    Kurtas(75574)
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                    Kurta Sets(55224)
+                                                       
+                                </div>
+                            </div>
+        
+                        
+        
+                       <h4 class="leftside"> BRANDS</h4>
+                            <div>
+                                <div>
+                                    <input type="checkbox">
+                                    KALINI(8927)                        
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                    Ethnic basket(4769)
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                    7Threads(4355)
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                    Anouk(3785)
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                    Sangria(3724)
+                                </div>
+                                <div><input type="checkbox">
+                                    Indo Era(3086)
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                    1 Stop Fashion(2655)
+                                </div>
+                                <div><input type="checkbox">
+                                    Varanga(2323)
+                                </div>
+                                <div style="color:red"> + 806 more</div>
+                            
+        
+                        </div>
+        
+                        <h4 class="leftside">PRICE</h4>
+                            <div>
+                                <div>
+                                <input type="checkbox">
+                                Rs. 187 to Rs. 11141(130474)
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                Rs. 11141 to Rs. 22095(234)
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                Rs. 22095 to Rs. 33049(12)
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                Rs. 33049 to Rs. 44003(8)
+                            
+                        </div>
+                        </div>
+                        
+        
+                        <h4 class="leftside">color</h4>
+                            <div>
+                                <div><input type="checkbox">
+                                    <i class="fa-regular fa-circle"></i>
+                                    Blue (13462)
+                                <div>
+                                    <input type="checkbox">
+                                    <i class="fa-regular fa-circle"></i>
+                                    Green (13146)
+                                </div>
+                                <div><input type="checkbox">
+                                    <i class="fa-regular fa-circle"></i>
+                                    Pink (12038)
+                                </div>
+                                <div><input type="checkbox">
+                                    <i class="fa-regular fa-circle"></i>
+                                    Black (9492)
+                                </div>
+                                <div><input type="checkbox">
+                                    <i class="fa-regular fa-circle"></i>
+                                    Yellow (7872)
+                                </div>
+                                <div><input type="checkbox">
+                                    <i class="fa-regular fa-circle"></i>
+                                    Red (7074)
+                                </div>
+                                <div><input type="checkbox">
+                                    <i class="fa-regular fa-circle"></i>
+                                    Navy Blue (6789)
+                                </div>
+                                <div style="color:red">+ 38 more</div>
+                            </div>
+                        
+                    
+        
+                    <h4 class="leftside">DISCOUNT RANGE</h4>
+        
+                           <div>
+                            <div>
+                                        
+                            <i class="fa-regular fa-circle"></i>
+                            10% and above</div>
+                        <div>
+                            <i class="fa-regular fa-circle"></i>
+                            20% and above</div>
+                        <div>
+                            <i class="fa-regular fa-circle"></i>
+                            30% and above</div>
+                        <div>
+                            <i class="fa-regular fa-circle"></i>
+                            40% and above</div>
+                        <div>
+                            <i class="fa-regular fa-circle"></i>
+                            50% and above</div>
+                        <div>
+                            <i class="fa-regular fa-circle"></i>
+                            60% and above</div>
+                        <div>                                
+                            <i class="fa-regular fa-circle"></i>
+                            70% and above</div>
+                        <div>
+                            <i class="fa-regular fa-circle"></i>
+                            80% and above
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-circle"></i>
+                            90% and above
+                        </div>
+                    </div> 
+                    </div>
+        
+                
+            </div>
+            <div id="rightDiv">
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/22120556/2023/2/25/986d6f97-fe9b-487a-9c64-f577e0a32c491677314970316KhushalKwomenEmbroideryKurtaandpalazzowithdupattaset7.jpg"/>
+                 <h4>Khushal K</h4>
+                 <p>Kurta with Palazzos and Dupatta</p>
+                 <h5>Rs.1499 <del style="color:#767881"> Rs.5499 </del><span style="color:#f03cab">(74% OFF)</span></h5>
+                </div> 
+
+             <div>
+                <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/20695836/2022/11/10/ba1724c2-c606-481c-a0ca-63424b61a8661668078028270WomensRayonPrintedEmbroideredKurtaWithPantAndDupatta1.jpg" alt="">
+                 <h4>SINGNI</h4>
+                 <p>Women Embroidered Kurta Set</p>
+                 <h5>Rs.1299 <del style="color:#767881"> Rs.4999 </del><span style="color:#f03cab">(74% OFF)</span></h5>
+                </div> 
+
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/18652620/2022/8/26/4d5f7043-a460-42e5-b67a-b04d9c0bc7041661503606623-KALINI-Women-Beige-Floral-Yoke-Design-Kurta-with-Trousers--W-1.jpg" alt="">
+                 <h4>KALINI</h4>
+                 <p>Women Yolk Design Kurta</p>
+                 <h5>Rs.813 <del style="color:#767881"> Rs.3699 </del><span style="color:#f03cab">(78% OFF)</span></h5>
+                </div> 
+
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/17644452/2022/4/6/ef668fbb-c88a-4243-b9bd-3282d2a84afd1649238881413-Libas-Women-Kurtas-5701649238880836-1.jpg"/>
+                 <h4>Libas</h4>
+                 <p>Women Ethnic Motif Printed</p>
+                 <h5>Rs.569 <del style="color:#767881"> Rs.1499 </del><span style="color:#f03cab">(62% OFF)</span></h5>
+                </div> 
+
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/22143838/2023/3/9/19485e92-d4cf-4d2e-8e10-01dacc0d4b4d1678359322683-anayna-Ethnic-Motifs-Printed-Kurta-5981678359322070-1.jpg" alt="">
+                 <h4>anaya</h4>
+                 <p>Women Ethnic Motif Printed</p>
+                 <h5>Rs.539 <del style="color:#767881"> Rs.1899 </del><span style="color:#f03cab">(70% OFF)</span></h5>
+                </div> 
+
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/22911800/2023/4/26/28bf7014-3ee9-4024-a506-ee02ccb83f8e1682515506345FASHIONDEPTHWomenEmbroideredCottonStraightKurtaPantDupattaSe1.jpg" alt="">
+                 <h4>FASHION DEPTH</h4>
+                 <p>Kurta with Trousers and Dupatta</p>
+                 <h5>Rs.1299 <del style="color:#767881"> Rs.3099 </del><span style="color:#f03cab">(70% OFF)</span></h5>
+                </div> 
+                 
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/17911110/2022/5/9/6ebd9d76-a223-4986-8abd-22c80d7018861652096800888-Anouk-Women-Kurta-Sets-1801652096800138-1.jpg" alt="">
+                 <h4>Anouk</h4>
+                 <p>Women Printed Kurta with Palazzo</p>
+                 <h5>Rs.1249 <del style="color:#767881"> Rs.3099 </del><span style="color:#f03cab">(68% OFF)</span></h5>
+                </div> 
+                
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/20498352/2022/10/22/3424a72e-8518-4853-aa99-e48a0e1205841666419466834KALINIWomenPistaGreenStraightKurtawithTrouserDupatta1.jpg" alt="">
+                 <h4>KALINI</h4>
+                 <p>Women Ethnic Motif Printed</p>
+                 <h5>Rs.1039 <del style="color:#767881"> Rs.2099 </del><span style="color:#f03cab">(60% OFF)</span></h5>
+                </div> 
+
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/10356511/2019/8/8/a28f9ccb-c0d7-4e66-87f0-e639f157ff2d1565263388836-Libas-Women-Kurta-Sets-571565263387250-1.jpg" alt="">
+                 <h4>Libas</h4>
+                 <p>Ethnic Print Kurta suit </p>
+                 <h5>Rs.769 <del style="color:#767881"> Rs.2399 </del><span style="color:#f03cab">(68% OFF)</span></h5>
+                </div> 
+            
+            <div>
+                <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/17251470/2022/3/10/81b3ab9f-1f9d-4820-b072-bba4caaff25e1646890035269-Varanga-Magenta-Silk-Kurta-With-Woven-Yoke-And-Fully-Elastic-1.jpg" alt="">
+             <h4>Varanga</h4>
+             <p>Women Yolk Design kurta</p>
+             <h5>Rs.1199 <del style="color:#767881"> Rs.4899 </del><span style="color:#f03cab">(76% OFF)</span></h5>
+            </div> 
+
+            <div>
+                <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/16712782/2022/4/14/2afbbc41-329f-4850-8aee-00dccdf641851649922896889-Indo-Era-Solid-Wine-Straight-Kurta-Palazzo-With-Dupatta-Set--1.jpg"/>
+             <h4>Indo Era</h4>
+             <p>Women Yolk Design kurta</p>
+             <h5>Rs.999 <del style="color:#767881"> Rs.3999 </del><span style="color:#f03cab">(75% OFF)</span></h5>
+            </div> 
+
+            <div>
+                <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/23336510/2023/5/22/1e00e110-f680-45e2-b3d6-3694bc201e201684754992623MarigoldLaneWomenNavyBlueFloralPrintedAnarkaliKurta1.jpg" alt="">
+             <h4>Marigold Lane</h4>
+             <p>Floral Printed Anarkalikurta</p>
+             <h5>Rs.2099<del style="color:#767881"> Rs.2999 </del><span style="color:#f03cab">(30% OFF)</span></h5>
+            </div> 
+
+            <div>
+                <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/16714126/2022/2/3/0250ccee-67d6-46fa-ab5b-f4d5e36ccb761643878799794-Anouk-Women-Kurtas-5101643878799296-1.jpg" alt="">
+             <h4>Anouk</h4>
+             <p>Women Bandhani Printed kurta</p>
+             <h5>Rs.594 <del style="color:#767881"> Rs.1699 </del><span style="color:#f03cab">(65% OFF)</span></h5>
+            </div> 
+
+            <div>
+                <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2020/12/19/76100d43-6521-498f-8b33-dac92fd4810e1608361677531-1.jpg" alt="">
+             <h4>Libas</h4>
+             <p>Women Printed kurta with Palzzo</p>
+             <h5>Rs.867<del style="color:#767881"> Rs.2799 </del><span style="color:#f03cab">(69% OFF)</span></h5>
+            </div> 
+
+
+            <div>
+                <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/17709686/2022/4/7/206b36ca-ae0d-4e9b-86be-a57eb6dbf00d1649325253946-Varanga-Women-Kurtas-8891649325253498-1.jpg" alt="">
+             <h4>Varanga</h4>
+             <p>Women Bandhani Printed kurta</p>
+             <h5>Rs.692 <del style="color:#767881"> Rs.3299 </del><span style="color:#f03cab">(79% OFF)</span></h5>
+            </div> 
+
+
+
+            </div>
+        </div>
+    
+</body>
+</html>

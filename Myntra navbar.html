@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra Navbar</title>
+    <style>
+        #screen {
+            border: 1px solid black;
+            width: 100%;
+            height: 800px;
+            font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+        }
+
+        #navbar {
+            border: 1px solid  #e9e5e5;
+            width: 100%;
+            height: 10%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #navbar>div:nth-child(1) {
+            /* border: 1px solid blue; */
+            width: 5%;
+            
+
+        }
+
+        #navbar>div:nth-child(1)>img {
+            width: 110px;
+            height: 60px;
+            padding: 10px 0px 10px 25px;
+        }
+
+        #navbar>div:nth-child(2) {
+            /* border: 1px solid blue; */
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            padding: 25px 0px 20px 0px;
+            font-size: 14px;
+            color: #282c3f;
+            font-weight: 700;
+
+
+        }
+        #navbar>div:nth-child(2)>div:nth-child(6)>sup {
+            /* border: 1px solid red; */
+            color: #ff3f6c;
+            font-family: Assistant;
+            font-weight: 600;
+            text-align: left;
+        }
+
+
+        #navbar>div:nth-child(3) {
+            /* border: 1px solid blue; */
+            width: 25%;
+            
+            
+        }
+
+        #navbar>div:nth-child(3) >div{
+            /* border: 1px solid black; */
+            width:100%;
+            height: 40px;
+            margin: 15px 0px 20px 0px; 
+            border: 1px solid #f5f5f6;
+            border-radius: 0 4px 4px 0;
+            background-color: #f5f5f6;
+
+
+        }
+        #navbar>div:nth-child(3) >div>input{
+            /* border: 1px solid red; */
+            width: 80%;
+             margin: 10px 0px 20px 10px;
+             font-size: 14px;
+             color: #696e79;
+             background-color: #f5f5f6;
+             border: none;
+
+
+        }
+
+        #navbar>div:nth-child(4) {
+            /* border: 1px solid blue; */
+            width: 15%;
+            display: flex;
+            justify-content: space-around;
+           
+
+        }
+        #navbar>div:nth-child(4)>div{
+            /* border: 1px solid red; */
+            color: #000;
+            padding: 15px 0px 20px 5px;
+            font-size: 12px;
+             font-weight: 700;
+            
+        }
+        #navbar>div:nth-child(4)>div > i{
+         
+         padding-left: 10px;
+        }
+
+
+       
+    </style>
+</head>
+
+<body>
+    <div id="screen">
+        <div id="navbar">
+            <div>
+                <!-- 1st child -->
+                <img src="myntra logo.jpg" alt="Myntra logo" />
+            </div>
+            <div>
+                <!-- 2n child -->
+                <div>MEN</div>
+                <div>WOMEN</div>
+                <div>KIDS</div>
+                <div>HOME & LIVING</div>
+                <div>BEAUTY</div>
+                <div>STUDIO <sup>new</sup></div>
+            </div>
+            <div>
+                <!-- 3rd child -->
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search for product brands and more">
+                </div>
+                
+            </div>
+            <div>
+                <div>
+                    <i class="fa-regular fa-user fa-lg"></i>
+                    <div>Profile</div>
+                </div>
+                <div>
+                    <i class="fa-regular fa-heart fa-lg"></i>
+                    <div>Wishlist</div>
+                
+                </div>
+                <div>
+                    <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                    <div>Bag</div>
+    
+                </div>
+               
+                
+               
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
