@@ -2,7 +2,7 @@
 //  var target = 54;
  
 //  function findNumber(array,target){
-//       var flag = false;
+//     
 //       for(i <0; i<array.length -4;i++){
 
 //       for(j = i+1; j<array.length -3;j++){
@@ -22,10 +22,7 @@
 //         }
 //     }
 
-//     if (flag == false){
-//         console.log(" addition of three number is not possible")
-//     }
-
+//     
 // findNumbers(array,target) ;
 
 // }
@@ -33,17 +30,17 @@
 
 
 2.
-var array2=[2,3,55,6,67,78,23,5,67,78,43,67,34,6,74,7,45,23,45,78,89,34,23];
-var target2= 236028;
+// var array2=[2,3,55,6,67,78,23,5,67,78,43,67,34,6,74,7,45,23,45,78,89,34,23];
+// var target2= 236028;
 
 
- function multiplication(){
-     var mul= array2 * target2;
-       console.log(mul,"multiplication")
+//  function multiplication(){
+//      var mul= array2 * target2;
+//        console.log(mul,"multiplication")
 
 
-}
-multiplication()
+// }
+// multiplication()
 
       
  

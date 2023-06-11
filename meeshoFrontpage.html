@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeeshoFrontPge</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+#screen{
+    border: 1px solid black;
+    width:100%;
+    height: 800px;
+}
+#navbar{
+    border: 1px solid rgb(53, 52, 52);
+    width:100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#navbar>div:nth-child(1){
+    /* border: 1px solid blue; */
+    width:15%;
+    padding: 15px 5px 10px 0px;
+
+}
+#navbar>div:nth-child(2){
+    border:1px solid rgb(53, 52, 52);
+    width:30%;
+    height: 50px;
+    margin-top: 15px;
+ 
+    border-radius: 5px;
+    margin-right: 200px;
+}
+#navbar>div:nth-child(2)>i{
+    color:rgb(184, 183, 183);
+    /* font-weight: 100; */
+}
+
+#navbar>div:nth-child(2)>input{
+    border: 1px solid rgb(231, 225, 225);
+    width:90%;
+    height: 25px;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    
+}
+#third-div{
+    /* border: 1px solid red; */
+    width:30%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 80px;
+    margin-top: 15px;
+
+}
+#third-div>div:nth-child(1){
+    /* border: 1px solid black; */
+    width:50%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    border-right: 1px solid grey;
+}
+#third-div>div:nth-child(2){
+    /* border: 1px solid black; */
+    width:50%;
+    padding-top: 20px;
+    text-align: center;
+    border-right: 1px solid grey;
+
+
+
+}
+#profile{
+    /* border: 1px solid blue; */
+    width:20%;
+    display: flex;
+    justify-content: space-evenly;
+    /* margin-right:150px ; */
+
+}
+#profile>div:nth-child(1){
+    /* border: 1px solid red; */
+    width:50%;
+    padding-top: 20px;
+    
+}
+
+#profile>div:nth-child(2){
+    /* border: 1px solid red; */
+    width:50%;
+    padding-top: 20px;
+
+}
+
+    </style>
+</head>
+<body>
+    <div id="screen">
+        <div id="navbar">
+            <div>
+                <img src="./meesho1.png" alt="meeshoIMG">
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                <input type="search" placeholder="Try Saree,Kurti or Search by Product Code">
+            
+
+            </div>
+            <div id="third-div">
+                <div>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <p>Download App</p>
+                   </div>
+                   <div>
+                    <p>Become Supplier</p>
+                   </div>
+            </div>
+           <div id="profile">
+            <div>
+                <i class="fa-regular fa-user"></i>
+                <p>Profile</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>Cart</p>
+            </div>
+            
+
+           </div>
+        </div>
+        <div id="body"></div>
+        <div>footer</div>
+    </div>
+</body>
+</html>

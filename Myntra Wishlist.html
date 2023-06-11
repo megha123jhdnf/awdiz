@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra Wishlist</title>
+    <style>
+        #screen {
+            /* border: 1px solid black; */
+            width: 100%;
+            /* height: 800px; */
+            font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+        }
+
+        #navbar {
+            border: 1px solid  #e9e5e5;
+            width: 100%;
+            height: 10%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #navbar>div:nth-child(1) {
+            /* border: 1px solid blue; */
+            width: 5%;
+            
+
+        }
+
+        #navbar>div:nth-child(1)>img {
+            width: 110px;
+            height: 60px;
+            padding: 10px 0px 10px 25px;
+        }
+
+        #navbar>div:nth-child(2) {
+            /* border: 1px solid blue; */
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            padding: 25px 0px 20px 0px;
+            font-size: 14px;
+            color: #282c3f;
+            font-weight: 700;
+
+
+        }
+        #navbar>div:nth-child(2)>div>a{
+            text-decoration: none;
+            color: black;
+        }
+        #navbar>div:nth-child(2)>div:nth-child(6)>sup {
+            /* border: 1px solid red; */
+            color: #ff3f6c;
+            font-family: Assistant;
+            font-weight: 600;
+            text-align: left;
+        }
+
+
+        #navbar>div:nth-child(3) {
+            /* border: 1px solid blue; */
+            width: 25%;
+            
+            
+        }
+
+        #navbar>div:nth-child(3) >div{
+            /* border: 1px solid black; */
+            width:100%;
+            height: 40px;
+            margin: 15px 0px 20px 0px; 
+            border: 1px solid #f5f5f6;
+            border-radius: 0 4px 4px 0;
+            background-color: #f5f5f6;
+
+
+        }
+        #navbar>div:nth-child(3) >div>input{
+            /* border: 1px solid red; */
+            width: 80%;
+             margin: 10px 0px 20px 10px;
+             font-size: 14px;
+             color: #696e79;
+             background-color: #f5f5f6;
+             border: none;
+             outline: none;
+
+
+
+        }
+
+        #navbar>div:nth-child(4) {
+            /* border: 1px solid blue; */
+            width: 15%;
+            display: flex;
+            justify-content: space-around;
+           
+
+        }
+       
+        #navbar>div:nth-child(4)>div{
+            /* border: 1px solid red; */
+            color: #000;
+            padding: 15px 0px 20px 5px;
+            font-size: 12px;
+             font-weight: 700;
+            
+        }
+        #navbar>div:nth-child(4)>div > i{
+         
+         padding-left: 10px;
+        }
+        
+        #top{
+            /* border: 1px solid red; */
+            width:15%;
+            display: flex;
+            justify-content: space-evenly;
+            margin-left: 50px;
+        }
+        #wishlist-img{
+            /* border: 1px solid red; */
+            width: 90%;
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: space-between;
+           margin-left: 50px;
+        }
+       
+       #wishlist-img>div{
+            /* border:2px solid black;  */
+            width: 18%;
+            height: 460px;
+            margin-bottom: 20px;
+            margin-top: 15px;
+            line-height: 0.7em;
+            border: 1PX SOLID rgb(230, 226, 226);;
+        }
+       
+       
+
+        #wishlist-img>div>img {
+            width: 100%;
+            height: 75%;
+        }
+       #move-to-bag{
+        border-top: 1px solid rgb(230, 226, 226);
+        padding-bottom: 10px;
+        text-align: center;
+        color:#ff3f6c;
+        font-size: 14px;
+        font-weight: 800;
+       }
+
+        /* footer */
+        #footer {
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        #online-shopping {
+            /* border: 1px solid black; */
+            width: 20%;
+            height: 100%;
+        }
+
+        #customer-policies {
+            /* border: 1px solid black; */
+            width: 20%;
+            height: 100%;
+        }
+
+        #experience {
+            width: 25%;
+            height: 100%;
+            padding-top: 15px;
+            /* border: 1px solid black; */
+        }
+
+        #guarantee {
+            width: 30%;
+            height: 100%;
+            /* border: 1px solid black; */
+            padding: 10px;
+            align-items: center;
+        }
+
+        .heading {
+            font-size: 12px;
+            font-weight: 700;
+            font-family: 'Times New Roman', Times, serif;
+            padding-left: 15px;
+            line-height: 25px;
+            list-style: none;
+            margin-bottom: 40px;
+            color: #282c3f;
+            word-spacing: 3px;
+}
+            
+
+        
+        .heading>li{
+            color: #9d9faa;
+            font-size: 15px;
+    
+            /* border: 1px solid red; */
+            
+        }
+       
+
+    </style>
+</head>
+<body>
+    <div id="screen">
+        <div id="navbar">
+            <div>
+                <!-- 1st child -->
+                <img src="myntra logo.jpg" alt="Myntra logo" />
+            </div>
+            <div>
+                <!-- 2n child -->
+                <div><a href="./MyntraMen product.html">MEN</a></div>
+               <div><a href="./Myntra Women page.html">WOMEN</a></div>
+                <div><a href="./Myntra Kids Page.html">KIDS</a></div>
+                <div><a href="./MyntraHomepage.html">HOME & LIVING</a></div>
+                <div><a href="./Myntra Beauty.html">BEAUTY</a></div>
+                <div>STUDIO <sup>new</sup></div> 
+            </div>
+            <div>
+                <!-- 3rd child -->
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search for product brands and more">
+                </div>
+                
+            </div>
+            <div>
+                <div>
+                    <i class="fa-regular fa-user fa-lg"></i>
+                    <div>Profile</div>
+                </div>
+                <div>
+                    <i class="fa-regular fa-heart fa-lg"></i>
+                    <div>Wishlist</div>
+                
+                </div>
+                <div>
+                    <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                    <div>Bag</div>
+    
+                </div>
+               
+                
+               
+            </div>
+        </div>
+        <!-- wishlist -->
+        <div id="wishlist">
+            <div id="top">
+                <p style="font-size: 18px;
+                font-weight: 700;color: #282c3f;">My Wishlist</p>
+                <p style=color:#696e79>10 items</p>
+            </div>
+            <div id="wishlist-img">
+
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/12180652/2020/8/27/1774f768-9bef-4488-8284-8e3ad3d8d4ed1598530559692-Taavi-Women-Tops-7191598530558075-1.jpg" alt="">
+                    <p style="font-size: 14px;color:#696e79" >Taavi Off-White & Pink Sangane</p>
+                    <h5>Rs.299 <del style="color:#cfd2d8">Rs.1,499 </del>  <span style="color: #ff3f6c;">(80% OFF)</span></h5>
+                    <div id="move-to-bag"><p>MOVE TO BAG</p></div>
+
+                </div>
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/19791536/2022/12/6/a58bfef4-05ac-4c27-9d39-17073c7757171670314799026RainRainbowRustMustardYellowPrintedPureCottonKurti1.jpg" alt="">
+                     <p style="font-size: 14px;color:#696e79" >Rain & Rainbow Rust & Musta</p>
+                     <h5>Rs.697 <del style="color:#cfd2d8">Rs.1,395 </del> <span style="color: #ff3f6c;">(50% OFF)</span>  </h5>
+                     <div id="move-to-bag"><p>MOVE TO BAG</p></div>
+
+                    </div>
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/11636294/2020/3/6/63f36806-0583-447a-b026-e2ae563eeb0c1583477535452-Shae-by-SASSAFRAS-Women-Blue-Printed-A-Line-Top-791583477533-1.jpg" alt="">
+                    <p  style="font-size: 14px;color:#696e79" >Shae by SASSAFRAS Women </p>
+                    <h5>Rs.515 <del style="color:#cfd2d8"> Rs.1,199</del> <span style="color: #ff3f6c;">(57% OFF)</span></h5>
+                    <div id="move-to-bag"><p>MOVE TO BAG</p></div>
+
+                </div>
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/19066166/2022/7/20/9d5575fb-afe9-4b69-a4d5-94900ce4e45c1658316998955-Womens-Maroon-Viscose-blend-Embroidered-Short-Top-2861658316-1.jpg" alt="">
+                     <p  style="font-size: 14px;color:#696e79" >Sangria Maroon Embroidered</p>
+                     <h5>Rs.679 <del style="color:#cfd2d8">Rs.1,999  </del> <span style="color: #ff3f6c;">(66% OFF)</span></h5>
+                     <div id="move-to-bag"><p>MOVE TO BAG</p></div>
+
+                    </div>
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/15361610/2021/9/4/2c6e4908-af80-4021-9871-e63c2274b43c1630768604713VishudhOffWhiteMandarinCollarRegularTop1.jpg" alt="">
+                     <p  style="font-size: 14px;color:#696e79" >Vishudh Off White & Blue Geom</p>
+                     <h5>Rs.399  <del style="color:#cfd2d8"> Rs.999 </del> <span style="color: #ff3f6c;"> (Rs. 60%OFF)</span></h5>
+                     <div id="move-to-bag"><p>MOVE TO BAG</p></div>
+
+                    </div>
+                
+               
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/19253020/2022/7/29/b7f91a31-0810-4fe0-bde5-3f8ba1f5b7a21659081442776KALINIWhiteGold-TonedZariSaree1.jpg" alt="">
+                    <p  style="font-size: 14px;color:#696e79" >KALINI White & Gold-Toned Z</p>
+                    <h5>Rs.474 <del style="color:#cfd2d8">Rs.2,496 </del> <span style="color: #ff3f6c;">(81% OFF)</span></h5>
+                    <div id="move-to-bag"><p>MOVE TO BAG</p></div>
+
+                </div>
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/productimage/2021/4/5/e59c4735-e5c0-4c08-8ef5-7c3ce6cee96c1617599157870-1.jpg" alt=""/>
+                     <p  style="font-size: 14px;color:#696e79" >Libas Women Green floral Kurta </p>
+                     <h5>Rs.1,007 <del style="color:#cfd2d8">Rs.2,799</del> <span style="color: #ff3f6c;">(64% OFF)</span></h5>
+                     <div id="move-to-bag"><p>MOVE TO BAG</p></div>
+
+                    </div>
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/20695836/2022/11/10/ba1724c2-c606-481c-a0ca-63424b61a8661668078028270WomensRayonPrintedEmbroideredKurtaWithPantAndDupatta1.jpg" alt="">
+                    <p  style="font-size: 14px;color:#696e79" >SINGNI Women Purple Ethnic</p>
+                    <h5>Rs.1,249 <del style="color:#cfd2d8">Rs.4,999</del> <span style="color: #ff3f6c;">(75% OFF)</span> </h5>
+                    <div id="move-to-bag"><p>MOVE TO BAG</p></div>
+
+                </div>
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/18652620/2022/8/26/4d5f7043-a460-42e5-b67a-b04d9c0bc7041661503606623-KALINI-Women-Beige-Floral-Yoke-Design-Kurta-with-Trousers--W-1.jpg" alt="">
+                    <p  style="font-size: 14px;color:#696e79" >KALINI Women Beige Floral Yok</p>
+                    <h5>Rs.813 <del style="color:#cfd2d8">Rs.3,699 </del><span style="color: #ff3f6c;">(78% OFF)</span> </h5>
+                    <div id="move-to-bag"><p>MOVE TO BAG</p></div>
+
+                </div>
+
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/22120556/2023/2/25/986d6f97-fe9b-487a-9c64-f577e0a32c491677314970316KhushalKwomenEmbroideryKurtaandpalazzowithdupattaset7.jpg"/>
+                       <p  style="font-size: 14px;color:#696e79" >Khushal K Ethnic Motifs Embr</p>
+                       <h5>Rs.1,416 <del style="color:#cfd2d8">Rs.5,449  </del> <span style="color: #ff3f6c;">(74% OFF)</span></h5>
+                       <div id="move-to-bag"><p>MOVE TO BAG</p></div>
+
+                    </div>
+                
+                
+            </div>
+        </div>
+
+        <div id="footer">
+            <div id="online-shopping">
+                <ul class="heading">ONLINE SHOPPING
+
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>Kids</li>
+                    <li>Home & Living</li>
+                    <li>Beauty</li>
+                    <li>Gift Card</li>
+                    <li>Myntra Insider</li>
+                </ul>
+
+                <ul class="heading">USEFUL LINKS
+                    <li>Blog</li>
+                    <li>Careers</li>
+                    <li>Site Map</li>
+                    <li>corporate information</li>
+                    <li> Whitehat</li>
+                </ul>
+            </div>
+
+            <div id="customer-policies">
+                <ul class="heading">CUSTOMER POLICIES
+                    <li>Contact US</li>
+                    <li>FAQ</li>
+                    <li>T&C</li>
+                    <li>Terms of Use</li>
+                    <li>Track Orders</li>
+                    <li>Shipping</li>
+                    <li>Cancellation</li>
+                    <li>Returns</li>
+                    <li>Privacy Policy</li>
+                    <li>Grievance Officer</li>
+                </ul>
+            </div>
+
+            <div id="experience">
+                <div class="heading">EXPERIENCE MYNTRA APP ON MOBILE</div>
+                <div style="display: flex; padding: 10px;">
+                    <img  src="https://constant.myntassets.com/web/assets/img/80cc455a-92d2-4b5c-a038-7da0d92af33f1539674178924-google_play.png" 
+                    style="width:100px;height:60px;">
+
+                    <img src="https://constant.myntassets.com/web/assets/img/bc5e11ad-0250-420a-ac71-115a57ca35d51539674178941-apple_store.png" 
+                    style="width:100px;height:60px;">
+                </div>
+
+                <div class="heading"> KEEP IN TOUCH</div>
+                <div style="display: flex;padding :20px;" >
+                    <i class="fa-brands fa-square-facebook"style="padding-right :10px;"></i>
+                    <i class="fa-brands fa-twitter" style="padding-right:10px;"></i>
+                    <i class="fa-brands fa-youtube" style="padding-right: 10px;"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+
+            </div>
+
+            <div id="guarantee">
+                <div style="display: flex;align-items: center;">
+                    <div>
+                        <img src="https://constant.myntassets.com/web/assets/img/6c3306ca-1efa-4a27-8769-3b69d16948741574602902452-original.png" 
+                        style="width: 48px; height: 40px;">
+                    </div>
+                    <div style="color:black;padding: 10px 10px;">
+                        <span><strong>100% ORIGINAL</strong>guarantee for all products at myntra.com</span>
+                    </div>
+                </div>
+                <div style="display: flex;align-items: center;">
+                    <div>
+                        <img src="https://constant.myntassets.com/web/assets/img/ef05d6ec-950a-4d01-bbfa-e8e5af80ffe31574602902427-30days.png" style="width: 48px; height: 49px;">
+                            
+                    </div>
+                    <div style="color: black;padding-left: 10px;">
+                        <span><strong>Return within 30 days</strong>of recieving your order</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    </div>
+
+    
+</body>
+</html>
