@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>meesho LogIN page</title>
     <style>
-        #body{
+        #body {
             background-color: rgb(233, 219, 224);
         }
-        #meesho-login{
+
+        #meesho-login {
             /* border: 1px solid black; */
-            width:35%;
+            width: 35%;
+            height: 60%;
             margin: auto;
             font-family: -apple-system, "Helvetica Neue", sans-serif, "Mier Book";
             background-color: rgb(245, 240, 240);
         }
-        #meesho-login>img{
-            width:100%;
-            height:20%;
+
+        #meesho-login>img {
+            width: 100%;
+            height: 20%;
         }
-        #meesho-login>h4{
+
+        #meesho-login>h4 {
             /* border: 1px solid red; */
-        
+
             margin: 40px 15px 40px 40px;
             color: rgb(53, 53, 67);
             font-style: normal;
@@ -29,96 +34,89 @@
             font-size: 20px;
             line-height: 28px;
             font-family: "Mier bold";
-          
-        }
-        #meesho-login>span{
-            /* border: 1px solid red; */
-            color: rgb(139, 139, 163);
-            font-style: normal;
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 16px;
-            font-family: "Mier book";
-            margin: 40px 15px 40px 40px;
-        }
-        #contact-no{
-            /* border: 1px solid red; */
-            width:80%;
-            height: 50px;
-            margin:8px 15px 25px 40px
 
         }
-        #no{
-            /* border: 1px solid blue; */
-            width:80%;
-            height: 40px;
-            color: rgb(53, 53, 67);
-           font-style: normal;
-            font-weight: 600;
-           font-size: 16px;
-          line-height: 20px;
-          padding-bottom: 13px;
-          border-bottom: 1px solid rgb(175, 173, 173);
+
+        #meesho-login>div{
+            /* border: 1px solid red; */
+            width:100%;
+        
+            
         }
-        #contact-no>input{
+        #meesho-login>div>input{
+            border:1px solid rgb(184, 181, 181);
+            width:90%;
+            height: 40px;
+            margin-left: 20px;
+        }
+        #meesho-login>div>lable{
             /* border: 1px solid black; */
-            width:80%;
-            height: 40px;
+            margin: 20px ;
             font-size: 16px;
-            font-weight: 400;
-            margin-top: 2px;
-            border: none;
-            outline: none;
-            border-bottom: 1px solid rgb(175, 173, 173);
+            font-weight: 700;
+            color: rgb(59, 57, 57);
 
+           }
+         
+        
 
-        }
-        #button{
-            width:75%;
+        #button {
+            width: 75%;
             height: 40px;
-            /* margin-left: 10; */
-            margin:8px 15px 25px 40px;
+            margin: 20px 15px 20px 40px;
             background: rgb(159, 32, 137);
             font-size: 15px;
             text-align: center;
             border-radius: 4px;
-           color: rgb(255, 255, 255);
-           border: none;
+            color: rgb(255, 255, 255);
+            border: none;
         }
-    
-        #Privacy>p:nth-child(1){
-          font-size: 12px;
-          color: rgb(153, 145, 145);
-          text-align: center;
+
+        #term-Privacy>p:nth-child(1) {
+            font-size: 12px;
+            color: rgb(90, 88, 88);
+            text-align: center;
+            
 
         }
-        #Privacy>p:nth-child(2){
+
+        #term-Privacy>p:nth-child(2) {
             font-size: 12px;
             text-align: center;
+            color:rgb(44, 43, 43)
+            
         }
-        #Privacy>p:nth-child(2)>span{
-            color:rgb(236, 63, 92)
+
+        #term-Privacy>p:nth-child(2)>span {
+            color: rgb(236, 63, 92)
         }
     </style>
 </head>
+
 <body id="body">
     <div id="meesho-login">
-       <img src="https://images.meesho.com/images/marketing/1661417516766.webp" alt="meesho-login"/>
-       <h4>Sign Up to view your profile</h4>
-       <span>Country</span>
-       <div id="contact-no">
-        <span id="no">IN +91</span>
-        <input type="number" placeholder="Phone Number">
-        
-       </div>
-       <button id="button">Continue</button>
-       <div id="Privacy">
-        <p>By continuing, you agree to Meesho’s </p>
-    <p><span>Terms & Condition</span> and <span>Privacy Policy</span></p>
-    </div>
-    </div>
-    
+        <img src="https://images.meesho.com/images/marketing/1661417516766.webp" alt="meesho-login" />
+        <h4>Sign Up to view your profile</h4>
+        <!-- <span>Country</span> -->
+        <div>
+            <lable>Email</lable><br>
+            <input type="email" placeholder="Enter Email here"><br>
+            <lable>Passward</lable><br>
+            <input type="passward" placeholder="Enter passward here">
 
-    
+            <!-- <span id="no">IN +91</span>
+            <input type="number" placeholder="Phone Number"> -->
+
+        </div>
+        <button id="button">Continue</button>
+        <div id="term-Privacy">
+            <p>By continuing, you agree to Meesho's </p>
+            <p><span>Terms & Condition</span> and <span>Privacy Policy</span></p>
+        </div>
+    </div>
+
+
+
 </body>
+
 </html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meesho Beauty</title>
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, "Helvetica Neue", sans-serif, "Mier Book";
+
+}
+
+#screen {
+    /* border: 1px solid black; */
+    width: 100%;
+    /* height: 800px; */
+}
+
+#navbar {
+    /* border: 1px solid rgb(53, 52, 52); */
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#navbar>div:nth-child(1) {
+    /* border: 1px solid blue; */
+    width: 15%;
+    margin: 15px 10px 10px 25px;
+
+}
+
+#navbar>div:nth-child(2) {
+    border: 1px solid rgb(46, 46, 53);
+    width: 30%;
+    height: 40px;
+    margin: 20px 25px 15px 10px;
+    border-radius: 5px;
+
+
+
+}
+
+#navbar>div:nth-child(2)>i {
+    color: rgb(184, 183, 183);
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#navbar>div:nth-child(2)>input {
+    border: 1px solid rgb(202, 197, 197);
+    width: 90%;
+    height: 30px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+
+}
+
+#app-supplier {
+    /* border: 1px solid red; */
+    width: 25%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px 10px 15px 100px;
+}
+
+#app-supplier>div:nth-child(1) {
+    /* border: 1px solid black; */
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    color: #353543;
+    font-size: 16px;
+    font-weight: 500;
+    border-right: 1px solid grey;
+}
+
+#app-supplier>div:nth-child(2) {
+    /* border: 1px solid black; */
+    width: 50%;
+    padding-top: 20px;
+    text-align: center;
+    color: #353543;
+    font-size: 16px;
+    font-weight: 500;
+    border-right: 1px solid grey;
+
+
+
+}
+
+#profile {
+    /* border: 1px solid blue; */
+    width: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    color: #353543;
+    font-size: 16px;
+    font-weight: 500;
+
+
+}
+
+#profile>div:nth-child(1) {
+    /* border: 1px solid red; */
+    width: 50%;
+    padding-top: 20px;
+
+}
+
+#profile>div:nth-child(2) {
+    /* border: 1px solid red; */
+    width: 50%;
+    padding-top: 20px;
+
+}
+
+#navi {
+    border: 1px solid rgb(168, 164, 164);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px;
+    color: #353543;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+#navi>p a{
+    text-decoration: none;
+    border: none;
+    color:black;
+}
+
+
+
+     #left-right-part{
+/* border:1px solid red; */
+width:100%;
+display: flex;
+justify-content: space-around;
+
+}
+#left-section{
+/* border: 1px solid rgb(160, 153, 153); */
+width:25%;
+}
+#left-section>div:nth-child(1){
+border: 1px solid rgb(163, 161, 161);
+display: flex;
+justify-content: space-between;
+width: 90%;
+height: 30px;
+margin:10px 10px 20px 20px;
+padding-top: 5px;
+border-radius: 4px;
+}
+#left-section>div:nth-child(1) i{
+    /* border: 1px solid gray; */
+    margin-right:10px;
+
+}
+#left-section>div:nth-child(1) b{
+color:#404046;
+
+}
+#left-section>div:nth-child(2){
+  border: 1px solid gray; 
+
+}
+#left-section>div:nth-child(2) h5{
+    /* border: 1px solid gray; */
+    margin-top: 15px;
+    margin-left: 20px;
+    color:#404046;
+    font-size: 16px;
+}
+#left-section>div:nth-child(2) p{
+    
+    font-size: 12px;
+    color:#353543;   
+    margin:8px 10px 20px 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid  rgb(163, 161, 161);
+}
+    
+    #left-section>div:nth-child(2) span{
+        /* border: 1px solid gray;  */
+        font-size: 18px;
+        color:#33333a;  
+        font-weight: 600;
+        margin:8px 10px 30px 20px;
+
+    }
+    
+    #top-section{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        margin-left: 25px;
+        line-height: 1.9em;
+    }
+     
+     #gender{
+        /* border:1px solid blue;   */
+        margin-left: 25px;
+        border-bottom: 1px solid rgb(218, 208, 208);
+
+
+     }
+     #gender>span{
+        border: 1px solid grey;
+        border-radius: 5px;
+        margin-bottom: 25px;
+        font-size: 12px;
+
+     }
+    
+ #category{
+        /* border:1px solid blue;  */
+        margin: 10px 10px 20px 20px;
+        border: none;
+
+ }
+ #category i{
+    margin-left: 50%;
+ }
+ #kurta{
+    margin-left: 25px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(218, 208, 208);
+    
+
+ }
+ .clothInfo{
+    border-bottom: 1px solid rgb(218, 208, 208);
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 30px;
+
+ }
+
+ #right-section{
+    border: 1px solid rgb(218, 208, 208);
+    width:70%;
+    height:80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+ }
+ #right-section>div{
+    /* border:1px solid blue; */
+    width: 22%;
+    height: 350px; 
+    margin-bottom: 30px; 
+    margin-top: 15px;
+    line-height: 1em; 
+    
+   
+
+ }
+ #right-section>div>:hover{
+    border: 1px solid rgb(199, 196, 196);
+ }
+ #right-section>div>img{
+    width: 100%;
+    height: 75%;
+   
+ }
+ #right-section>div>h3{
+    color: #404046;
+    font-size: 14px;
+ }
+ #right-section>div>h4{
+    font-size: 16px;
+    margin-top: 10px;
+   
+ }
+ #right-section>div>h4 small{
+    color:#404046;
+
+ }
+ .clothINFO{
+    display: flex;
+    /* justify-content: space-evenly; */
+    margin-left: 25px;
+ }
+ 
+ 
+    </style>
+</head>
+<body>
+    <div id="screen">
+        <div id="navbar">
+            <div>
+                <img src="./meeshoLogo.png" alt="meeshoIMG">
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                <input type="search" placeholder="Try Saree,Kurti or Search by Product Code">
+
+
+            </div>
+            <div id="app-supplier">
+                <div>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <p>Download App</p>
+                </div>
+                <div>
+                    <p>Become Supplier</p>
+                </div>
+            </div>
+            <div id="profile">
+                <div>
+                    <i class="fa-regular fa-user"></i>
+                    <p>Profile</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Cart</p>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="navi">
+
+            <p><a href="./meeshoWomen Ethnic.html">Women Ethnic</a></p>
+            <p><a href="./meeshoWomenWestern.html">Women Western</a></p>
+            <p><a href="./MeeshoMen.html">Men</a></p>
+             <p><a href="./Meesho Kids.html">Kids</a></p>
+            <p><a href="./meeshoKitchen.html">Home & Kitchen</a></p>
+            <p><a href="./meeshoBeauty.html">Beauty & Health</a></p>
+            <p><a href="./meeshoJwellery.html">Jewellery & Accessories</a></p>
+            <p><a href="./meesho women bag.html">Bags & Footwear</a></p>
+            <p><a href="./meesho Electronic.html">Electronics</a></p>
+
+
+        </div>
+    
+    <div id="top-section">
+        <h2>Face Makeup</h2>
+        <p><b>Showing 1-20 </b>out of 10000 products</p>
+
+
+    </div>
+    <div id="left-right-part">
+        <div id="left-section">
+            <div>
+                <p style="padding-bottom:50px;">Sort by : <b>Relevance</b></p>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div>
+                <h5>FILTERS</h5>
+                <P>1000+ Products</P>
+                <div id="category">
+                    <span style="margin-bottom: 20px;">Category</span>
+                <i class="fa-solid fa-angle-up"></i>
+                </div>
+                
+                <div id="kurta">
+
+            <input type="checkbox" placeholder="Kurta">
+            <label >Face Makeup Combo</label>
+            
+
+
+                </div>
+                 <div id="gender">
+            
+                   <h3>Gender</h3>
+                   <span>Women</span>
+            
+                </div>
+
+              
+                <div class="clothInfo">
+                    <h3> Fabric</h3>
+                   
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+
+                </div>
+                <div class="clothInfo">
+                    <h3>color</h3>
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+                </div>
+                <div class="clothInfo">
+                    <h3>Price</h3>
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+                </div>
+                <div class="clothInfo">
+                    <h3>Discount</h3>
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+                </div>
+                <div class="clothInfo">
+                    <h3>Rating</h3>
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+                </div>
+                <div class="clothInfo">
+                    <h3>size</h3>
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+                </div>
+
+    
+     </div>
+
+                
+ </div> 
+        
+        <div id="right-section">
+            <div>
+                <img src="https://images.meesho.com/images/products/250155151/aejwe_400.webp" />
+                <h3>Unique Face makeup combo</h3>
+                <h4>Rs.199 <small>onwards</small></h>
+            </div>
+             <div>
+                <img src="https://images.meesho.com/images/products/254028582/h1ibs_400.webp">
+                <h3>Unique Face makeup combo</h3>
+                <h4>Rs.294 <small>onwards</small></h4>
+            </div> 
+            <div>
+                <img src="https://images.meesho.com/images/products/238434936/bmxrb_400.webp"/>
+                <h3>Unique Face makeup combo</h3>
+                <h4>Rs.299 <small>onwards</small></h4>
+            </div>
+            <div>
+                <img src="https://images.meesho.com/images/products/133095049/nbcmv_400.webp">
+                <h3>Unique Face makeup combo</h3>
+                <h4>Rs.261 <small>onwards</small></h4>
+            </div> 
+
+            <div>
+                <img src="https://images.meesho.com/images/products/252438219/gh5gj_400.webp" />
+                <h3>Unique Face makeup combo</h3>
+                <h4>Rs.299<small>onwards</small></h4>
+            </div>
+
+            
+            <div>
+                <img src="https://images.meesho.com/images/products/256109024/vhrza_400.webp" >
+                <h3>Unique Face makeup combo</h3>
+                <h4>Rs.407 <small>onwards</small></h4>
+            </div>
+            <div>
+                <img src="https://images.meesho.com/images/products/260665074/nsrmf_400.webp" >
+                <h3>Unique Face makeup combo</h3>
+                <h4> rs.348 <small>onwards</small></h4>
+            </div>
+            <div>
+                <img src="https://images.meesho.com/images/products/288027530/e4zxn_400.webp">
+                <h3>Unique Face makeup combo</h3>
+                <h4> <small>onwards</small></h4>
+            </div>
+            
+            
+            
+
+        </div>
+
+    </div>
+
+</body>
+</html>

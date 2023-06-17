@@ -1,145 +1,570 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MeeshoFrontPge</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-#screen{
-    border: 1px solid black;
-    width:100%;
-    height: 800px;
-}
-#navbar{
-    border: 1px solid rgb(53, 52, 52);
-    width:100%;
-    height: 80px;
-    display: flex;
-    justify-content: space-evenly;
-}
-#navbar>div:nth-child(1){
-    /* border: 1px solid blue; */
-    width:15%;
-    padding: 15px 5px 10px 0px;
-
-}
-#navbar>div:nth-child(2){
-    border:1px solid rgb(53, 52, 52);
-    width:30%;
-    height: 50px;
-    margin-top: 15px;
- 
-    border-radius: 5px;
-    margin-right: 200px;
-}
-#navbar>div:nth-child(2)>i{
-    color:rgb(184, 183, 183);
-    /* font-weight: 100; */
-}
-
-#navbar>div:nth-child(2)>input{
-    border: 1px solid rgb(231, 225, 225);
-    width:90%;
-    height: 25px;
-    margin-top: 15px;
-    border: none;
-    outline: none;
+    <link rel="stylesheet" href="./meeshoFrontpage.css">
     
-}
-#third-div{
-    /* border: 1px solid red; */
-    width:30%;
-    height: 60px;
-    display: flex;
-    justify-content: space-around;
-    margin-right: 80px;
-    margin-top: 15px;
-
-}
-#third-div>div:nth-child(1){
-    /* border: 1px solid black; */
-    width:50%;
-    display: flex;
-    justify-content: space-around;
-    padding-top: 20px;
-    border-right: 1px solid grey;
-}
-#third-div>div:nth-child(2){
-    /* border: 1px solid black; */
-    width:50%;
-    padding-top: 20px;
-    text-align: center;
-    border-right: 1px solid grey;
-
-
-
-}
-#profile{
-    /* border: 1px solid blue; */
-    width:20%;
-    display: flex;
-    justify-content: space-evenly;
-    /* margin-right:150px ; */
-
-}
-#profile>div:nth-child(1){
-    /* border: 1px solid red; */
-    width:50%;
-    padding-top: 20px;
-    
-}
-
-#profile>div:nth-child(2){
-    /* border: 1px solid red; */
-    width:50%;
-    padding-top: 20px;
-
-}
-
-    </style>
 </head>
+
 <body>
     <div id="screen">
         <div id="navbar">
             <div>
-                <img src="./meesho1.png" alt="meeshoIMG">
+                <img src="./meeshoLogo.png" alt="meeshoIMG">
             </div>
             <div>
                 <i class="fa-solid fa-magnifying-glass fa-xl"></i>
                 <input type="search" placeholder="Try Saree,Kurti or Search by Product Code">
-            
+
 
             </div>
-            <div id="third-div">
+            <div id="app-supplier">
                 <div>
                     <i class="fa-solid fa-mobile-screen-button"></i>
                     <p>Download App</p>
-                   </div>
-                   <div>
+                </div>
+                <div>
                     <p>Become Supplier</p>
-                   </div>
+                </div>
             </div>
-           <div id="profile">
-            <div>
-                <i class="fa-regular fa-user"></i>
-                <p>Profile</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-cart-shopping"></i>
-                <p>Cart</p>
-            </div>
-            
+            <div id="profile">
+                <div>
+                    <i class="fa-regular fa-user"></i>
+                    <p>Profile</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Cart</p>
+                </div>
 
-           </div>
+
+            </div>
         </div>
-        <div id="body"></div>
-        <div>footer</div>
+        <div id="navi">
+
+            <p><a href="./meeshoWomen Ethnic.html">Women Ethnic</a></p>
+            <p><a href="./meeshoWomenWestern.html">Women Western</a></p>
+            <p><a href="./MeeshoMen.html">Men</a></p>
+             <p><a href="./Meesho Kids.html">Kids</a></p>
+            <p><a href="./meeshoKitchen.html">Home & Kitchen</a></p>
+            <p><a href="./meeshoBeauty.html">Beauty & Health</a></p>
+            <p><a href="./meeshoJwellery.html">Jewellery & Accessories</a></p>
+            <p><a href="./meesho women bag.html">Bags & Footwear</a></p>
+            <p><a href="./meesho Electronic.html">Electronics</a></p>
+
+        </div>
+        <div id="main">
+            <div>
+
+                <h1>Lowest Prices
+                    Best Quality Shopping</h1>
+                <div id="Delivery">
+
+                    <img src="https://images.meesho.com/images/pow/freeDelivery_jamun.svg" />
+                    <h2 class="border-right">Free Delivery</h2>
+                    <img src="https://images.meesho.com/images/pow/cod_jamun.svg" />
+                    <h2 class="border-right">Cash on Delivery</h2>
+                    <img src="https://images.meesho.com/images/pow/easyReturns_jamun.svg" />
+                    <h2>Easy Returns</h2>
+                </div>
+                <!-- <div id="meesho-app-btn"> -->
+                    <!-- <img src="https://images.meesho.com/images/pow/playstoreSmallIcon.png" /> -->
+                    <button id="meesho-app-btn">Download the Meesho App</button>
+
+                <!-- </div> -->
+
+            </div>
+            <img src="https://images.meesho.com/images/marketing/1686234459500_512.webp" />
+
+        </div>
+        <h1 id="category">Top Categories to choose from</h1>
+        <div id="top-cat">
+            <div>
+                <img src="https://images.meesho.com/images/marketing/1678691686252_400.webp" alt="women-store">
+            </div>
+
+
+            <div>
+
+                <img src="https://images.meesho.com/images/marketing/1678691699680_300.webp" alt="men-store">
+
+
+                <img src="https://images.meesho.com/images/marketing/1678691712594_300.webp" alt="kids-store">
+            </div>
+        </div>
+
+        <div id="essential">
+
+            <img class="view-all" src="https://images.meesho.com/images/marketing/1678691759889_200.webp" />
+
+            <div id="essential-divs">
+                <div>
+                    <img src="https://images.meesho.com/images/marketing/1678691846068_200.webp" />
+                    <img class="essential-img"
+                        src="https://images.meesho.com/images/marketing/1678691858580_150.webp" />
+                </div>
+
+                <div>
+                    <img src="https://images.meesho.com/images/marketing/1678691832099_200.webp" />
+                    <img class="essential-img"
+                        src="https://images.meesho.com/images/marketing/1678691818629_150.webp" />
+                </div>
+
+                <div>
+                    <img src="https://images.meesho.com/images/marketing/1678691796046_200.webp" />
+                    <img class="essential-img"
+                        src="https://images.meesho.com/images/marketing/1678691781261_150.webp" />
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+        <div id="new-style">
+            <img class="view-all" src="https://images.meesho.com/images/marketing/1678691903873_200.webp" />
+
+            <div id="new-style-Divs">
+                <div>
+                    <img src="https://images.meesho.com/images/marketing/1678691960553_200.webp" />
+                    <img class="new-style-img"
+                        src="https://images.meesho.com/images/marketing/1678691971903_150.webp" />
+                </div>
+                <div>
+                    <img src="https://images.meesho.com/images/marketing/1678691936892_200.webp" />
+                    <img class="new-style-img"
+                        src="https://images.meesho.com/images/marketing/1678691948963_150.webp" />
+
+                </div>
+                <div>
+                    <img src="https://images.meesho.com/images/marketing/1678691925419_200.webp" />
+                    <img class="new-style-img"
+                        src="https://images.meesho.com/images/marketing/1678691914513_150.webp" />
+
+                </div>
+
+            </div>
+
+        </div>
+             <!-- <div id="download-app-banner">
+                <img src="https://images.meesho.com/images/pow/downloadBannerDesktop_1050.webp"/>
+                <div>
+                    <h4>Become a Reseller and</h4>
+                    <h1 class="business-invest">Start your Online Business</h1>
+                    <h1 class="business-invest">With Zero Investment</h1>
+                    <div>
+                        <img src="https://images.meesho.com/images/pow/playstoreIcon_500.webp" alt="google play">
+                        <img src="https://images.meesho.com/images/pow/appstoreIcon_500.webp" alt="App store">
+                    </div>
+                </div>
+             </div>
+
+        <div id="supply-container">
+            <img src="https://images.meesho.com/images/pow/supplyBannerDesktop_1106.webp" alt="supply-container">
+              <div>
+                <h3>Register as a Meesho</h3>
+                <h3>supplier</h3>
+                <p>Sell Your Product to crores of customers at 0%</p>
+                 <p>Commission</p>
+              </div>
+        </div> -->
+        <h2 style="font-size: 32px;font-weight: 400;color:rgb(39, 37, 37)">Products For You</h2>
+        <div id="left-right-part">
+            <div id="left-section">
+                <div>
+                    <p style="color:rgb(87, 79, 79);">Sort by : <b>Relevance</b></p>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div>
+                    <h5>FILTERS</h5>
+                    <P>1000+ Products</P>
+                   
+                    <span>Category</span>
+                    
+                    <div id="category-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" placeholder="Search">
+
+                    </div>
+                     <div id="product">
+                    <div>
+                        <input class="checkbox" type="checkbox">
+                    Analog Watches
+                    </div>
+
+                    <div>
+                        <input class="checkbox" type="checkbox">
+                        Bangles & Bracelets
+                    </div>
+
+                    <div>
+                        <input class="checkbox" type="checkbox">
+                    Bathing Soaps
+                    </div>
+
+                    <div>
+                        <input class="checkbox" type="checkbox">
+                        Bedsheets
+                    </div>
+
+                    <div>
+                        <input class="checkbox" type="checkbox">
+                        Bike Covers
+                    </div>
+
+                    <div>
+                        <input class="checkbox" type="checkbox">
+                        Blouses
+                    </div>
+
+                    <div>
+                        <input class="checkbox" type="checkbox">
+                         Bluetooth Headphones
+                    </div>
+
+                    <div>
+                        <input class="checkbox" type="checkbox">
+                        Body Lotions & Creams
+                        </div>
+
+                    <div>
+                        <input class="checkbox" type="checkbox">
+                        Bra
+                    </div>
+
+                    <div>
+                        <input class="checkbox" type="checkbox">
+                        Car Covers
+                    </div>
+
+                    <div>
+                        <input class="checkbox" type="checkbox">
+                        Cups & Mugs
+                    </div>
+
+                    <div>
+                        <input class="checkbox" type="checkbox">
+                        Dresses
+                    </div>
+                    <div id="show-more"> Show More</div>
+                    </div>
+
+                  
+                    <div class="categoryOFproduct">
+                        Gender
+                        <!-- <i class="fa-solid fa-angle-down"></i> -->
+
+                    </div>
+
+                    <div class="categoryOFproduct">
+                    Fabric
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+
+                   </div>
+                    <div class="categoryOFproduct">
+                       OxFords
+                        <!-- <i class="fa-solid fa-angle-down"></i> -->
+                    </div>
+                     <div class="categoryOFproduct">
+                        dail_shape
+                        <!-- <i class="fa-solid fa-angle-down"></i> -->
+                     </div>
+                   
+                     <div class="categoryOFproduct">
+                        color
+                        
+                        <!-- <i class="fa-solid fa-angle-down"></i> -->
+    
+                     </div>
+                    
+                     <div class="categoryOFproduct">
+                        Price
+                      
+                        <!-- <i class="fa-solid fa-angle-down"></i> -->
+                     </div>
+                    
+                    <div class="categoryOFproduct">
+                        Meesho Mall
+                        <!-- <i class="fa-solid fa-angle-down"></i> -->
+                    </div>
+
+                    <div class="categoryOFproduct">
+                          Occasion
+                       
+                        <!-- <i class="fa-solid fa-angle-down"></i> -->
+    
+                    </div>
+                    <div class="categoryOFproduct">
+                        Combo of
+                        <!-- <i class="fa-solid fa-angle-down"></i> -->
+    
+                    </div>
+                    <div class="categoryOFproduct">
+                        Kurta_Fabric
+                        <!-- <i class="fa-solid fa-angle-down"></i> -->
+                    </div>
+                    <div class="categoryOFproduct">
+                    
+                    Dupatta color
+                                         
+                        <!-- <i class="fa-solid fa-angle-down"></i> -->
+                    </div>
+
+                   <div class="categoryOFproduct">
+                    Discount
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+                </div>
+
+                   <div class="categoryOFproduct">
+                    Rating
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+                </div>
+
+                   <div class="categoryOFproduct">
+                    Size
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+                </div>
+
+                   <div class="categoryOFproduct">
+                    Combo
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+
+                   </div>
+                   <div class="categoryOFproduct">
+                Operating_Voltage
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+                </div>
+
+                   <div class="categoryOFproduct">
+                    Power_consumption
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+
+                   </div>
+                   <div class="categoryOFproduct">
+                    Reversible
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+                </div>
+
+                   <div class="categoryOFproduct">
+                    used_for
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+
+                   </div>
+                   <div class="categoryOFproduct">
+                    body_material
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+
+                   </div>
+                   <div class="categoryOFproduct">
+                    Material
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+                </div>
+                   <div class="categoryOFproduct">
+                    Bottom Length
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+
+                   </div>
+
+                   <div class="categoryOFproduct">
+                    Print or Pattern Type
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+
+                   </div>
+                   <div class="categoryOFproduct">
+                    Bottom Style
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+
+                   </div>
+                   <div class="categoryOFproduct">
+                    Bottomwaer Fabric
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+                </div>
+
+                   <div class="categoryOFproduct">
+                Ornamentation
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+
+                   </div>
+                   <div class="categoryOFproduct">
+                Bottom Pattern Type
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+                </div>
+                   <div class="categoryOFproduct">
+                    Border
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+
+                   </div>
+                   <div class="categoryOFproduct">
+                    Surface Styling
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+
+                   </div>
+                   <div class="categoryOFproduct">
+                    Back Type
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+                </div>
+                   
+                   <div  class="categoryOFproduct">
+                    Top Pattern
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+                </div>
+                   <div class="categoryOFproduct">
+                    Fit/shape
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+
+                   </div>
+                   
+                   <div class="categoryOFproduct">
+                    Inner Fabric
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+
+                   </div>
+                   <div class="categoryOFproduct">
+                    Loom Type
+                    <!-- <i   style="margin: 10px 0px 5px 150px;" class="fa-solid fa-angle-down"></i> -->
+
+                   </div>
+                   <div class="categoryOFproduct">
+                    Top Type
+                    <!-- <i  style="margin: 10px 0px 5px 160px;" class="fa-solid fa-angle-down"></i> -->
+                </div>
+                   <div class="categoryOFproduct">
+                    Brands
+                    <!-- <i  style="margin: 10px 0px 5px 175px;" class="fa-solid fa-angle-down"></i> -->
+                </div>
+                   <div class="categoryOFproduct">
+                    Compatible Mode
+                    <!-- <i  style="margin: 10px 0px 5px 110px;" class="fa-solid fa-angle-down"></i> -->
+                </div>
+                   <div class="categoryOFproduct">
+                    Warranty Period                    
+                    <!-- <i  style="margin: 10px 0px 5px 120px;" class="fa-solid fa-angle-down"></i> -->
+                </div>
+                </div>
+
+                    
+
+
+            
+            
+                    
+                    
+            </div> 
+            
+            <div id="right-section">
+                <div>
+                    <img src="https://images.meesho.com/images/products/103713364/0ioi6_400.webp"/>
+                    <h3>Classy Graceful Women Dresses</h3>
+                    <h4>Rs.199 <small>onwards</small></h>
+                </div>
+                 <div>
+                    <img src="https://images.meesho.com/images/products/118678740/bcrp0_400.webp"/>
+                    <h3>Ethnic Men Kurtas</h3>
+                    <h4>Rs.294 <small>onwards</small></h4>
+                </div> 
+                <div>
+                    <img src="https://images.meesho.com/images/products/59578636/7to43_400.webp">
+                    <h3>Bluetooth Headphones & Earphones</h3>
+                    <h4>Rs.299 <small>onwards</small></h4>
+                </div>
+                <div>
+                    <img src="https://images.meesho.com/images/products/70393359/7x5uz_400.webp" />
+                    <h3>Pretty Modern Women Dress</h3>
+                    <h4>Rs.261 <small>onwards</small></h4>
+                </div> 
+
+                <div>
+                    <img src="https://images.meesho.com/images/products/22486015/1a522_400.webp" />
+                    <h3>Cutiepie Elegant Kids pants</h3>
+                    <h4>Rs.322 <small>onwards</small></h4>
+                </div>
+                <div>
+                    <img src="https://images.meesho.com/images/products/156967649/tuiao_400.webp" />
+                    <h3>Cutiepie Elegant Kids pants</h3>
+                    <h4>Rs.322 <small>onwards</small></h4>
+                </div>
+
+                
+                <div>
+                    <img src="https://images.meesho.com/images/products/31536766/ltqhe_400.webp" />
+                    <h3>Red mini Matte Waterproof Lipstick</h3>
+                    <h4>Rs.110 <small>onwards</small></h4>
+                </div>
+
+                
+                <div>
+                    <img src="https://images.meesho.com/images/products/72925220/k2k8q_400.webp" />
+                    <h3>Pretty Ravishing Women T-shirt</h3>
+                    <h4> Rs.161 <small>onwards</small></h4>
+                </div>
+
+                
+                <div>
+                    <img src=https://images.meesho.com/images/products/293074521/uwn39_400.webp />
+                    <h3>Stylo Water Bottles</h3>
+                    <h4>Rs. 299<small>onwards</small></h4>
+                </div>
+
+                
+                <div>
+                    <img src="https://images.meesho.com/images/products/74889023/1wa7n_400.webp"/>
+                    <h3>Modern Fashinable Women Slippers</h3>
+                    <h4>Rs.353<small>onwards</small></h4>
+                </div>
+
+                
+                <div>
+                    <img src="https://images.meesho.com/images/products/284384943/h9upc_400.webp" />
+                    <h3>Myra Voguish Women Kurta Set</h3>
+                    <h4>Rs.299<small>onwards</small></h4>
+                </div>
+
+                
+                <div>
+                    <img src="https://images.meesho.com/images/products/215557664/mmdez_400.webp"/>
+                    <h3>Voguish Versatile Women Slingbags</h3>
+                    <h4> <small>onwards</small></h4>
+                </div>
+
+                
+                <div>
+                    <img src="https://images.meesho.com/images/products/145168739/ozktv_400.webp" />
+                    <h3>Kashvi Sensational Women Kurta Set</h3>
+                    <h4>Rs.549 <small>onwards</small></h4>
+                </div>
+
+                
+                <div>
+                    <img src="https://images.meesho.com/images/products/142754375/ehexo_400.webp" />
+                    <h3>Preety Moder Women Capes,Shrugs & Ponchos</h3>
+                    <h4>Rs.407 <small>onwards</small></h4>
+                </div>
+                <div>
+                    <img src="https://images.meesho.com/images/products/227443296/sxxkp_400.webp" />
+                    <h3>Trendy Designer Women Tops & tunics</h3>
+                    <h4> rs.348 <small>onwards</small></h4>
+                </div>
+                <div>
+                    <img src="https://images.meesho.com/images/products/287062641/rdwcl_400.webp" />
+                    <h3>Stylish Modern Women T-shirt</h3>
+                    <h4> <small>onwards</small></h4>
+                </div>
+                
+                
+                
+
+            </div>
+
+        </div>
     </div>
 </body>
+
 </html>

@@ -4,26 +4,19 @@
 
     var start = 8723;
 var end = 6567;
-// 2, 5, and 10
-
- function twoStage(start,end) {
-
-var filteredArray[]
-    for (var i = start; i <= end; i++) {
-        if (i % 5 == 0) {
-            result.push(i)
-            // console.log(i)
+function twostage(start,end){
+    var fileredArray = [];
+    var result = [];
+    for(var i = start; i>= end;i--){
+        if ([i] % 2 == 0 && [i] % 5 == 0 && [i] % 10 ==0){
+            fileredArray.push([i]);
         }
     }
-    console.log(result,"- res")
+    // console.log(fileredArray);
+    for(var j=0; j<fileredArray.length;j++){
+        // console.log(fileredArray[j])
+        result.push(fileredArray[j+=1])
+    }
+    console.log(result)
 }
-twoStage(start, end)
-
-
-
-
-
-
-var filteredArray = [100, 110, 120, 130, 140, 150]  //  2, 5, and 10 = 100
-
-var result = [110, 130, 150]
+twostage(start,end)

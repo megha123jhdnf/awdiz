@@ -144,3 +144,11 @@ function number(array){
 }
 number(givenArray)
 
+
+
+
+
+
+
+
+2.

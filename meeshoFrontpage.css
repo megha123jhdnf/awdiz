@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, "Helvetica Neue", sans-serif, "Mier Book";
+
+}
+
+#screen {
+    /* border: 1px solid black; */
+    width: 100%;
+    /* height: 800px; */
+}
+
+#navbar {
+    /* border: 1px solid rgb(53, 52, 52); */
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#navbar>div:nth-child(1) {
+    /* border: 1px solid blue; */
+    width: 15%;
+    margin: 15px 10px 10px 25px;
+
+}
+
+#navbar>div:nth-child(2) {
+    border: 1px solid rgb(46, 46, 53);
+    width: 30%;
+    height: 40px;
+    margin: 20px 25px 15px 10px;
+    border-radius: 5px;
+
+
+
+}
+
+#navbar>div:nth-child(2)>i {
+    color: rgb(184, 183, 183);
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#navbar>div:nth-child(2)>input {
+    border: 1px solid rgb(202, 197, 197);
+    width: 90%;
+    height: 30px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+
+}
+
+#app-supplier {
+    /* border: 1px solid red; */
+    width: 25%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px 10px 15px 100px;
+}
+
+#app-supplier>div:nth-child(1) {
+    /* border: 1px solid black; */
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    color: #353543;
+    font-size: 16px;
+    font-weight: 500;
+    border-right: 1px solid grey;
+}
+
+#app-supplier>div:nth-child(2) {
+    /* border: 1px solid black; */
+    width: 50%;
+    padding-top: 20px;
+    text-align: center;
+    color: #353543;
+    font-size: 16px;
+    font-weight: 500;
+    border-right: 1px solid grey;
+
+
+
+}
+
+#profile {
+    /* border: 1px solid blue; */
+    width: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    color: #353543;
+    font-size: 16px;
+    font-weight: 500;
+
+
+}
+
+#profile>div:nth-child(1) {
+    /* border: 1px solid red; */
+    width: 50%;
+    padding-top: 20px;
+
+}
+
+#profile>div:nth-child(2) {
+    /* border: 1px solid red; */
+    width: 50%;
+    padding-top: 20px;
+
+}
+
+#navi {
+    border: 1px solid rgb(168, 164, 164);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px;
+    color: #353543;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+#navi>p a{
+    text-decoration: none;
+    border: none;
+    color:black;
+}
+
+
+#main {
+    /* border: 1px solid red; */
+    width: 80%;
+    display: flex;
+    margin: auto;
+    margin-top: 45px;
+    background-color: rgb(248, 248, 255);
+    border-radius: 4px;
+}
+
+#main h1 {
+    /* border: 1px solid blue; */
+    padding: 25px 25px 20px 30px;
+    color: rgb(53, 53, 67);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 52px;
+}
+
+#Delivery {
+    /* border: 2px solid brown; */
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    height: 50px;
+    margin-left: 40px;
+    font-size: 10px;
+    background-color: #ffffff;
+
+}
+
+#Delivery>img {
+    width: 30px;
+}
+
+#Delivery h2 {
+    /* border: 2px solid black; */
+    width: 19%;
+    color: rgb(75, 75, 78);
+    font-weight: 700;
+    line-height: 20px;
+
+}
+
+.border-right {
+    border-right: 1px solid grey;
+}
+
+
+#category {
+    /* border: 1px solid red; */
+    width: 40%;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-size: 35px;
+    color: rgb(53, 53, 67);
+
+}
+
+#meesho-app-btn {
+    /* border: 1px solid red; */
+    width: 60%;
+    height: 15%;
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(156, 15, 156);
+    font-weight: 600;
+    border-radius: 4px;
+    border: none;
+}
+
+
+
+
+#top-cat {
+    /* border: 1px solid red; */
+    width: 80%;
+    margin: auto;
+    display: flex;
+    background-image: url(https://images.meesho.com/images/marketing/1678691670429_1200.webp);
+    border-radius: 4px;
+}
+
+#top-cat>div:nth-child(1) {
+    /* border:1px solid blue; */
+    margin-top: 10%;
+    margin-left: 2%;
+}
+
+#top-cat>div:nth-child(2) {
+    /* border: 1px solid red; */
+    margin-top: 23%;
+    margin-left: 20px;
+
+}
+
+#essential {
+    background-image: url(https://images.meesho.com/images/marketing/1678691743015_1200.webp);
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 4px;
+}
+
+.view-all {
+    /* border: 1px solid red; */
+    width: 165px;
+    height: 60px;
+    margin-top: 22%;
+    margin-left: 10%;
+}
+
+#essential-divs {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly
+}
+
+.essential-img {
+    /* border: 1px solid red;  */
+    margin-left: 25px;
+
+}
+
+
+
+
+#new-style {
+    background-image: url(https://images.meesho.com/images/marketing/1678691892265_1200.webp);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+#new-style-Divs {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.new-style-img {
+    margin-left: 25px;
+
+}
+ /* #download-app-banner h4{
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+ }
+
+*/
+#left-right-part{
+/* border:1px solid red; */
+width:100%;
+display: flex;
+justify-content: space-around;
+
+}
+#left-section{
+/* border: 1px solid rgb(160, 153, 153); */
+width:25%;
+}
+#left-section>div:nth-child(1){
+border: 1px solid rgb(163, 161, 161);
+display: flex;
+justify-content: space-between;
+width: 90%;
+height: 30px;
+margin:10px 10px 20px 20px;
+padding-top: 5px;
+border-radius: 4px;
+}
+#left-section>div:nth-child(1) i{
+    /* border: 1px solid gray; */
+    margin-right:10px;
+
+}
+#left-section>div:nth-child(1) b{
+color:#404046;
+
+}
+#left-section>div:nth-child(2){
+  border: 1px solid gray; 
+
+}
+#left-section>div:nth-child(2) h5{
+    /* border: 1px solid gray; */
+    margin-top: 15px;
+    margin-left: 20px;
+    color:#404046;
+    font-size: 16px;
+}
+#left-section>div:nth-child(2) p{
+    font-size: 12px;
+    color:#353543;   
+    margin:8px 10px 20px 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid  rgb(163, 161, 161);
+}
+    
+    #left-section>div:nth-child(2) span{
+        /* border: 1px solid gray;  */
+        font-size: 18px;
+        color:#33333a;  
+        font-weight: 600;
+        margin:8px 10px 30px 20px;
+
+    }
+    #category-search{
+        border: 1px solid gray; 
+        width:90%;
+        height: 40px;
+        margin: 10px 10px 20px 20px;
+        border-radius: 4px;
+     }
+     #category-search >i{
+        margin: 10px;
+        
+     }
+     #category-search>input{
+        width:80%;
+        height: 30px;
+        border: none;
+        outline: none;
+     }
+    #product{
+        /* border: 1px solid gray;  */
+        width:100%;
+        height: auto;
+        /* margin:10px 10px 20px 20px; */
+
+    }
+    #product>div{
+        margin: 10px 10px 20px 20px;
+        font-size: 16px;
+         color: #484858;
+         font-weight: 700;
+        line-height: 1.8em;
+    }
+    #product>div>input{
+        margin-right: 15px;
+        margin-left: 20px;
+    }
+    #show-more{
+        color:purple;
+        margin-left: 70px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgb(202, 198, 198);
+    }
+ .categoryOFproduct{
+    /* border: 1px solid red; */
+    width:80%;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    font-size: 18px;
+    color: #0c0b0b;
+    font-weight: 500;
+   
+ }
+ #right-section{
+    border: 1px solid rgb(218, 208, 208);
+    width:70%;
+    height:80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+ }
+ #right-section>div{
+    /* border:1px solid blue; */
+    width: 22%;
+    height: 350px; 
+    margin-bottom: 30px; 
+    margin-top: 15px;
+    line-height: 1em; 
+    
+   
+
+ }
+ #right-section>div>:hover{
+    border: 1px solid rgb(199, 196, 196);
+ }
+ #right-section>div>img{
+    width: 100%;
+    height: 75%;
+   
+ }
+ #right-section>div>h3{
+    color: #404046;
+    font-size: 14px;
+ }
+ #right-section>div>h4{
+    font-size: 16px;
+    margin-top: 10px;
+   
+ }
+ #right-section>div>h4 small{
+    color:#404046;
+
+ }
+ 
