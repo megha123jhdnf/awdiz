@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+#screen {
+    border: 1px solid grey;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#navbar {
+    border: 1px solid rgb(230, 217, 217);
+    width: 25%;
+    height: 100%;
+    overflow: scroll;
+    position: fixed;
+    margin-right: 80%;
+
+}
+
+#navbar>div:nth-child(1) {
+    margin: 20px 0px 20px 40px;
+    color: rgb(96, 188, 224);
+
+}
+
+#navbar>div:nth-child(2)>div {
+    border: 1px solid grey;
+    margin: 25px 0px 20px 40px;
+    font-size: 22px;
+    border: none;
+
+}
+
+#navbar>div:nth-child(2)>div:nth-child(1)>span {
+    color: black;
+}
+
+#navbar>div:nth-child(2)>div>i {
+    margin-right: 15px;
+}
+
+#tweetBtn {
+    border: 1px solid grey;
+    background-color: rgb(44, 184, 240);
+    width: 70%;
+    height: 45px;
+    margin: auto;
+    border-radius: 20px;
+    /* border-bottom: 20px; */
+    border: none;
+
+}
+
+#tweetBtn>p {
+    padding-top: 5%;
+    padding-left: 35%;
+    /* text-align: center; */
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+
+}
+#profile-name{
+    margin:10px 0px 10px 35px;
+    
+}
+#Explore{
+    border:1px solid rgb(221, 215, 215);
+    width:40%;
+    margin-right: 10%;
+    
+}
+#Explore>div:nth-child(1){
+    border:1px solid rgb(238, 232, 232);
+ 
+}
+#Explore>div:nth-child(1)>div:nth-child(1){
+    /* border:1px solid rgb(238, 232, 232); */
+    background-color: rgb(242, 242, 247);
+    width:80%;
+    height: 40px; 
+    margin-top: 15px;
+    margin-left: 25px;
+    border-radius: 20px;
+
+}
+#Explore>div:nth-child(1)>div:nth-child(1)>i{
+     margin-left: 10px;
+    margin-top:10px;
+
+}
+#Explore>div:nth-child(1)>div:nth-child(1)>input{
+    background-color: rgb(242, 242, 247);
+    font-size: 16px;
+    margin-left: 15px;
+    color:rgb(119, 110, 110);
+    border: none;
+
+    
+}
+#Explore>div:nth-child(1)>div:nth-child(2){
+    /* border:1px solid rgb(221, 215, 215); */
+    margin-top: 15px;
+    margin-left: 10px;
+    color:rgb(138, 132, 132);
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+#Explore>div:nth-child(1)>div:nth-child(2)>span{
+    margin-left: 40px;
+
+}
+#Explore>div:nth-child(1)>div:nth-child(2)>span:hover{
+    background-color: rgb(242, 242, 247);
+}   
+
+#Explore>div:nth-child(2){
+    border: 1px solid rgb(240, 237, 237);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#Explore>div:nth-child(2)>div{
+     margin-top: 20px;
+     margin-left: 20px;
+}
+
+#Explore>div:nth-child(2)>div>p:nth-child(1),p:nth-child(3){
+        font-size: 14px;
+        font-weight: 400;
+        color:rgb(82, 68, 68);
+}
+#Explore>div:nth-child(2)>div>p:nth-child(2){
+    font-size: 16px;
+    font-weight: 700;
+    color:rgb(82, 68, 68);
+}
+#Explore>div:nth-child(2)>div>p:nth-child(3)>span{
+    color:rgb(66, 188, 236);
+    font-weight: 600;
+}
+#Explore>div:nth-child(3)>h4{
+
+    margin: 20px 0px 15px 20px;
+    font-size: 20px;
+}
+#Explore>div:nth-child(3)>div:nth-child(2){
+    /* border:1px solid red; */
+    width:100%;
+    display: flex;
+}
+#Explore>div:nth-child(3)>div>div:nth-child(1)>img{
+    width:30px;
+    border: 1px solid rgb(245, 239, 239);
+
+    
+}
+#Explore>div:nth-child(3)>div>div:nth-child(2)>p i{
+    background-color: rgb(58, 185, 235);
+}
+#Explore>div:nth-child(3)>div>div:nth-child(2)>p{
+    font-size: 18px;
+    font-weight: 600;
+}
+#Explore>div:nth-child(3)>div:nth-child(3)>p{
+   font-size: 16px;
+   margin-left: 20px;
+}
+.center{
+    line-height: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#last{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color:skyblue;
+}
+#Explore>div:nth-child(3)>img{
+    border: 1px solid rgb(245, 239, 239);
+    border-radius: 10px;
+    margin-left: 50px;
+    width:80%;
+    height: 90%;
+}
+
+.reply-icon{
+    margin-left: 20px;
+    margin-bottom: 25px;
+
+}
+.reply-icon>i{
+    margin-left: 30px;
+}
+#fashion-beauty{
+    border: 1px solid rgb(247, 241, 241);
+}
+#fashion-beauty:hover{
+    background-color: rgb(242, 242, 247);
+
+}
+#fashion-beauty>h6{
+    margin: 20px 0px 15px 20px;
+    font-size: 18px;
+}
+#louis-vuitton{
+    border: 1px solid rgb(212, 208, 208);
+    
+
+}
+#louis-vuitton>div:nth-child(1){
+    display: flex;
+
+}
+#louis-vuitton>div:nth-child(1)>div:nth-child(2){
+    display: flex;
+
+}
+#louis-vuitton>div:nth-child(1)>div:nth-child(1)>img{
+    /* border: 1px solid rgb(223, 217, 217); */
+    width:30px;
+    margin:5px 0px 5px 5px;
+}
+#louis-vuitton>div:nth-child(1)>div:nth-child(2)
+>p:nth-child(1){
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+}
+#louis-vuitton>div:nth-child(1)>div:nth-child(2)
+>p:nth-child(2){
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(37, 35, 35);
+    margin-left: 10px;
+}
+#louis-vuitton>div:nth-child(2){
+    /* border: 1px solid red; */
+    color: rgb(110, 105, 105);
+    font-weight: 400;
+    margin-left: 20px;
+
+}
+
+#louis-vuitton>div:nth-child(2)>p:nth-child(2)>span{
+    color:rgb(33, 179, 236);
+
+}
+#louis-vuitton>div:nth-child(2)>p:nth-child(4)>span{
+    color:rgb(33, 179, 236);
+}
+#louis-vuitton>div:nth-child(2)>p:nth-child(5){
+    color:rgb(33, 179, 236);
+    margin-top: 20px;
+
+}
+#louis-vuitton>div:nth-child(3)>img{
+    width:85%;
+    height: 460px;
+    margin-left: 40px;
+    /* border: 1px solid red; */
+}
+
+#right-part{
+    border:1px solid rgb(170, 165, 165);
+    background-color: rgb(242, 242, 247);
+    width:25%;
+    height:320px;
+    border-radius: 20px;
+    /* height: 100%; */
+    /* overflow: scroll; */
+    position: fixed;
+    margin-left: 70%;
+}
+#right-part>h4{
+    margin:20px 0px 15px 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+#right-part>div>div:nth-child(1)>img{
+    /* border:1px solid red; */
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 5px;
+
+
+}
+.accountSuggest{
+    display: flex;
+    margin-bottom: 25px;
+    
+}
+.accountSuggest>div:nth-child(2)>p:nth-child(1){
+ color:rgb(51, 49, 49);
+ font-weight: 700;
+ 
+
+}
+.accountSuggest>div:nth-child(2)>p:nth-child(2){
+    margin-left: 10px;
+    color:rgb(128, 121, 121);
+    font-weight: 500;
+}
+.accountSuggest>div:nth-child(3){
+    border:1px solid rgb(51, 49, 49);
+    background-color: black;
+    color:white;
+    width: 35%;
+    height: 30px;
+    margin-left: 40%;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 20px;
+}
+#showMore{
+    color:rgb(49, 173, 223);
+    font-size: 16px;
+    font-weight: 700;
+    margin-top:5px;
+    margin-left: 5px;
+    padding-bottom: 10px;
+}
+#Policy{
+    margin-top: 50px;
+    font-size: 16px;
+    color:rgb(112, 107, 107);
+    font-weight: 400;
+}

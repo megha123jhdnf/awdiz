@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    font: 14px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+
+
+}
+#screen{
+    /* background-color: rgb(252, 250, 248); */
+    width: 100%;
+    height: 100%;
+
+}
+#twitterLogin{
+    border: 1px solid rgb(236, 230, 230);
+    background-color: white;
+    width:40%;
+    height: 600px;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 40px;
+
+}
+#twitterLogin>div:nth-child(1){
+    width:20%;
+    margin-left:45%;
+    margin-top: 20px;
+    color:rgb(116, 202, 236);
+ 
+}
+#signintwitter{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#google-sign{
+
+    border: 1px solid rgb(128, 128, 128);
+    width:60%;
+    display: flex;
+    height: 40px;
+    margin: 20px 20px 10px 110px;
+    border-radius: 40px;
+  
+
+
+}
+#google-sign>img{
+    border: 1px solid grey;
+    /* background-color: white; */
+    width:10%;
+    height: 30px;
+    margin-left: 20%;
+    margin-top: 5px;
+    border: none;
+
+}
+#google-sign>p{
+    border: 1px solid grey;
+    width:50%;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    background-color:white;
+}
+
+
+#twitterLogin>div:nth-child(4){
+    border: 1px solid grey;
+    width:60%;
+    height: 40px;
+    margin: 25px 20px 15px 110px;
+    border-radius: 40px;
+
+}
+#twitterLogin>div:nth-child(4)>button{
+
+    border: 1px solid grey;
+    width:50%;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    background-color:white;
+}
+
+#twitterLogin>div:nth-child(4)>i{
+    margin-left: 60px;
+    margin-top: 10px; 
+}
+#or{
+    text-align: center;
+    font-size: 17px;
+    /* border-left: 10px; */
+}
+#searchtype{
+    border: 1px solid grey;
+    width:60%;
+    height: 40px;
+    margin: 25px 20px 15px 110px;
+    border-radius: 2px;
+    
+
+}
+#searchtype>input{
+    width:70%;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+}
+#next{
+    border: 1px solid grey;
+    width:60%;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 110px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 40px;
+    background-color: rgb(31, 28, 28);
+    color:white;
+    font-size: 18px;
+   
+}
+#forgotP{
+    border: 1px solid grey;
+    width:60%;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 110px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 40px; 
+    font-size: 18px;
+    color:  rgb(59, 57, 57);
+    background-color: white;
+}
+#signin-Account{
+    color:  rgb(88, 85, 85);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+#signin-Account>a{
+    text-decoration: none;
+}
+

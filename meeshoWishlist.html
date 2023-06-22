@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meesho wishlist</title>
+    <style>
+        
+#screen {
+    /* border: 1px solid black; */
+    width: 100%;
+    /* height: 800px; */
+}
+
+#navbar {
+    /* border: 1px solid rgb(53, 52, 52); */
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#navbar>div:nth-child(1) {
+    /* border: 1px solid blue; */
+    width: 15%;
+    margin: 15px 10px 10px 25px;
+
+}
+
+#navbar>div:nth-child(2) {
+    border: 1px solid rgb(46, 46, 53);
+    width: 30%;
+    height: 40px;
+    margin: 20px 25px 15px 10px;
+    border-radius: 5px;
+
+
+
+}
+
+#navbar>div:nth-child(2)>i {
+    color: rgb(184, 183, 183);
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#navbar>div:nth-child(2)>input {
+    border: 1px solid rgb(202, 197, 197);
+    width: 90%;
+    height: 30px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+
+}
+
+#app-supplier {
+    /* border: 1px solid red; */
+    width: 25%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px 10px 15px 100px;
+}
+
+#app-supplier>div:nth-child(1) {
+    /* border: 1px solid black; */
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    color: #353543;
+    font-size: 16px;
+    font-weight: 500;
+    border-right: 1px solid grey;
+}
+#app-supplier>div:nth-child(1)>i{
+    padding-top: 15px;
+}
+
+#app-supplier>div:nth-child(2) {
+    /* border: 1px solid black; */
+    width: 50%;
+    padding-top: 10px;
+    text-align: center;
+    color: #353543;
+    font-size: 16px;
+    font-weight: 500;
+    border-right: 1px solid grey;
+
+
+
+}
+
+#profile {
+    /* border: 1px solid blue; */
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    color: #353543;
+    font-size: 16px;
+    font-weight: 500;
+
+
+}
+#profile>div a{
+    text-decoration: none;
+    color:#33333a;
+}
+#profile>div:nth-child(1) {
+    /* border: 1px solid red; */
+    width: 30%;
+    padding-top: 20px;
+    margin-right: 15px;
+
+}
+
+#profile>div:nth-child(2) {
+    /* border: 1px solid red; */
+    width: 30%;
+    padding-top: 35px;
+    margin-right: 15px;
+}
+
+#profile>div:nth-child(3){
+    /* border: 1px solid red; */
+    width: 30%;
+    padding-top: 20px;
+    margin-right: 15px;
+
+
+}
+
+#navi {
+    border: 1px solid rgb(168, 164, 164);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px;
+    color: #353543;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+#navi>p a{
+    text-decoration: none;
+    border: none;
+    color:black;
+}
+#top{
+            /* border: 1px solid red; */
+            width:15%;
+            display: flex;
+            justify-content: space-evenly;
+            margin-left: 50px;
+        }
+        #wishlist-img{
+            /* border: 1px solid red; */
+            width: 90%;
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: space-between;
+           margin-left: 50px;
+        }
+       
+       #wishlist-img>div{
+            /* border:2px solid black;  */
+            width: 18%;
+            height: 460px;
+            margin-bottom: 20px;
+            margin-top: 15px;
+            line-height: 0.7em;
+            border: 1PX SOLID rgb(230, 226, 226);;
+        }
+       
+       
+
+        #wishlist-img>div>img {
+            width: 100%;
+            height: 75%;
+        }
+       #move-to-bag{
+        border-top: 1px solid rgb(230, 226, 226);
+        padding-bottom: 10px;
+        text-align: center;
+        color:#ff3f6c;
+        font-size: 14px;
+        font-weight: 800;
+       }
+
+
+
+    </style>
+</head>
+<body>
+    <!-- <div id="screen"> -->
+        <div id="navbar">
+            <div>
+                <img src="./meeshoLogo.png" alt="meeshoIMG">
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                <input type="search" placeholder="Try Saree,Kurti or Search by Product Code">
+
+
+            </div>
+            <div id="app-supplier">
+                <div>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <p>Download App</p>
+                </div>
+                <div>
+                    <p>Become Supplier</p>
+                </div>
+            </div>
+            <div id="profile">
+                <div>
+                    <i class="fa-regular fa-user"></i>
+                    <p><a href="./meesho Register page.html">Profile</a></p>
+                </div>
+                <div>
+                    <i class="fa-regular fa-heart fa-lg"></i>
+                    <div  class="anchorTAG"><a href="./meeshoWishlist.html">Wishlist</a></div>
+                
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p><a href="./meeshoCart.html">Cart</a></p>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="navi">
+
+            <p><a href="./meeshoWomen Ethnic.html">Women Ethnic</a></p>
+            <p><a href="./meeshoWomenWestern.html">Women Western</a></p>
+            <p><a href="./MeeshoMen.html">Men</a></p>
+             <p><a href="./Meesho Kids.html">Kids</a></p>
+            <p><a href="./meeshoKitchen.html">Home & Kitchen</a></p>
+            <p><a href="./meeshoBeauty.html">Beauty & Health</a></p>
+            <p><a href="./meeshoJwellery.html">Jewellery & Accessories</a></p>
+            <p><a href="./meesho women bag.html">Bags & Footwear</a></p>
+            <p><a href="./meesho Electronic.html">Electronics</a></p>
+
+        </div>
+        <div id="wishlist">
+            <div id="top">
+                <p style="font-size: 18px;
+                font-weight: 700;color: #282c3f;">My Wishlist</p>
+                <p style=color:#696e79>10 items</p>
+            </div>
+            <div id="wishlist-img">
+
+                <div>
+                    <img src="https://images.meesho.com/images/products/70393359/7x5uz_400.webp" alt="">
+                    <p style="font-size: 14px;color:#696e79" >Preety Women Dress</p>
+                    <h5>Rs.299 <del style="color:#cfd2d8">Rs.1,499 </del>  <span style="color: #ff3f6c;">(80% OFF)</span></h5>
+                    <div id="move-to-bag"><p>MOVE TO BAG</p></div>
+
+                </div>
+                <div>
+                    <img src="https://images.meesho.com/images/products/260682709/hqjmq_400.webp"/>
+                     <p style="font-size: 14px;color:#696e79" >Rain & Rainbow Rust & Musta</p>
+                     <h5>Rs.697 <del style="color:#cfd2d8">Rs.1,395 </del> <span style="color: #ff3f6c;">(50% OFF)</span>  </h5>
+                     <div id="move-to-bag"><p>MOVE TO BAG</p></div>
+
+                    </div>
+                <div>
+                    <img src="https://images.meesho.com/images/products/299171055/52au5_400.webp" alt="">
+                    <p  style="font-size: 14px;color:#696e79" >Shae by SASSAFRAS Women </p>
+                    <h5>Rs.515 <del style="color:#cfd2d8"> Rs.1,199</del> <span style="color: #ff3f6c;">(57% OFF)</span></h5>
+                    <div id="move-to-bag"><p>MOVE TO BAG</p></div>
+
+                </div>
+                <div>
+                    <img src="https://images.meesho.com/images/products/162586169/ud2tj_400.webp" alt="">
+                     <p  style="font-size: 14px;color:#696e79" >Sangria Maroon Embroidered</p>
+                     <h5>Rs.679 <del style="color:#cfd2d8">Rs.1,999  </del> <span style="color: #ff3f6c;">(66% OFF)</span></h5>
+                     <div id="move-to-bag"><p>MOVE TO BAG</p></div>
+
+                    </div>
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/15361610/2021/9/4/2c6e4908-af80-4021-9871-e63c2274b43c1630768604713VishudhOffWhiteMandarinCollarRegularTop1.jpg" alt="">
+                     <p  style="font-size: 14px;color:#696e79" >Vishudh Off White & Blue Geom</p>
+                     <h5>Rs.399  <del style="color:#cfd2d8"> Rs.999 </del> <span style="color: #ff3f6c;"> (Rs. 60%OFF)</span></h5>
+                     <div id="move-to-bag"><p>MOVE TO BAG</p></div>
+
+                    </div>
+                
+               
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/19253020/2022/7/29/b7f91a31-0810-4fe0-bde5-3f8ba1f5b7a21659081442776KALINIWhiteGold-TonedZariSaree1.jpg" alt="">
+                    <p  style="font-size: 14px;color:#696e79" >KALINI White & Gold-Toned Z</p>
+                    <h5>Rs.474 <del style="color:#cfd2d8">Rs.2,496 </del> <span style="color: #ff3f6c;">(81% OFF)</span></h5>
+                    <div id="move-to-bag"><p>MOVE TO BAG</p></div>
+
+                </div>
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/productimage/2021/4/5/e59c4735-e5c0-4c08-8ef5-7c3ce6cee96c1617599157870-1.jpg" alt=""/>
+                     <p  style="font-size: 14px;color:#696e79" >Libas Women Green floral Kurta </p>
+                     <h5>Rs.1,007 <del style="color:#cfd2d8">Rs.2,799</del> <span style="color: #ff3f6c;">(64% OFF)</span></h5>
+                     <div id="move-to-bag"><p>MOVE TO BAG</p></div>
+
+                    </div>
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/20695836/2022/11/10/ba1724c2-c606-481c-a0ca-63424b61a8661668078028270WomensRayonPrintedEmbroideredKurtaWithPantAndDupatta1.jpg" alt="">
+                    <p  style="font-size: 14px;color:#696e79" >SINGNI Women Purple Ethnic</p>
+                    <h5>Rs.1,249 <del style="color:#cfd2d8">Rs.4,999</del> <span style="color: #ff3f6c;">(75% OFF)</span> </h5>
+                    <div id="move-to-bag"><p>MOVE TO BAG</p></div>
+
+                </div>
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/18652620/2022/8/26/4d5f7043-a460-42e5-b67a-b04d9c0bc7041661503606623-KALINI-Women-Beige-Floral-Yoke-Design-Kurta-with-Trousers--W-1.jpg" alt="">
+                    <p  style="font-size: 14px;color:#696e79" >KALINI Women Beige Floral Yok</p>
+                    <h5>Rs.813 <del style="color:#cfd2d8">Rs.3,699 </del><span style="color: #ff3f6c;">(78% OFF)</span> </h5>
+                    <div id="move-to-bag"><p>MOVE TO BAG</p></div>
+
+                </div>
+
+                <div>
+                    <img src="https://assets.myntassets.com/f_webp,w_200,c_limit,fl_progressive,dpr_2.0/assets/images/22120556/2023/2/25/986d6f97-fe9b-487a-9c64-f577e0a32c491677314970316KhushalKwomenEmbroideryKurtaandpalazzowithdupattaset7.jpg"/>
+                       <p  style="font-size: 14px;color:#696e79" >Khushal K Ethnic Motifs Embr</p>
+                       <h5>Rs.1,416 <del style="color:#cfd2d8">Rs.5,449  </del> <span style="color: #ff3f6c;">(74% OFF)</span></h5>
+                       <div id="move-to-bag"><p>MOVE TO BAG</p></div>
+
+                    </div>
+                
+                
+            </div>
+       
+    
+</body>
+</html>
