@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+#screen {
+    border: 1px solid grey;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#navbar {
+    border: 1px solid rgb(230, 217, 217);
+    width: 25%;
+    height: 100%;
+    overflow: scroll;
+    position: fixed;
+    margin-right: 80%;
+    
+
+}
+
+#navbar>div:nth-child(1) {
+    
+    margin: 20px 0px 20px 40px;
+    color: rgb(96, 188, 224);
+
+}
+
+#navbar>div:nth-child(2)>div {
+    border: 1px solid rgb(228, 217, 217);
+    margin: 25px 0px 20px 40px;
+    font-size: 22px;
+    border: none;
+
+}
+#profile>span{
+     border: 1px solid red;   
+     text-decoration: none;
+    border: none;
+    color:black;
+
+}
+
+#navbar>div:nth-child(2)>div:nth-child(1)>span {
+    color: black;
+
+
+}
+
+
+
+
+#navbar>div:nth-child(2)>div>i {
+    margin-right: 15px;
+    
+}
+
+#tweetBtn {
+    border: 1px solid grey;
+    background-color: rgb(44, 184, 240);
+    width: 70%;
+    height: 45px;
+    margin: auto;
+    border-radius: 20px;
+    /* border-bottom: 20px; */
+    border: none;
+
+}
+
+#tweetBtn>p {
+    
+    padding-top: 5%;
+    padding-left: 35%;
+    /* text-align: center; */
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+
+}
+#profile-name{
+    margin:10px 0px 10px 35px;
+    
+}
+#list{
+    border: 1px solid rgb(223, 213, 213);
+    width:45%;
+    margin-left:20%;
+
+}
+#list>div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+#list>div:nth-child(1)>i:nth-child(1){
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+#list>div:nth-child(1)>div{
+    border: 1px solid rgb(248, 243, 243);
+    background-color: rgb(242, 242, 247);
+    display: flex;
+    width:70%;
+    height: 45px;
+    border-radius: 25px;
+    
+}
+#list>div:nth-child(1)>div>i{
+    padding-top: 15px;
+    padding-left: 15px;
+}
+#list>div:nth-child(1)>div>input{
+    background-color: rgb(242, 242, 247);
+     border: none;
+
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#list>div:nth-child(1)>div{
+
+}
+
+#list>div:nth-child(1)>i:nth-child(3){
+    margin-right: 10px;
+    margin-top: 10px;
+
+}
+#Pin-list{
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#pin{
+    border-bottom: 1px solid rgb(241, 234, 234);
+
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(110, 110, 134);
+    margin-left: 25px;
+    margin-top: 45px;
+    padding-bottom: 10px;
+}
+#newList>h4{
+    font-size: 20px;
+}
+.account-noti{
+display: flex;
+/* justify-content: space-evenly;} */
+}
+.account-noti>div:nth-child(1)>img{
+    width:50px;
+    height: 45px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+   
+.account-noti>div:nth-child(2)>p:nth-child(1){
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.account-noti>div:nth-child(2)>p:nth-child(1)>small{
+    color: rgb(80, 76, 76);
+    margin-left: 10px;
+
+}
+.account-noti>div:nth-child(2)>p:nth-child(2){
+    font-size: 14px;
+    margin-left: 10px;
+
+    color: rgb(80, 76, 76);
+
+}#follow1{
+    border: 1px solid grey;
+    background-color: black;
+    margin-left: 25%;
+    width: 15%;
+    height: 25px;
+    text-align: center;
+    padding-top: 5px;
+    color: white;
+    border-radius: 20px;
+}
+#follow2{
+    border: 1px solid grey;
+    background-color: black;
+    margin-left: 27%;
+    width: 15%;
+    height: 25px;
+    text-align: center;
+    padding-top: 5px;
+    color: white;
+    border-radius: 20px;
+}
+#follow3{
+    border: 1px solid grey;
+    background-color: black;
+    margin-left: 34%;
+    width: 15%;
+    height: 25px;
+    text-align: center;
+    padding-top: 5px;
+    color: white;
+    border-radius: 20px;
+}
+#showmore{
+    color:rgb(154, 219, 245);
+    border-bottom: 1px solid rgb(204, 199, 199);
+    font-size: 16px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+#YourLists{
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-left:20px;
+
+}
+#showUP{
+    color: rgb(85, 85, 92);
+    margin-top: 10%;
+    margin-left: 25px;
+}
+
+
+#newList>div:nth-child(1)>div{
+    border: 1px solid red;
+  display:flex ;
+}
+
+
+#search-part{
+    /* border: 1px solid rgb(240, 232, 232); */
+           width: 25%;
+           position: sticky;
+           /* margin-left: 0%; */
+}
+#search{
+        border: 1px solid grey;
+        background-color: rgb(242, 242, 247);
+        width:100%;
+        height:40px;
+        margin-top: 15px;
+        padding-top: 10px;
+        border-radius: 20px;
+        border: none;
+
+
+}
+
+#search>div{
+            border: 1px solid rgb(99, 93, 93);
+             width:100%;
+           height: 40px;
+           border: none;
+           margin-top: 5px;
+           /* margin-left: 20px; */
+}
+#search>div>i{
+   /* border: 1px solid black; */
+   margin-left: 10px;
+
+}
+
+#search>div>input{
+   font-size: 16px;
+   font-weight: 600;
+   border: none;
+   background-color: rgb(242, 242, 247);
+
+
+}
+#suggetion{
+   background-color: rgb(242, 242, 247);
+   border-radius: 15px;
+
+}
+#suggetion>p:nth-child(1){
+   margin-top: 20px;
+   margin-left: 20px;
+   font-size: 22px;
+   color:black;
+   font-weight: 500;
+   /* line-height: 1.5em; */
+}
+   #suggetion>p:nth-child(2){
+       margin-left: 20px;
+       color:rgb(12, 12, 12);
+       font-weight: 500;
+   }
+   #suggetion>p:nth-child(3){
+       border: 1px solid rgb(145, 131, 131);
+       width:35%;
+       height: 30px;
+       font-size: 16px;
+       font-weight: 600;
+       border-radius: 40px;
+       color:white;
+       background-color: black;
+       margin-left: 20px;
+       margin-top: 20px;
+       padding-top: 10px;
+       text-align: center;
+       margin-bottom: 10px;
+       
+   }
+   #suggetAccount{
+       background-color: rgb(242, 242, 247);
+       margin-top: 20px;
+       border-radius: 20px;
+
+   }
+   #suggetAccount>h2{
+       margin-bottom: 15px;
+       margin-left: 10px;
+   }
+   #suggetAccount>div{
+       margin-bottom: 20px;
+       margin-left: 20px;
+   }
+   #suggetAccount>p{
+       margin-bottom: 10px;
+       color: rgb(159, 159, 233);
+       font-size: 16px;
+       font-weight: 600;
+   }
+   #follow{
+       background-color: rgb(242, 242, 247);
+       border-radius: 20px;
+
+       margin-top: 20px;
+       margin-bottom: 20px;
+
+   }
+   #follow>h5{
+       font-size: 20px;
+       margin-top: 15px;
+       margin-left: 20px;
+       margin-bottom: 15px;
+   }
+   #follow>div{
+       display: flex;
+       justify-content: space-between;
+
+   }
+   #followAccount>div>h6{
+       font-size: 20px;
+       margin-top: 15px;
+       margin-left: 20px;
+   }
+   #followAccount>div>p{
+       margin-left: 20px;
+   }
+   #follow-btn{
+       border: 1px solid rgb(145, 131, 131);
+       width:35%;
+       height: 30px;
+       font-size: 16px;
+       font-weight: 600;
+       border-radius: 40px;
+       color:white;
+       background-color: black;
+       margin-left: 20px;
+       margin-top: 20px;
+       padding-top: 10px;
+       text-align: center;
+       margin-bottom: 10px;
+   }
+   #showmore{
+       color:rgb(121, 121, 235);
+       font-weight: 600;
+       margin-left: 20px;
+   }
+
+   #Policy{
+    margin-top: 50px;
+    font-size: 16px;
+    color:rgb(112, 107, 107);
+    font-weight: 400;
+}
+
+
+
