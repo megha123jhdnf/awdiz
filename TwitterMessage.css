@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+#screen {
+    border: 1px solid grey;
+    width: 100%;
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+#navbar {
+    border: 1px solid rgb(230, 217, 217);
+    width: 25%;
+    height: 100%;
+    overflow: scroll;
+    /* position: fixed; */
+    /* margin-right: 80%; */
+
+
+}
+
+#navbar>div:nth-child(1) {
+
+    margin: 20px 0px 20px 40px;
+    color: rgb(96, 188, 224);
+
+}
+
+#navbar>div:nth-child(2)>div {
+    border: 1px solid rgb(228, 217, 217);
+    margin: 25px 0px 20px 40px;
+    font-size: 22px;
+    border: none;
+
+}
+
+#profile>span {
+    border: 1px solid red;
+    text-decoration: none;
+    border: none;
+    color: black;
+
+}
+
+#navbar>div:nth-child(2)>div:nth-child(1)>span {
+    color: black;
+
+
+}
+
+
+
+
+#navbar>div:nth-child(2)>div>i {
+    margin-right: 15px;
+
+}
+
+#tweetBtn {
+    border: 1px solid grey;
+    background-color: rgb(44, 184, 240);
+    width: 70%;
+    height: 45px;
+    margin: auto;
+    border-radius: 20px;
+    /* border-bottom: 20px; */
+    border: none;
+
+}
+
+#tweetBtn>p {
+
+    padding-top: 5%;
+    padding-left: 35%;
+    /* text-align: center; */
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+
+}
+
+#profile-name {
+    margin: 10px 0px 10px 35px;
+
+}
+
+#inbox {
+    border: 1px solid rgb(241, 239, 239);
+    width: 35%;
+
+}
+
+#inbox>div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+}
+
+#inbox>div:nth-child(1)>h5 {
+    font-size: 22px;
+    color: rgb(43, 38, 38);
+    margin: 10px 0px 15px 20px;
+}
+
+/* #setting-icon{
+    border: 1px solid red;
+    margin-left: 25px
+} */
+#inbox>div:nth-child(2)>h4 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 0.3em;
+    color: rgb(29, 27, 27);
+    margin: 30px 0px 15px 20px;
+}
+
+#inbox>div:nth-child(2)>div>p {
+    line-height: 1.3em;
+    font-weight: 400;
+    color: rgb(67, 67, 75);
+    margin-left: 20px;
+
+}
+
+#inbox>div:nth-child(2)>p {
+    /* border: 1px solid red; */
+    width: 40%;
+    height: 35px;
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(44, 177, 230);
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+
+#newMessage {
+    /* border: 1px solid rgb(233, 228, 228); */
+    width: 40%;
+
+}
+#newMessage >h4{
+    margin-top: 45%;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 20px;
+    color: rgb(29, 27, 27);
+
+}
+#newMessage>div>p{
+    line-height: 1.2em;
+    font-weight: 400;
+    color: rgb(67, 67, 75);
+    margin-left: 20px;
+}
+#newMessage>p{
+      /* border: 1px solid red; */
+      width: 35%;
+      height: 40px;
+      border-radius: 30px;
+      text-align: center;
+      padding-top: 10px;
+      font-size: 20px;
+      font-weight: 600;
+      color: white;
+      background-color: rgb(44, 177, 230);
+      margin-top: 40px;
+      margin-left: 20px;
+}
