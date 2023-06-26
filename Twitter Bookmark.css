@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+#screen {
+    border: 1px solid grey;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#navbar {
+    /* border: 1px solid rgb(230, 217, 217); */
+    width: 25%;
+    height: 100%;
+    overflow: scroll;
+    position: fixed;
+    margin-right: 75%;
+
+
+}
+
+#navbar>div:nth-child(1) {
+
+    margin: 20px 0px 20px 40px;
+    color: rgb(96, 188, 224);
+
+}
+
+#navbar>div:nth-child(2)>div {
+    border: 1px solid rgb(228, 217, 217);
+    margin: 25px 0px 20px 40px;
+    font-size: 22px;
+    border: none;
+
+}
+
+#profile>span {
+    border: 1px solid red;
+    text-decoration: none;
+    border: none;
+    color: black;
+
+}
+
+#navbar>div:nth-child(2)>div:nth-child(1)>span {
+    color: black;
+
+}
+
+#navbar>div:nth-child(2)>div>i {
+    margin-right: 15px;
+
+}
+
+#tweetBtn {
+    border: 1px solid grey;
+    background-color: rgb(44, 184, 240);
+    width: 70%;
+    height: 45px;
+    margin: auto;
+    border-radius: 20px;
+    /* border-bottom: 20px; */
+    border: none;
+
+}
+
+#tweetBtn>p {
+
+    padding-top: 5%;
+    padding-left: 35%;
+    /* text-align: center; */
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+
+}
+
+#profile-name {
+    margin: 10px 0px 10px 35px;
+
+}
+
+#Bookmark {
+    border: 1px solid rgb(248, 246, 246);
+    width: 45%;
+    margin-left: 22%;
+}
+
+#Bookmark>h4 {
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 20px;
+    position: fixed;
+}
+
+#Bookmark>p:nth-child(2) {
+    color: rgb(143, 137, 137);
+    font-size: 14px;
+    margin-left: 15px;
+    position: fixed;
+    margin-top: 32px;
+
+
+}
+
+#Bookmark>img {
+    width: 55%;
+    margin-top: 10%;
+    margin-left: 20%;
+}
+
+#Bookmark>h3 {
+    margin-top: 5%;
+    margin-left: 22%;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(34, 31, 31);
+    margin-bottom: 5px;
+
+}
+.for-bookmark{
+    margin-left: 22%;
+    color: rgb(121, 118, 118);
+
+
+}
+
+
+
+
+#search-part {
+    /* border: 1px solid rgb(240, 232, 232); */
+    width: 25%;
+    height: 1000px;
+    position: sticky;
+    border: none;
+
+}
+
+#search {
+    border: 1px solid grey;
+    background-color: rgb(242, 242, 247);
+    width: 100%;
+    height: 40px;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-radius: 20px;
+    border: none;
+
+
+}
+
+#search>div {
+    border: 1px solid rgb(99, 93, 93);
+    width: 100%;
+    height: 40px;
+    border: none;
+    margin-top: 5px;
+    /* margin-left: 20px; */
+}
+
+#search>div>i {
+    /* border: 1px solid black; */
+    margin-left: 10px;
+
+}
+
+#search>div>input {
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    background-color: rgb(242, 242, 247);
+
+
+}
+
+#suggetAccount {
+    background-color: rgb(242, 242, 247);
+    margin-top: 20px;
+    border-radius: 20px;
+
+}
+
+#suggetAccount>h2 {
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+#suggetAccount>div {
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+#suggetAccount>p {
+    margin-bottom: 10px;
+    color: rgb(159, 159, 233);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#follow {
+    background-color: rgb(242, 242, 247);
+    border-radius: 20px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+#follow>h5 {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+#follow>div {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#followAccount>div>h6 {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+#followAccount>div>p {
+    margin-left: 20px;
+}
+
+#follow-btn {
+    border: 1px solid rgb(145, 131, 131);
+    width: 35%;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 40px;
+    color: white;
+    background-color: black;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#showmore {
+    color: rgb(121, 121, 235);
+    font-weight: 600;
+    margin-left: 20px;
+}
+#termPolicy{
+    font-size: 14px;
+    color:rgb(128, 110, 110);
+}
