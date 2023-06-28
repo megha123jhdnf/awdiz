@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+}
+#draft{
+    border:1px solid rgb(196, 190, 190);
+    width:40%;
+    height: 550px;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left: 10px;
+    overflow: scroll;
+
+    
+}
+#draft>div:nth-child(1){
+    display: flex;
+}
+#draft>div:nth-child(1)>i{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#draft>div:nth-child(1)>p{
+    margin-left: 25px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+#draft>div:nth-child(2){
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    border-bottom: 1px solid rgb(200, 203, 204);
+
+
+}
+#draft>div:nth-child(2)>p:nth-child(1){
+ font-size: 16px;
+ font-weight: 600;
+ border-bottom: 4px solid rgb(27, 180, 226);
+
+}
+#draft>div:nth-child(3)>img{
+    margin-left: 25%;
+    width:50%;
+    height: 160px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+}
+#draft>div:nth-child(4)>h2{
+    font-size: 22px;
+    font-weight: 700;
+    margin-left: 25%;
+    color: rgb(27, 25, 25);
+    margin-bottom: 10px;
+}
+.lastTwoP{
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 25%;
+    color: rgb(129, 125, 125);
+
+
+}
+
