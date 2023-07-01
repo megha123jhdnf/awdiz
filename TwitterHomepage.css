@@ -9,8 +9,7 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    position: relative;
-    display:none;
+    
 }
 
 #navbar {
@@ -85,6 +84,9 @@
 #profile-name{
     margin:10px 0px 10px 35px;
     
+}
+#morePopup{
+    cursor: pointer;
 }
 #home{
     border: 1px solid rgb(223, 213, 213);
